@@ -1,0 +1,5812 @@
+{
+  "provenance": {
+    "source_kind": "SustainGym author-maintained ACN-Data session cache",
+    "primary_dataset": "ACN-Data, Caltech",
+    "primary_url": "https://ev.caltech.edu/dataset.html",
+    "cache_repository": "https://github.com/chrisyeh96/sustaingym",
+    "cache_revision": "11d9bbdad7ace18d3d182c9a1f98f2f3339dad86",
+    "cache_url": "https://raw.githubusercontent.com/chrisyeh96/sustaingym/11d9bbdad7ace18d3d182c9a1f98f2f3339dad86/sustaingym/data/evcharging/acn_data/caltech/2019-05-01%202019-08-31.csv.gz",
+    "cache_sha256": "d23a07e3b5175dca0da107610557f604fa177f71bfc696687c70a0470964047b",
+    "cache_input_records": 3527,
+    "selection": "connectionTime >= 2019-05-01T07:00:00Z and connectionTime < 2019-06-01T07:00:00Z",
+    "local_timezone": "America/Los_Angeles",
+    "selected_input_records": 964,
+    "field_mapping": {
+      "sessionID": "session_id",
+      "connectionTime": "arrival (timezone conversion only)",
+      "disconnectTime": "departure (timezone conversion only)",
+      "kWhDelivered": "delivered_energy (kWh)"
+    },
+    "transformations": "Select connection-time interval and retain these four fields; timestamps converted to UTC without rounding. No deduplication, same-day filtering, energy filtering, or capacity filtering at this export stage.",
+    "retrieved_utc": "2026-10-22T12:41:08.337385Z",
+    "cache_license": "MIT at the pinned revision; Copyright (c) 2022 Christopher Yeh; https://github.com/chrisyeh96/sustaingym/blob/11d9bbdad7ace18d3d182c9a1f98f2f3339dad86/LICENSE",
+    "complete_export": true,
+    "source_scope": "All selected records in the fixed author cache; not a new API completeness certification."
+  },
+  "sessions": [
+    {
+      "sessionID": "2_39_131_30_2019-05-01 08:18:44.595638",
+      "connectionTime": "2019-05-01T08:18:45Z",
+      "disconnectTime": "2019-05-01T22:52:36Z",
+      "kWhDelivered": 44.069
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-01 13:33:13.958599",
+      "connectionTime": "2019-05-01T13:33:14Z",
+      "disconnectTime": "2019-05-01T18:50:55Z",
+      "kWhDelivered": 17.666
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-01 13:54:21.241471",
+      "connectionTime": "2019-05-01T13:54:21Z",
+      "disconnectTime": "2019-05-01T22:21:59Z",
+      "kWhDelivered": 2.908
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-01 14:08:57.921419",
+      "connectionTime": "2019-05-01T14:08:58Z",
+      "disconnectTime": "2019-05-01T23:21:08Z",
+      "kWhDelivered": 22.51
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-01 14:43:41.837319",
+      "connectionTime": "2019-05-01T14:43:42Z",
+      "disconnectTime": "2019-05-02T02:49:07Z",
+      "kWhDelivered": 31.208
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-01 15:19:15.333912",
+      "connectionTime": "2019-05-01T15:19:15Z",
+      "disconnectTime": "2019-05-01T20:34:15Z",
+      "kWhDelivered": 8.742
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-01 15:25:54.888943",
+      "connectionTime": "2019-05-01T15:25:55Z",
+      "disconnectTime": "2019-05-02T01:07:18Z",
+      "kWhDelivered": 1.081
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-01 15:29:01.581646",
+      "connectionTime": "2019-05-01T15:29:02Z",
+      "disconnectTime": "2019-05-01T22:41:23Z",
+      "kWhDelivered": 7.958
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-01 15:32:15.698157",
+      "connectionTime": "2019-05-01T15:32:16Z",
+      "disconnectTime": "2019-05-02T01:50:26Z",
+      "kWhDelivered": 13.609
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-01 15:35:21.813898",
+      "connectionTime": "2019-05-01T15:35:22Z",
+      "disconnectTime": "2019-05-01T22:57:39Z",
+      "kWhDelivered": 29.524
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-01 15:39:18.925731",
+      "connectionTime": "2019-05-01T15:39:19Z",
+      "disconnectTime": "2019-05-02T01:14:48Z",
+      "kWhDelivered": 4.663
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-01 15:43:14.131837",
+      "connectionTime": "2019-05-01T15:43:14Z",
+      "disconnectTime": "2019-05-01T23:26:04Z",
+      "kWhDelivered": 51.85
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-01 15:45:27.916726",
+      "connectionTime": "2019-05-01T15:45:28Z",
+      "disconnectTime": "2019-05-02T01:39:04Z",
+      "kWhDelivered": 17.191
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-01 15:53:46.975370",
+      "connectionTime": "2019-05-01T15:53:47Z",
+      "disconnectTime": "2019-05-01T23:29:32Z",
+      "kWhDelivered": 10.054
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-01 15:55:40.240381",
+      "connectionTime": "2019-05-01T15:55:40Z",
+      "disconnectTime": "2019-05-02T01:11:10Z",
+      "kWhDelivered": 13.849
+    },
+    {
+      "sessionID": "2_39_88_438_2019-05-01 15:56:57.816169",
+      "connectionTime": "2019-05-01T15:56:58Z",
+      "disconnectTime": "2019-05-01T23:28:29Z",
+      "kWhDelivered": 33.579
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-01 16:03:34.809336",
+      "connectionTime": "2019-05-01T16:03:35Z",
+      "disconnectTime": "2019-05-02T02:05:24Z",
+      "kWhDelivered": 8.5
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-01 16:04:36.186567",
+      "connectionTime": "2019-05-01T16:04:36Z",
+      "disconnectTime": "2019-05-02T00:09:06Z",
+      "kWhDelivered": 16.169
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-01 16:05:58.363347",
+      "connectionTime": "2019-05-01T16:05:58Z",
+      "disconnectTime": "2019-05-02T00:34:20Z",
+      "kWhDelivered": 4.368
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-01 16:13:17.462183",
+      "connectionTime": "2019-05-01T16:13:17Z",
+      "disconnectTime": "2019-05-01T23:36:16Z",
+      "kWhDelivered": 3.47
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-01 16:21:33.604642",
+      "connectionTime": "2019-05-01T16:21:34Z",
+      "disconnectTime": "2019-05-01T20:06:58Z",
+      "kWhDelivered": 4.956
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-01 16:37:15.246069",
+      "connectionTime": "2019-05-01T16:37:15Z",
+      "disconnectTime": "2019-05-02T01:05:35Z",
+      "kWhDelivered": 5.401
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-01 16:48:02.613902",
+      "connectionTime": "2019-05-01T16:48:03Z",
+      "disconnectTime": "2019-05-01T23:02:37Z",
+      "kWhDelivered": 7.89
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-01 16:50:58.314373",
+      "connectionTime": "2019-05-01T16:50:58Z",
+      "disconnectTime": "2019-05-02T01:50:55Z",
+      "kWhDelivered": 1.813
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-01 16:53:46.112347",
+      "connectionTime": "2019-05-01T16:53:46Z",
+      "disconnectTime": "2019-05-02T00:03:08Z",
+      "kWhDelivered": 3.394
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-01 16:53:49.397821",
+      "connectionTime": "2019-05-01T16:53:49Z",
+      "disconnectTime": "2019-05-02T01:42:16Z",
+      "kWhDelivered": 4.46
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-01 16:58:51.960389",
+      "connectionTime": "2019-05-01T16:58:52Z",
+      "disconnectTime": "2019-05-02T02:40:43Z",
+      "kWhDelivered": 6.466
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-01 17:19:01.874288",
+      "connectionTime": "2019-05-01T17:19:02Z",
+      "disconnectTime": "2019-05-01T22:14:23Z",
+      "kWhDelivered": 12.285
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-01 17:26:10.624460",
+      "connectionTime": "2019-05-01T17:26:11Z",
+      "disconnectTime": "2019-05-02T02:19:14Z",
+      "kWhDelivered": 4.867
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-01 17:59:37.023704",
+      "connectionTime": "2019-05-01T17:59:37Z",
+      "disconnectTime": "2019-05-01T23:35:14Z",
+      "kWhDelivered": 4.446
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-01 19:23:06.104633",
+      "connectionTime": "2019-05-01T19:23:06Z",
+      "disconnectTime": "2019-05-01T22:55:34Z",
+      "kWhDelivered": 1.205
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-01 19:25:03.085152",
+      "connectionTime": "2019-05-01T19:25:03Z",
+      "disconnectTime": "2019-05-02T01:15:07Z",
+      "kWhDelivered": 2.325
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-01 20:50:20.478241",
+      "connectionTime": "2019-05-01T20:50:20Z",
+      "disconnectTime": "2019-05-01T22:12:14Z",
+      "kWhDelivered": 4.376
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-01 21:09:06.461400",
+      "connectionTime": "2019-05-01T21:09:06Z",
+      "disconnectTime": "2019-05-02T01:45:33Z",
+      "kWhDelivered": 1.455
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-01 21:22:53.214459",
+      "connectionTime": "2019-05-01T21:22:53Z",
+      "disconnectTime": "2019-05-02T00:01:10Z",
+      "kWhDelivered": 0.83
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-01 22:01:12.391393",
+      "connectionTime": "2019-05-01T22:01:12Z",
+      "disconnectTime": "2019-05-02T02:51:22Z",
+      "kWhDelivered": 6.37
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-01 23:38:44.276748",
+      "connectionTime": "2019-05-01T23:38:46Z",
+      "disconnectTime": "2019-05-02T00:54:17Z",
+      "kWhDelivered": 4.337
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-02 01:21:53.704574",
+      "connectionTime": "2019-05-02T01:21:54Z",
+      "disconnectTime": "2019-05-02T03:45:08Z",
+      "kWhDelivered": 5.887
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-02 13:38:09.368662",
+      "connectionTime": "2019-05-02T13:38:09Z",
+      "disconnectTime": "2019-05-02T18:34:10Z",
+      "kWhDelivered": 18.751
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-02 14:07:35.468285",
+      "connectionTime": "2019-05-02T14:07:35Z",
+      "disconnectTime": "2019-05-02T23:35:21Z",
+      "kWhDelivered": 5.782
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-02 14:12:16.157954",
+      "connectionTime": "2019-05-02T14:12:16Z",
+      "disconnectTime": "2019-05-03T02:49:00Z",
+      "kWhDelivered": 4.919
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-02 15:00:18.523087",
+      "connectionTime": "2019-05-02T15:00:19Z",
+      "disconnectTime": "2019-05-02T23:42:39Z",
+      "kWhDelivered": 3.081
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-02 15:06:23.046695",
+      "connectionTime": "2019-05-02T15:06:23Z",
+      "disconnectTime": "2019-05-03T00:26:41Z",
+      "kWhDelivered": 0.815
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-02 15:30:41.751896",
+      "connectionTime": "2019-05-02T15:30:42Z",
+      "disconnectTime": "2019-05-03T00:32:37Z",
+      "kWhDelivered": 14.101
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-02 15:40:09.313476",
+      "connectionTime": "2019-05-02T15:40:09Z",
+      "disconnectTime": "2019-05-03T03:52:04Z",
+      "kWhDelivered": 3.658
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-02 15:46:53.346703",
+      "connectionTime": "2019-05-02T15:46:53Z",
+      "disconnectTime": "2019-05-02T20:39:01Z",
+      "kWhDelivered": 4.879
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-02 15:47:40.138227",
+      "connectionTime": "2019-05-02T15:47:40Z",
+      "disconnectTime": "2019-05-02T23:53:02Z",
+      "kWhDelivered": 12.773
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-02 15:55:35.116833",
+      "connectionTime": "2019-05-02T15:55:35Z",
+      "disconnectTime": "2019-05-03T02:30:58Z",
+      "kWhDelivered": 4.674
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-02 15:59:03.530775",
+      "connectionTime": "2019-05-02T15:59:04Z",
+      "disconnectTime": "2019-05-03T01:07:09Z",
+      "kWhDelivered": 39.897
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-02 16:03:32.425927",
+      "connectionTime": "2019-05-02T16:03:32Z",
+      "disconnectTime": "2019-05-02T23:40:47Z",
+      "kWhDelivered": 3.353
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-02 16:12:44.566586",
+      "connectionTime": "2019-05-02T16:12:45Z",
+      "disconnectTime": "2019-05-03T03:36:59Z",
+      "kWhDelivered": 10.957
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-02 16:20:28.952918",
+      "connectionTime": "2019-05-02T16:20:29Z",
+      "disconnectTime": "2019-05-03T00:12:11Z",
+      "kWhDelivered": 14.208
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-02 16:25:14.187512",
+      "connectionTime": "2019-05-02T16:25:14Z",
+      "disconnectTime": "2019-05-02T17:24:52Z",
+      "kWhDelivered": 0.682
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-02 17:01:15.631878",
+      "connectionTime": "2019-05-02T17:01:16Z",
+      "disconnectTime": "2019-05-02T20:09:25Z",
+      "kWhDelivered": 10.335
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-02 17:08:25.558626",
+      "connectionTime": "2019-05-02T17:08:26Z",
+      "disconnectTime": "2019-05-03T00:31:30Z",
+      "kWhDelivered": 5.117
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-02 17:10:10.452245",
+      "connectionTime": "2019-05-02T17:10:10Z",
+      "disconnectTime": "2019-05-02T23:24:49Z",
+      "kWhDelivered": 0.887
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-02 17:22:02.599805",
+      "connectionTime": "2019-05-02T17:22:03Z",
+      "disconnectTime": "2019-05-02T23:10:46Z",
+      "kWhDelivered": 19.612
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-02 17:24:56.355403",
+      "connectionTime": "2019-05-02T17:24:56Z",
+      "disconnectTime": "2019-05-03T01:36:37Z",
+      "kWhDelivered": 5.305
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-02 17:38:11.200433",
+      "connectionTime": "2019-05-02T17:38:11Z",
+      "disconnectTime": "2019-05-03T05:09:27Z",
+      "kWhDelivered": 2.017
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-02 18:01:21.044022",
+      "connectionTime": "2019-05-02T18:01:21Z",
+      "disconnectTime": "2019-05-03T12:27:54Z",
+      "kWhDelivered": 22.964
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-02 18:38:05.322095",
+      "connectionTime": "2019-05-02T18:38:05Z",
+      "disconnectTime": "2019-05-03T00:14:57Z",
+      "kWhDelivered": 29.884
+    },
+    {
+      "sessionID": "2_39_82_385_2019-05-02 19:37:17.661750",
+      "connectionTime": "2019-05-02T19:37:18Z",
+      "disconnectTime": "2019-05-02T21:45:40Z",
+      "kWhDelivered": 0.768
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-02 19:46:29.029019",
+      "connectionTime": "2019-05-02T19:46:29Z",
+      "disconnectTime": "2019-05-02T22:59:03Z",
+      "kWhDelivered": 2.603
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-02 20:17:30.717984",
+      "connectionTime": "2019-05-02T20:17:31Z",
+      "disconnectTime": "2019-05-03T02:27:25Z",
+      "kWhDelivered": 6.578
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-02 20:24:59.856770",
+      "connectionTime": "2019-05-02T20:25:00Z",
+      "disconnectTime": "2019-05-03T01:08:43Z",
+      "kWhDelivered": 1.1265232974865376
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-02 20:29:30.668885",
+      "connectionTime": "2019-05-02T20:29:31Z",
+      "disconnectTime": "2019-05-02T21:06:36Z",
+      "kWhDelivered": 0.925
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-02 20:40:23.789901",
+      "connectionTime": "2019-05-02T20:40:24Z",
+      "disconnectTime": "2019-05-02T21:00:02Z",
+      "kWhDelivered": 0.566
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-02 21:16:02.013263",
+      "connectionTime": "2019-05-02T21:16:02Z",
+      "disconnectTime": "2019-05-02T22:51:30Z",
+      "kWhDelivered": 5.307
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-02 23:35:53.793154",
+      "connectionTime": "2019-05-02T23:35:54Z",
+      "disconnectTime": "2019-05-03T01:24:12Z",
+      "kWhDelivered": 6.043
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-03 01:22:56.900026",
+      "connectionTime": "2019-05-03T01:22:57Z",
+      "disconnectTime": "2019-05-03T03:06:00Z",
+      "kWhDelivered": 7.868
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-03 01:29:24.728158",
+      "connectionTime": "2019-05-03T01:29:25Z",
+      "disconnectTime": "2019-05-03T05:02:36Z",
+      "kWhDelivered": 12.56
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-03 01:29:35.712774",
+      "connectionTime": "2019-05-03T01:29:36Z",
+      "disconnectTime": "2019-05-03T02:39:36Z",
+      "kWhDelivered": 7.759
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-03 04:20:30.914594",
+      "connectionTime": "2019-05-03T04:20:31Z",
+      "disconnectTime": "2019-05-03T05:33:05Z",
+      "kWhDelivered": 3.965
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-03 07:01:04.750920",
+      "connectionTime": "2019-05-03T07:01:05Z",
+      "disconnectTime": "2019-05-03T07:26:49Z",
+      "kWhDelivered": 0.75
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-03 13:30:28.387450",
+      "connectionTime": "2019-05-03T13:30:28Z",
+      "disconnectTime": "2019-05-03T18:46:07Z",
+      "kWhDelivered": 18.822
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-03 14:18:53.317699",
+      "connectionTime": "2019-05-03T14:18:53Z",
+      "disconnectTime": "2019-05-04T02:10:34Z",
+      "kWhDelivered": 2.839
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-03 14:40:50.612230",
+      "connectionTime": "2019-05-03T14:40:51Z",
+      "disconnectTime": "2019-05-03T18:17:59Z",
+      "kWhDelivered": 6.025
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-03 14:59:59.634513",
+      "connectionTime": "2019-05-03T15:00:00Z",
+      "disconnectTime": "2019-05-03T22:25:33Z",
+      "kWhDelivered": 4.772
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-03 15:26:19.057017",
+      "connectionTime": "2019-05-03T15:26:19Z",
+      "disconnectTime": "2019-05-03T21:57:46Z",
+      "kWhDelivered": 4.167
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-03 15:26:37.243561",
+      "connectionTime": "2019-05-03T15:26:37Z",
+      "disconnectTime": "2019-05-03T19:45:35Z",
+      "kWhDelivered": 9.926
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-03 15:38:39.008387",
+      "connectionTime": "2019-05-03T15:38:39Z",
+      "disconnectTime": "2019-05-04T00:17:03Z",
+      "kWhDelivered": 9.526
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-03 15:40:16.861912",
+      "connectionTime": "2019-05-03T15:40:17Z",
+      "disconnectTime": "2019-05-04T00:29:47Z",
+      "kWhDelivered": 6.414
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-03 15:46:27.946885",
+      "connectionTime": "2019-05-03T15:46:28Z",
+      "disconnectTime": "2019-05-03T23:54:20Z",
+      "kWhDelivered": 12.377
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-03 15:53:52.921511",
+      "connectionTime": "2019-05-03T15:53:53Z",
+      "disconnectTime": "2019-05-03T21:56:41Z",
+      "kWhDelivered": 13.309
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-03 15:57:27.484843",
+      "connectionTime": "2019-05-03T15:57:27Z",
+      "disconnectTime": "2019-05-03T20:31:55Z",
+      "kWhDelivered": 4.125
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-03 16:11:51.417585",
+      "connectionTime": "2019-05-03T16:11:51Z",
+      "disconnectTime": "2019-05-04T02:00:04Z",
+      "kWhDelivered": 7.455
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-03 16:20:52.160134",
+      "connectionTime": "2019-05-03T16:20:52Z",
+      "disconnectTime": "2019-05-03T19:31:00Z",
+      "kWhDelivered": 5.154
+    },
+    {
+      "sessionID": "2_39_83_386_2019-05-03 16:23:04.480298",
+      "connectionTime": "2019-05-03T16:23:04Z",
+      "disconnectTime": "2019-05-03T18:53:01Z",
+      "kWhDelivered": 0.84
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-03 16:32:36.288429",
+      "connectionTime": "2019-05-03T16:32:36Z",
+      "disconnectTime": "2019-05-04T01:37:43Z",
+      "kWhDelivered": 5.876
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-03 16:33:08.312556",
+      "connectionTime": "2019-05-03T16:33:08Z",
+      "disconnectTime": "2019-05-04T00:50:39Z",
+      "kWhDelivered": 17.466
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-03 16:36:36.174787",
+      "connectionTime": "2019-05-03T16:36:36Z",
+      "disconnectTime": "2019-05-04T00:25:41Z",
+      "kWhDelivered": 3.123
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-03 16:40:24.938897",
+      "connectionTime": "2019-05-03T16:40:25Z",
+      "disconnectTime": "2019-05-04T02:39:01Z",
+      "kWhDelivered": 5.713
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-03 17:19:43.246041",
+      "connectionTime": "2019-05-03T17:19:43Z",
+      "disconnectTime": "2019-05-04T00:45:57Z",
+      "kWhDelivered": 3.608
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-03 18:29:17.420082",
+      "connectionTime": "2019-05-03T18:29:17Z",
+      "disconnectTime": "2019-05-04T00:24:48Z",
+      "kWhDelivered": 4.609
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-03 19:20:52.922387",
+      "connectionTime": "2019-05-03T19:20:53Z",
+      "disconnectTime": "2019-05-03T22:26:41Z",
+      "kWhDelivered": 19.868
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-03 19:26:34.826857",
+      "connectionTime": "2019-05-03T19:26:35Z",
+      "disconnectTime": "2019-05-03T22:53:48Z",
+      "kWhDelivered": 1.526
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-03 19:36:35.348426",
+      "connectionTime": "2019-05-03T19:36:35Z",
+      "disconnectTime": "2019-05-04T02:23:28Z",
+      "kWhDelivered": 6.58
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-03 20:53:04.899083",
+      "connectionTime": "2019-05-03T20:53:05Z",
+      "disconnectTime": "2019-05-04T03:53:02Z",
+      "kWhDelivered": 17.403
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-03 21:33:23.089531",
+      "connectionTime": "2019-05-03T21:33:23Z",
+      "disconnectTime": "2019-05-03T23:52:53Z",
+      "kWhDelivered": 10.864
+    },
+    {
+      "sessionID": "2_39_126_560_2019-05-03 21:37:55.815261",
+      "connectionTime": "2019-05-03T21:37:56Z",
+      "disconnectTime": "2019-05-04T01:18:17Z",
+      "kWhDelivered": 3.848
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-04 00:12:31.489862",
+      "connectionTime": "2019-05-04T00:12:31Z",
+      "disconnectTime": "2019-05-04T01:11:14Z",
+      "kWhDelivered": 0.845
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-04 03:24:41.106226",
+      "connectionTime": "2019-05-04T03:24:41Z",
+      "disconnectTime": "2019-05-04T05:58:30Z",
+      "kWhDelivered": 12.625
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-04 03:56:47.408643",
+      "connectionTime": "2019-05-04T03:56:47Z",
+      "disconnectTime": "2019-05-05T04:09:20Z",
+      "kWhDelivered": 51.506
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-04 04:44:54.092420",
+      "connectionTime": "2019-05-04T04:44:54Z",
+      "disconnectTime": "2019-05-04T20:55:42Z",
+      "kWhDelivered": 11.81
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-04 06:02:02.511526",
+      "connectionTime": "2019-05-04T06:02:03Z",
+      "disconnectTime": "2019-05-06T01:52:55Z",
+      "kWhDelivered": 36.88
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-04 14:47:58.239568",
+      "connectionTime": "2019-05-04T14:47:58Z",
+      "disconnectTime": "2019-05-04T16:38:27Z",
+      "kWhDelivered": 6.362
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-04 17:09:36.969474",
+      "connectionTime": "2019-05-04T17:09:37Z",
+      "disconnectTime": "2019-05-04T18:46:22Z",
+      "kWhDelivered": 7.893
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-04 17:10:45.426205",
+      "connectionTime": "2019-05-04T17:10:45Z",
+      "disconnectTime": "2019-05-04T19:28:45Z",
+      "kWhDelivered": 9.879
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-04 18:03:09.139532",
+      "connectionTime": "2019-05-04T18:03:09Z",
+      "disconnectTime": "2019-05-05T02:00:22Z",
+      "kWhDelivered": 4.71
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-04 18:35:42.242225",
+      "connectionTime": "2019-05-04T18:35:42Z",
+      "disconnectTime": "2019-05-04T21:51:22Z",
+      "kWhDelivered": 7.526
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-04 19:10:17.182103",
+      "connectionTime": "2019-05-04T19:10:17Z",
+      "disconnectTime": "2019-05-05T02:12:08Z",
+      "kWhDelivered": 3.174
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-04 20:15:58.612464",
+      "connectionTime": "2019-05-04T20:15:59Z",
+      "disconnectTime": "2019-05-04T21:01:10Z",
+      "kWhDelivered": 2.461
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-04 22:30:19.831562",
+      "connectionTime": "2019-05-04T22:30:20Z",
+      "disconnectTime": "2019-05-05T00:32:50Z",
+      "kWhDelivered": 5.251
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-05 01:40:56.513642",
+      "connectionTime": "2019-05-05T01:40:57Z",
+      "disconnectTime": "2019-05-05T17:46:33Z",
+      "kWhDelivered": 16.11
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-05 02:54:31.594526",
+      "connectionTime": "2019-05-05T02:54:32Z",
+      "disconnectTime": "2019-05-06T17:28:53Z",
+      "kWhDelivered": 40.272
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-05 03:04:57.137023",
+      "connectionTime": "2019-05-05T03:04:57Z",
+      "disconnectTime": "2019-05-05T22:11:30Z",
+      "kWhDelivered": 16.157
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-05 03:07:25.463972",
+      "connectionTime": "2019-05-05T03:07:25Z",
+      "disconnectTime": "2019-05-05T22:11:21Z",
+      "kWhDelivered": 15.815
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-05 08:42:32.827468",
+      "connectionTime": "2019-05-05T08:42:33Z",
+      "disconnectTime": "2019-05-05T18:01:28Z",
+      "kWhDelivered": 5.882
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-05 09:22:37.577213",
+      "connectionTime": "2019-05-05T09:22:38Z",
+      "disconnectTime": "2019-05-08T00:11:38Z",
+      "kWhDelivered": 14.062
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-05 15:52:14.019221",
+      "connectionTime": "2019-05-05T15:52:14Z",
+      "disconnectTime": "2019-05-05T17:20:07Z",
+      "kWhDelivered": 1.418
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-05 16:52:24.210678",
+      "connectionTime": "2019-05-05T16:52:24Z",
+      "disconnectTime": "2019-05-06T00:29:12Z",
+      "kWhDelivered": 39.343
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-05 17:33:07.986705",
+      "connectionTime": "2019-05-05T17:33:08Z",
+      "disconnectTime": "2019-05-05T20:45:22Z",
+      "kWhDelivered": 6.247
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-05 18:46:46.938907",
+      "connectionTime": "2019-05-05T18:46:47Z",
+      "disconnectTime": "2019-05-05T23:24:44Z",
+      "kWhDelivered": 11.892
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-05 18:51:37.990711",
+      "connectionTime": "2019-05-05T18:51:38Z",
+      "disconnectTime": "2019-05-05T23:57:10Z",
+      "kWhDelivered": 20.609
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-05 19:10:40.815735",
+      "connectionTime": "2019-05-05T19:10:41Z",
+      "disconnectTime": "2019-05-05T19:59:09Z",
+      "kWhDelivered": 0.963
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-05 20:28:14.793299",
+      "connectionTime": "2019-05-05T20:28:15Z",
+      "disconnectTime": "2019-05-05T22:07:57Z",
+      "kWhDelivered": 5.349
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-05 22:54:54.882183",
+      "connectionTime": "2019-05-05T22:54:55Z",
+      "disconnectTime": "2019-05-06T02:05:31Z",
+      "kWhDelivered": 4.691
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-06 00:38:39.918068",
+      "connectionTime": "2019-05-06T00:38:47Z",
+      "disconnectTime": "2019-05-06T00:43:54Z",
+      "kWhDelivered": 0.574
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-06 01:10:22.389181",
+      "connectionTime": "2019-05-06T01:10:22Z",
+      "disconnectTime": "2019-05-06T01:31:27Z",
+      "kWhDelivered": 2.401
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-06 02:08:34.544085",
+      "connectionTime": "2019-05-06T02:08:35Z",
+      "disconnectTime": "2019-05-06T05:21:32Z",
+      "kWhDelivered": 16.264
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-06 13:38:12.798997",
+      "connectionTime": "2019-05-06T13:38:13Z",
+      "disconnectTime": "2019-05-06T18:38:53Z",
+      "kWhDelivered": 18.729
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-06 14:14:27.028419",
+      "connectionTime": "2019-05-06T14:14:27Z",
+      "disconnectTime": "2019-05-07T02:26:45Z",
+      "kWhDelivered": 2.809
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-06 14:14:53.586826",
+      "connectionTime": "2019-05-06T14:14:54Z",
+      "disconnectTime": "2019-05-07T01:03:56Z",
+      "kWhDelivered": 35.387
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-06 15:21:50.320614",
+      "connectionTime": "2019-05-06T15:21:50Z",
+      "disconnectTime": "2019-05-06T18:31:51Z",
+      "kWhDelivered": 10.91
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-06 15:36:27.191936",
+      "connectionTime": "2019-05-06T15:36:27Z",
+      "disconnectTime": "2019-05-06T19:10:17Z",
+      "kWhDelivered": 10.318
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-06 15:44:18.916411",
+      "connectionTime": "2019-05-06T15:44:19Z",
+      "disconnectTime": "2019-05-07T01:24:43Z",
+      "kWhDelivered": 13.273
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-06 15:54:08.068297",
+      "connectionTime": "2019-05-06T15:54:08Z",
+      "disconnectTime": "2019-05-06T21:18:50Z",
+      "kWhDelivered": 16.359
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-06 15:54:41.525628",
+      "connectionTime": "2019-05-06T15:54:42Z",
+      "disconnectTime": "2019-05-07T01:00:45Z",
+      "kWhDelivered": 1.404
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-06 15:56:56.110904",
+      "connectionTime": "2019-05-06T15:56:56Z",
+      "disconnectTime": "2019-05-07T00:39:28Z",
+      "kWhDelivered": 19.916
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-06 16:06:19.825120",
+      "connectionTime": "2019-05-06T16:06:20Z",
+      "disconnectTime": "2019-05-07T02:10:38Z",
+      "kWhDelivered": 3.685
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-06 16:09:25.240309",
+      "connectionTime": "2019-05-06T16:09:25Z",
+      "disconnectTime": "2019-05-06T18:07:27Z",
+      "kWhDelivered": 3.882
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-06 16:14:34.837175",
+      "connectionTime": "2019-05-06T16:14:35Z",
+      "disconnectTime": "2019-05-06T23:47:33Z",
+      "kWhDelivered": 6.269
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-06 16:19:15.140380",
+      "connectionTime": "2019-05-06T16:19:15Z",
+      "disconnectTime": "2019-05-06T17:46:40Z",
+      "kWhDelivered": 7.588
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-06 16:21:42.771770",
+      "connectionTime": "2019-05-06T16:21:43Z",
+      "disconnectTime": "2019-05-06T22:56:11Z",
+      "kWhDelivered": 11.91
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-06 16:22:21.991037",
+      "connectionTime": "2019-05-06T16:22:22Z",
+      "disconnectTime": "2019-05-07T01:32:25Z",
+      "kWhDelivered": 4.58
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-06 16:22:37.111148",
+      "connectionTime": "2019-05-06T16:22:37Z",
+      "disconnectTime": "2019-05-07T00:11:45Z",
+      "kWhDelivered": 4.556
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-06 16:37:18.264898",
+      "connectionTime": "2019-05-06T16:37:18Z",
+      "disconnectTime": "2019-05-07T00:02:44Z",
+      "kWhDelivered": 5.742
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-06 16:59:29.274505",
+      "connectionTime": "2019-05-06T16:59:29Z",
+      "disconnectTime": "2019-05-07T02:13:05Z",
+      "kWhDelivered": 13.435
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-06 17:03:13.894416",
+      "connectionTime": "2019-05-06T17:03:14Z",
+      "disconnectTime": "2019-05-06T23:26:01Z",
+      "kWhDelivered": 10.93
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-06 17:05:28.356690",
+      "connectionTime": "2019-05-06T17:05:28Z",
+      "disconnectTime": "2019-05-07T03:27:50Z",
+      "kWhDelivered": 2.008
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-06 17:37:17.440202",
+      "connectionTime": "2019-05-06T17:37:17Z",
+      "disconnectTime": "2019-05-07T01:28:48Z",
+      "kWhDelivered": 24.871
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-06 17:40:18.761496",
+      "connectionTime": "2019-05-06T17:40:19Z",
+      "disconnectTime": "2019-05-06T21:27:02Z",
+      "kWhDelivered": 6.623
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-06 17:49:58.241918",
+      "connectionTime": "2019-05-06T17:49:58Z",
+      "disconnectTime": "2019-05-06T22:45:25Z",
+      "kWhDelivered": 32.489
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-06 18:05:26.404915",
+      "connectionTime": "2019-05-06T18:05:26Z",
+      "disconnectTime": "2019-05-07T00:41:37Z",
+      "kWhDelivered": 11.348
+    },
+    {
+      "sessionID": "2_39_88_438_2019-05-06 18:31:59.644044",
+      "connectionTime": "2019-05-06T18:32:00Z",
+      "disconnectTime": "2019-05-07T00:13:08Z",
+      "kWhDelivered": 7.873
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-06 18:49:41.150384",
+      "connectionTime": "2019-05-06T18:49:41Z",
+      "disconnectTime": "2019-05-07T00:09:16Z",
+      "kWhDelivered": 12.843
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-06 18:58:31.663491",
+      "connectionTime": "2019-05-06T18:58:32Z",
+      "disconnectTime": "2019-05-06T21:54:05Z",
+      "kWhDelivered": 1.739
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-06 19:29:40.920822",
+      "connectionTime": "2019-05-06T19:29:41Z",
+      "disconnectTime": "2019-05-07T02:36:06Z",
+      "kWhDelivered": 6.477
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-06 19:32:53.389311",
+      "connectionTime": "2019-05-06T19:32:53Z",
+      "disconnectTime": "2019-05-06T20:16:11Z",
+      "kWhDelivered": 1.572
+    },
+    {
+      "sessionID": "2_39_83_386_2019-05-06 20:04:09.327067",
+      "connectionTime": "2019-05-06T20:04:09Z",
+      "disconnectTime": "2019-05-07T00:06:14Z",
+      "kWhDelivered": 5.386
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-06 20:33:40.430734",
+      "connectionTime": "2019-05-06T20:33:40Z",
+      "disconnectTime": "2019-05-07T00:22:56Z",
+      "kWhDelivered": 1.008
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-06 20:41:55.185184",
+      "connectionTime": "2019-05-06T20:41:55Z",
+      "disconnectTime": "2019-05-06T21:16:56Z",
+      "kWhDelivered": 0.907
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-06 21:09:32.615138",
+      "connectionTime": "2019-05-06T21:09:34Z",
+      "disconnectTime": "2019-05-07T01:04:39Z",
+      "kWhDelivered": 5.676
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-06 21:16:01.930195",
+      "connectionTime": "2019-05-06T21:16:02Z",
+      "disconnectTime": "2019-05-06T22:57:32Z",
+      "kWhDelivered": 7.867
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-06 23:32:58.144607",
+      "connectionTime": "2019-05-06T23:32:58Z",
+      "disconnectTime": "2019-05-07T00:57:02Z",
+      "kWhDelivered": 4.783
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-07 01:39:17.643064",
+      "connectionTime": "2019-05-07T01:39:18Z",
+      "disconnectTime": "2019-05-07T02:42:09Z",
+      "kWhDelivered": 3.487
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-07 03:09:12.700904",
+      "connectionTime": "2019-05-07T03:09:13Z",
+      "disconnectTime": "2019-05-07T04:30:00Z",
+      "kWhDelivered": 4.988
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-07 03:43:33.567939",
+      "connectionTime": "2019-05-07T03:43:34Z",
+      "disconnectTime": "2019-05-07T06:13:15Z",
+      "kWhDelivered": 6.17
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-07 13:31:46.536621",
+      "connectionTime": "2019-05-07T13:31:47Z",
+      "disconnectTime": "2019-05-07T18:52:13Z",
+      "kWhDelivered": 19.017
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-07 14:17:11.546725",
+      "connectionTime": "2019-05-07T14:17:12Z",
+      "disconnectTime": "2019-05-08T00:23:17Z",
+      "kWhDelivered": 6.058
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-07 14:18:02.503838",
+      "connectionTime": "2019-05-07T14:18:02Z",
+      "disconnectTime": "2019-05-08T00:14:12Z",
+      "kWhDelivered": 3.555
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-07 14:34:36.946702",
+      "connectionTime": "2019-05-07T14:34:37Z",
+      "disconnectTime": "2019-05-08T03:46:30Z",
+      "kWhDelivered": 15.897
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-07 15:04:05.834357",
+      "connectionTime": "2019-05-07T15:04:06Z",
+      "disconnectTime": "2019-05-07T23:50:34Z",
+      "kWhDelivered": 3.158
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-07 15:28:25.040499",
+      "connectionTime": "2019-05-07T15:28:25Z",
+      "disconnectTime": "2019-05-08T00:23:53Z",
+      "kWhDelivered": 12.736
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-07 15:34:04.071362",
+      "connectionTime": "2019-05-07T15:34:04Z",
+      "disconnectTime": "2019-05-08T00:36:38Z",
+      "kWhDelivered": 0.841
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-07 15:38:34.896360",
+      "connectionTime": "2019-05-07T15:38:35Z",
+      "disconnectTime": "2019-05-07T23:13:53Z",
+      "kWhDelivered": 13.846
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-07 15:42:46.782906",
+      "connectionTime": "2019-05-07T15:42:47Z",
+      "disconnectTime": "2019-05-08T00:32:01Z",
+      "kWhDelivered": 2.214
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-07 15:54:48.809060",
+      "connectionTime": "2019-05-07T15:54:49Z",
+      "disconnectTime": "2019-05-07T22:49:38Z",
+      "kWhDelivered": 11.102
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-07 15:54:53.500492",
+      "connectionTime": "2019-05-07T15:54:53Z",
+      "disconnectTime": "2019-05-08T00:38:29Z",
+      "kWhDelivered": 18.963
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-07 16:00:21.440025",
+      "connectionTime": "2019-05-07T16:00:21Z",
+      "disconnectTime": "2019-05-08T01:13:03Z",
+      "kWhDelivered": 5.253
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-07 16:07:37.287403",
+      "connectionTime": "2019-05-07T16:07:38Z",
+      "disconnectTime": "2019-05-08T00:54:07Z",
+      "kWhDelivered": 3.406
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-07 16:08:12.047206",
+      "connectionTime": "2019-05-07T16:08:12Z",
+      "disconnectTime": "2019-05-07T20:43:08Z",
+      "kWhDelivered": 17.914
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-07 16:13:40.716988",
+      "connectionTime": "2019-05-07T16:13:41Z",
+      "disconnectTime": "2019-05-07T23:50:05Z",
+      "kWhDelivered": 30.405
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-07 16:14:54.511520",
+      "connectionTime": "2019-05-07T16:14:55Z",
+      "disconnectTime": "2019-05-08T00:03:54Z",
+      "kWhDelivered": 3.568
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-07 16:16:26.247682",
+      "connectionTime": "2019-05-07T16:16:26Z",
+      "disconnectTime": "2019-05-08T00:26:20Z",
+      "kWhDelivered": 3.529
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-07 16:19:32.714612",
+      "connectionTime": "2019-05-07T16:19:33Z",
+      "disconnectTime": "2019-05-08T02:02:07Z",
+      "kWhDelivered": 5.831
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-07 16:27:25.527473",
+      "connectionTime": "2019-05-07T16:27:26Z",
+      "disconnectTime": "2019-05-07T21:06:19Z",
+      "kWhDelivered": 14.128
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-07 16:38:35.675523",
+      "connectionTime": "2019-05-07T16:38:36Z",
+      "disconnectTime": "2019-05-07T23:11:17Z",
+      "kWhDelivered": 8.628
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-07 16:38:50.417475",
+      "connectionTime": "2019-05-07T16:38:50Z",
+      "disconnectTime": "2019-05-07T23:40:12Z",
+      "kWhDelivered": 0.928
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-07 16:49:56.428997",
+      "connectionTime": "2019-05-07T16:49:56Z",
+      "disconnectTime": "2019-05-07T19:24:13Z",
+      "kWhDelivered": 8.448
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-07 16:58:13.164142",
+      "connectionTime": "2019-05-07T16:58:13Z",
+      "disconnectTime": "2019-05-07T23:16:25Z",
+      "kWhDelivered": 7.713
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-07 17:07:06.007506",
+      "connectionTime": "2019-05-07T17:07:06Z",
+      "disconnectTime": "2019-05-07T21:58:49Z",
+      "kWhDelivered": 12.185
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-07 17:07:42.368123",
+      "connectionTime": "2019-05-07T17:07:42Z",
+      "disconnectTime": "2019-05-08T00:13:22Z",
+      "kWhDelivered": 6.391
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-07 17:09:09.621224",
+      "connectionTime": "2019-05-07T17:09:10Z",
+      "disconnectTime": "2019-05-08T02:10:01Z",
+      "kWhDelivered": 11.941
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-07 17:43:01.584667",
+      "connectionTime": "2019-05-07T17:43:02Z",
+      "disconnectTime": "2019-05-07T23:35:24Z",
+      "kWhDelivered": 6.537
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-07 18:28:19.622296",
+      "connectionTime": "2019-05-07T18:28:20Z",
+      "disconnectTime": "2019-05-08T00:53:12Z",
+      "kWhDelivered": 19.894
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-07 19:23:09.477836",
+      "connectionTime": "2019-05-07T19:23:09Z",
+      "disconnectTime": "2019-05-07T22:55:22Z",
+      "kWhDelivered": 2.019
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-07 19:37:08.663491",
+      "connectionTime": "2019-05-07T19:37:09Z",
+      "disconnectTime": "2019-05-07T23:45:13Z",
+      "kWhDelivered": 2.213
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-07 19:37:09.556499",
+      "connectionTime": "2019-05-07T19:37:10Z",
+      "disconnectTime": "2019-05-08T00:32:19Z",
+      "kWhDelivered": 31.023
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-07 19:49:04.679577",
+      "connectionTime": "2019-05-07T19:49:05Z",
+      "disconnectTime": "2019-05-08T01:13:32Z",
+      "kWhDelivered": 8.176
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-07 20:49:32.354775",
+      "connectionTime": "2019-05-07T20:49:32Z",
+      "disconnectTime": "2019-05-07T22:02:30Z",
+      "kWhDelivered": 0.921
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-07 21:00:47.951886",
+      "connectionTime": "2019-05-07T21:00:48Z",
+      "disconnectTime": "2019-05-08T01:40:04Z",
+      "kWhDelivered": 0.965
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-07 21:33:31.777680",
+      "connectionTime": "2019-05-07T21:33:32Z",
+      "disconnectTime": "2019-05-07T21:40:24Z",
+      "kWhDelivered": 0.7
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-07 21:57:54.213436",
+      "connectionTime": "2019-05-07T21:57:54Z",
+      "disconnectTime": "2019-05-08T01:37:44Z",
+      "kWhDelivered": 5.304
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-07 22:01:26.503322",
+      "connectionTime": "2019-05-07T22:01:26Z",
+      "disconnectTime": "2019-05-08T02:19:02Z",
+      "kWhDelivered": 13.783
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-07 22:20:18.379305",
+      "connectionTime": "2019-05-07T22:20:18Z",
+      "disconnectTime": "2019-05-07T23:05:37Z",
+      "kWhDelivered": 4.226
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-07 23:16:08.800708",
+      "connectionTime": "2019-05-07T23:16:09Z",
+      "disconnectTime": "2019-05-08T01:13:27Z",
+      "kWhDelivered": 4.438
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-08 00:09:11.603397",
+      "connectionTime": "2019-05-08T00:09:12Z",
+      "disconnectTime": "2019-05-08T15:05:03Z",
+      "kWhDelivered": 11.871
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-08 00:59:02.602404",
+      "connectionTime": "2019-05-08T00:59:03Z",
+      "disconnectTime": "2019-05-08T01:38:15Z",
+      "kWhDelivered": 1.706
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-08 01:33:51.566418",
+      "connectionTime": "2019-05-08T01:33:52Z",
+      "disconnectTime": "2019-05-08T02:36:20Z",
+      "kWhDelivered": 3.135
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-08 01:52:49.457746",
+      "connectionTime": "2019-05-08T01:52:49Z",
+      "disconnectTime": "2019-05-08T03:38:58Z",
+      "kWhDelivered": 11.98
+    },
+    {
+      "sessionID": "2_39_83_386_2019-05-08 02:18:15.297711",
+      "connectionTime": "2019-05-08T02:18:15Z",
+      "disconnectTime": "2019-05-08T04:49:35Z",
+      "kWhDelivered": 3.638
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-08 02:40:11.760693",
+      "connectionTime": "2019-05-08T02:40:12Z",
+      "disconnectTime": "2019-05-08T05:05:29Z",
+      "kWhDelivered": 14.011
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-08 03:10:20.138388",
+      "connectionTime": "2019-05-08T03:10:20Z",
+      "disconnectTime": "2019-05-08T04:58:19Z",
+      "kWhDelivered": 1.365
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-08 03:21:36.901233",
+      "connectionTime": "2019-05-08T03:21:37Z",
+      "disconnectTime": "2019-05-08T04:53:38Z",
+      "kWhDelivered": 7.031
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-08 05:39:55.935884",
+      "connectionTime": "2019-05-08T05:39:56Z",
+      "disconnectTime": "2019-05-08T06:20:12Z",
+      "kWhDelivered": 0.857
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-08 13:29:16.769231",
+      "connectionTime": "2019-05-08T13:29:17Z",
+      "disconnectTime": "2019-05-08T18:50:58Z",
+      "kWhDelivered": 19.164
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-08 14:09:09.299732",
+      "connectionTime": "2019-05-08T14:09:09Z",
+      "disconnectTime": "2019-05-08T20:10:24Z",
+      "kWhDelivered": 10.636
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-08 14:49:51.609271",
+      "connectionTime": "2019-05-08T14:49:52Z",
+      "disconnectTime": "2019-05-08T17:10:05Z",
+      "kWhDelivered": 15.762
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-08 15:06:37.851143",
+      "connectionTime": "2019-05-08T15:06:38Z",
+      "disconnectTime": "2019-05-09T00:12:56Z",
+      "kWhDelivered": 0.886
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-08 15:23:02.435833",
+      "connectionTime": "2019-05-08T15:23:02Z",
+      "disconnectTime": "2019-05-09T01:44:10Z",
+      "kWhDelivered": 14.876
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-08 15:33:53.111063",
+      "connectionTime": "2019-05-08T15:33:53Z",
+      "disconnectTime": "2019-05-09T01:16:23Z",
+      "kWhDelivered": 4.878
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-08 15:37:07.685440",
+      "connectionTime": "2019-05-08T15:37:08Z",
+      "disconnectTime": "2019-05-09T01:40:47Z",
+      "kWhDelivered": 13.65
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-08 15:37:08.804899",
+      "connectionTime": "2019-05-08T15:37:09Z",
+      "disconnectTime": "2019-05-09T02:32:01Z",
+      "kWhDelivered": 4.676
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-08 15:37:33.934056",
+      "connectionTime": "2019-05-08T15:37:34Z",
+      "disconnectTime": "2019-05-08T23:44:06Z",
+      "kWhDelivered": 1.306
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-08 15:44:02.032784",
+      "connectionTime": "2019-05-08T15:44:02Z",
+      "disconnectTime": "2019-05-08T22:29:08Z",
+      "kWhDelivered": 8.371
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-08 15:48:46.304087",
+      "connectionTime": "2019-05-08T15:48:46Z",
+      "disconnectTime": "2019-05-08T23:29:52Z",
+      "kWhDelivered": 0.863
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-08 15:53:14.252446",
+      "connectionTime": "2019-05-08T15:53:14Z",
+      "disconnectTime": "2019-05-09T00:29:00Z",
+      "kWhDelivered": 0.85
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-08 15:55:51.391190",
+      "connectionTime": "2019-05-08T15:55:51Z",
+      "disconnectTime": "2019-05-09T01:04:20Z",
+      "kWhDelivered": 4.114
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-08 16:07:11.830588",
+      "connectionTime": "2019-05-08T16:07:12Z",
+      "disconnectTime": "2019-05-08T23:37:12Z",
+      "kWhDelivered": 2.682
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-08 16:07:26.818038",
+      "connectionTime": "2019-05-08T16:07:27Z",
+      "disconnectTime": "2019-05-08T17:42:57Z",
+      "kWhDelivered": 7.883
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-08 16:16:21.293411",
+      "connectionTime": "2019-05-08T16:16:21Z",
+      "disconnectTime": "2019-05-08T23:18:20Z",
+      "kWhDelivered": 14.647
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-08 16:23:56.990787",
+      "connectionTime": "2019-05-08T16:23:57Z",
+      "disconnectTime": "2019-05-09T00:35:15Z",
+      "kWhDelivered": 17.959
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-08 16:26:46.296147",
+      "connectionTime": "2019-05-08T16:26:46Z",
+      "disconnectTime": "2019-05-09T06:43:37Z",
+      "kWhDelivered": 2.133
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-08 16:35:02.905697",
+      "connectionTime": "2019-05-08T16:35:03Z",
+      "disconnectTime": "2019-05-09T01:46:02Z",
+      "kWhDelivered": 6.27
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-08 16:38:09.827802",
+      "connectionTime": "2019-05-08T16:38:10Z",
+      "disconnectTime": "2019-05-08T18:17:36Z",
+      "kWhDelivered": 3.758
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-08 17:02:18.552134",
+      "connectionTime": "2019-05-08T17:02:19Z",
+      "disconnectTime": "2019-05-08T23:31:08Z",
+      "kWhDelivered": 10.341
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-08 17:07:22.922850",
+      "connectionTime": "2019-05-08T17:07:23Z",
+      "disconnectTime": "2019-05-09T02:13:38Z",
+      "kWhDelivered": 11.802
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-08 17:20:44.043349",
+      "connectionTime": "2019-05-08T17:20:44Z",
+      "disconnectTime": "2019-05-09T00:27:43Z",
+      "kWhDelivered": 7.884
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-08 18:04:50.680339",
+      "connectionTime": "2019-05-08T18:04:51Z",
+      "disconnectTime": "2019-05-09T00:59:49Z",
+      "kWhDelivered": 10.314
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-08 18:04:59.525697",
+      "connectionTime": "2019-05-08T18:05:00Z",
+      "disconnectTime": "2019-05-09T00:42:09Z",
+      "kWhDelivered": 11.098
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-08 18:39:30.726295",
+      "connectionTime": "2019-05-08T18:39:31Z",
+      "disconnectTime": "2019-05-08T19:44:08Z",
+      "kWhDelivered": 0.94
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-08 18:41:00.139481",
+      "connectionTime": "2019-05-08T18:41:00Z",
+      "disconnectTime": "2019-05-09T00:35:28Z",
+      "kWhDelivered": 1.903
+    },
+    {
+      "sessionID": "2_39_83_386_2019-05-08 18:54:36.026297",
+      "connectionTime": "2019-05-08T18:54:36Z",
+      "disconnectTime": "2019-05-08T23:42:44Z",
+      "kWhDelivered": 5.088
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-08 18:54:52.441841",
+      "connectionTime": "2019-05-08T18:54:52Z",
+      "disconnectTime": "2019-05-09T01:31:27Z",
+      "kWhDelivered": 35.474
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-08 18:58:17.515427",
+      "connectionTime": "2019-05-08T18:58:18Z",
+      "disconnectTime": "2019-05-09T02:41:15Z",
+      "kWhDelivered": 6.439
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-08 19:18:36.893607",
+      "connectionTime": "2019-05-08T19:18:37Z",
+      "disconnectTime": "2019-05-09T01:11:46Z",
+      "kWhDelivered": 0.886
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-08 19:20:47.448092",
+      "connectionTime": "2019-05-08T19:20:47Z",
+      "disconnectTime": "2019-05-09T01:55:23Z",
+      "kWhDelivered": 4.067
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-08 19:34:14.109568",
+      "connectionTime": "2019-05-08T19:34:14Z",
+      "disconnectTime": "2019-05-08T22:53:10Z",
+      "kWhDelivered": 1.934
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-08 19:55:56.059964",
+      "connectionTime": "2019-05-08T19:55:56Z",
+      "disconnectTime": "2019-05-09T04:17:04Z",
+      "kWhDelivered": 2.058
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-08 20:01:26.188298",
+      "connectionTime": "2019-05-08T20:01:26Z",
+      "disconnectTime": "2019-05-09T00:57:51Z",
+      "kWhDelivered": 1.011
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-08 20:35:04.105284",
+      "connectionTime": "2019-05-08T20:35:04Z",
+      "disconnectTime": "2019-05-08T23:54:56Z",
+      "kWhDelivered": 8.079
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-08 20:48:18.823815",
+      "connectionTime": "2019-05-08T20:48:19Z",
+      "disconnectTime": "2019-05-09T00:26:10Z",
+      "kWhDelivered": 11.298
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-08 23:15:33.717857",
+      "connectionTime": "2019-05-08T23:15:34Z",
+      "disconnectTime": "2019-05-09T01:13:00Z",
+      "kWhDelivered": 0.904
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-08 23:21:00.745604",
+      "connectionTime": "2019-05-08T23:21:01Z",
+      "disconnectTime": "2019-05-08T23:48:19Z",
+      "kWhDelivered": 1.416
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-09 01:29:07.465368",
+      "connectionTime": "2019-05-09T01:29:07Z",
+      "disconnectTime": "2019-05-09T03:40:01Z",
+      "kWhDelivered": 5.873
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-09 01:47:30.976644",
+      "connectionTime": "2019-05-09T01:47:31Z",
+      "disconnectTime": "2019-05-09T03:45:21Z",
+      "kWhDelivered": 4.581
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-09 03:04:30.129991",
+      "connectionTime": "2019-05-09T03:04:30Z",
+      "disconnectTime": "2019-05-09T04:27:59Z",
+      "kWhDelivered": 4.95
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-09 05:01:34.038650",
+      "connectionTime": "2019-05-09T05:01:34Z",
+      "disconnectTime": "2019-05-10T01:40:00Z",
+      "kWhDelivered": 5.169
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-09 13:30:55.133277",
+      "connectionTime": "2019-05-09T13:30:55Z",
+      "disconnectTime": "2019-05-09T19:38:51Z",
+      "kWhDelivered": 18.888
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-09 14:11:06.944152",
+      "connectionTime": "2019-05-09T14:11:07Z",
+      "disconnectTime": "2019-05-10T01:16:18Z",
+      "kWhDelivered": 4.963
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-09 14:13:44.392771",
+      "connectionTime": "2019-05-09T14:13:44Z",
+      "disconnectTime": "2019-05-09T23:55:19Z",
+      "kWhDelivered": 9.852
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-09 14:58:31.747097",
+      "connectionTime": "2019-05-09T14:58:32Z",
+      "disconnectTime": "2019-05-09T15:09:14Z",
+      "kWhDelivered": 0.538
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-09 15:06:00.222097",
+      "connectionTime": "2019-05-09T15:06:00Z",
+      "disconnectTime": "2019-05-09T23:10:39Z",
+      "kWhDelivered": 2.81
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-09 15:18:05.772756",
+      "connectionTime": "2019-05-09T15:18:06Z",
+      "disconnectTime": "2019-05-09T23:54:23Z",
+      "kWhDelivered": 18.123
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-09 15:26:40.848622",
+      "connectionTime": "2019-05-09T15:26:41Z",
+      "disconnectTime": "2019-05-10T01:02:28Z",
+      "kWhDelivered": 1.017
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-09 15:27:34.822756",
+      "connectionTime": "2019-05-09T15:27:35Z",
+      "disconnectTime": "2019-05-10T01:16:43Z",
+      "kWhDelivered": 4.628
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-09 15:27:43.229563",
+      "connectionTime": "2019-05-09T15:27:43Z",
+      "disconnectTime": "2019-05-10T01:02:25Z",
+      "kWhDelivered": 1.935
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-09 15:28:35.482330",
+      "connectionTime": "2019-05-09T15:28:35Z",
+      "disconnectTime": "2019-05-09T19:19:31Z",
+      "kWhDelivered": 4.413
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-09 15:34:29.743737",
+      "connectionTime": "2019-05-09T15:34:30Z",
+      "disconnectTime": "2019-05-09T22:42:21Z",
+      "kWhDelivered": 13.332
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-09 15:50:01.519210",
+      "connectionTime": "2019-05-09T15:50:02Z",
+      "disconnectTime": "2019-05-10T00:33:32Z",
+      "kWhDelivered": 3.914
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-09 15:56:11.857344",
+      "connectionTime": "2019-05-09T15:56:12Z",
+      "disconnectTime": "2019-05-09T23:47:26Z",
+      "kWhDelivered": 0.863
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-09 15:59:11.282145",
+      "connectionTime": "2019-05-09T15:59:11Z",
+      "disconnectTime": "2019-05-10T01:13:26Z",
+      "kWhDelivered": 0.885
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-09 16:26:15.889522",
+      "connectionTime": "2019-05-09T16:26:16Z",
+      "disconnectTime": "2019-05-10T00:17:03Z",
+      "kWhDelivered": 2.302
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-09 17:03:57.244871",
+      "connectionTime": "2019-05-09T17:03:57Z",
+      "disconnectTime": "2019-05-10T01:04:31Z",
+      "kWhDelivered": 11.146
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-09 17:07:08.982445",
+      "connectionTime": "2019-05-09T17:07:09Z",
+      "disconnectTime": "2019-05-10T03:35:46Z",
+      "kWhDelivered": 5.624
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-09 17:07:58.194022",
+      "connectionTime": "2019-05-09T17:07:58Z",
+      "disconnectTime": "2019-05-10T01:38:21Z",
+      "kWhDelivered": 10.552
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-09 17:08:40.929137",
+      "connectionTime": "2019-05-09T17:08:41Z",
+      "disconnectTime": "2019-05-10T01:46:58Z",
+      "kWhDelivered": 6.284
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-09 17:25:00.791439",
+      "connectionTime": "2019-05-09T17:25:01Z",
+      "disconnectTime": "2019-05-09T22:46:59Z",
+      "kWhDelivered": 16.051
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-09 17:26:51.119879",
+      "connectionTime": "2019-05-09T17:26:51Z",
+      "disconnectTime": "2019-05-09T18:24:19Z",
+      "kWhDelivered": 6.619
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-09 17:35:53.468635",
+      "connectionTime": "2019-05-09T17:35:53Z",
+      "disconnectTime": "2019-05-09T22:44:51Z",
+      "kWhDelivered": 4.243
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-09 17:42:27.963479",
+      "connectionTime": "2019-05-09T17:42:28Z",
+      "disconnectTime": "2019-05-10T11:40:34Z",
+      "kWhDelivered": 12.387
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-09 18:11:22.480032",
+      "connectionTime": "2019-05-09T18:11:22Z",
+      "disconnectTime": "2019-05-09T23:38:17Z",
+      "kWhDelivered": 29.882
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-09 18:59:35.357676",
+      "connectionTime": "2019-05-09T18:59:35Z",
+      "disconnectTime": "2019-05-10T03:42:20Z",
+      "kWhDelivered": 2.116
+    },
+    {
+      "sessionID": "2_39_88_438_2019-05-09 19:21:46.219155",
+      "connectionTime": "2019-05-09T19:21:46Z",
+      "disconnectTime": "2019-05-09T22:41:42Z",
+      "kWhDelivered": 8.911
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-09 19:49:36.108319",
+      "connectionTime": "2019-05-09T19:49:36Z",
+      "disconnectTime": "2019-05-10T01:19:04Z",
+      "kWhDelivered": 6.597
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-09 20:09:39.312348",
+      "connectionTime": "2019-05-09T20:09:39Z",
+      "disconnectTime": "2019-05-09T22:55:53Z",
+      "kWhDelivered": 1.373
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-09 20:28:05.156721",
+      "connectionTime": "2019-05-09T20:28:05Z",
+      "disconnectTime": "2019-05-10T01:39:55Z",
+      "kWhDelivered": 1.812
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-09 21:12:43.908712",
+      "connectionTime": "2019-05-09T21:12:44Z",
+      "disconnectTime": "2019-05-10T00:13:57Z",
+      "kWhDelivered": 6.019
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-09 21:14:16.421686",
+      "connectionTime": "2019-05-09T21:14:16Z",
+      "disconnectTime": "2019-05-09T21:54:20Z",
+      "kWhDelivered": 0.887
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-09 22:10:40.916707",
+      "connectionTime": "2019-05-09T22:10:41Z",
+      "disconnectTime": "2019-05-10T00:23:37Z",
+      "kWhDelivered": 2.465
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-10 00:42:10.400782",
+      "connectionTime": "2019-05-10T00:42:10Z",
+      "disconnectTime": "2019-05-10T02:37:26Z",
+      "kWhDelivered": 7.887
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-10 00:43:42.034188",
+      "connectionTime": "2019-05-10T00:43:42Z",
+      "disconnectTime": "2019-05-10T15:35:42Z",
+      "kWhDelivered": 11.875
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-10 00:46:06.335063",
+      "connectionTime": "2019-05-10T00:46:06Z",
+      "disconnectTime": "2019-05-10T03:29:47Z",
+      "kWhDelivered": 4.377
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-10 01:28:45.888224",
+      "connectionTime": "2019-05-10T01:28:46Z",
+      "disconnectTime": "2019-05-10T05:17:39Z",
+      "kWhDelivered": 13.564
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-10 01:49:22.989082",
+      "connectionTime": "2019-05-10T01:49:23Z",
+      "disconnectTime": "2019-05-10T02:53:53Z",
+      "kWhDelivered": 0.846
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-10 03:28:37.353195",
+      "connectionTime": "2019-05-10T03:28:37Z",
+      "disconnectTime": "2019-05-10T04:54:12Z",
+      "kWhDelivered": 7.506
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-10 13:25:17.032352",
+      "connectionTime": "2019-05-10T13:25:17Z",
+      "disconnectTime": "2019-05-10T14:39:33Z",
+      "kWhDelivered": 3.816
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-10 13:28:56.874603",
+      "connectionTime": "2019-05-10T13:28:57Z",
+      "disconnectTime": "2019-05-10T22:52:20Z",
+      "kWhDelivered": 18.276
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-10 14:08:15.889810",
+      "connectionTime": "2019-05-10T14:08:16Z",
+      "disconnectTime": "2019-05-10T19:21:53Z",
+      "kWhDelivered": 11.355
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-10 14:43:36.027579",
+      "connectionTime": "2019-05-10T14:43:36Z",
+      "disconnectTime": "2019-05-10T23:16:49Z",
+      "kWhDelivered": 19.885
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-10 14:56:56.061762",
+      "connectionTime": "2019-05-10T14:56:56Z",
+      "disconnectTime": "2019-05-10T23:11:53Z",
+      "kWhDelivered": 4.426
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-10 15:11:39.827049",
+      "connectionTime": "2019-05-10T15:11:40Z",
+      "disconnectTime": "2019-05-10T22:55:09Z",
+      "kWhDelivered": 51.294
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-10 15:22:57.140397",
+      "connectionTime": "2019-05-10T15:22:57Z",
+      "disconnectTime": "2019-05-10T20:59:57Z",
+      "kWhDelivered": 1.49
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-10 15:30:01.346637",
+      "connectionTime": "2019-05-10T15:30:01Z",
+      "disconnectTime": "2019-05-10T20:54:24Z",
+      "kWhDelivered": 16.702
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-10 15:35:31.761839",
+      "connectionTime": "2019-05-10T15:35:32Z",
+      "disconnectTime": "2019-05-11T01:27:17Z",
+      "kWhDelivered": 1.722
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-10 15:42:29.311540",
+      "connectionTime": "2019-05-10T15:42:29Z",
+      "disconnectTime": "2019-05-10T23:18:38Z",
+      "kWhDelivered": 11.052
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-10 15:57:19.910788",
+      "connectionTime": "2019-05-10T15:57:20Z",
+      "disconnectTime": "2019-05-10T23:52:27Z",
+      "kWhDelivered": 5.323
+    },
+    {
+      "sessionID": "2_39_126_560_2019-05-10 16:02:16.272461",
+      "connectionTime": "2019-05-10T16:02:16Z",
+      "disconnectTime": "2019-05-10T23:00:07Z",
+      "kWhDelivered": 9.872
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-10 16:09:12.374611",
+      "connectionTime": "2019-05-10T16:09:12Z",
+      "disconnectTime": "2019-05-11T00:20:40Z",
+      "kWhDelivered": 4.347
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-10 16:15:06.108425",
+      "connectionTime": "2019-05-10T16:15:06Z",
+      "disconnectTime": "2019-05-11T01:23:15Z",
+      "kWhDelivered": 2.33
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-10 16:23:48.115268",
+      "connectionTime": "2019-05-10T16:23:48Z",
+      "disconnectTime": "2019-05-10T18:34:50Z",
+      "kWhDelivered": 4.11
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-10 16:32:19.081504",
+      "connectionTime": "2019-05-10T16:32:19Z",
+      "disconnectTime": "2019-05-11T04:48:03Z",
+      "kWhDelivered": 5.687
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-10 16:34:13.171779",
+      "connectionTime": "2019-05-10T16:34:13Z",
+      "disconnectTime": "2019-05-11T00:35:10Z",
+      "kWhDelivered": 6.009
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-10 16:57:01.226605",
+      "connectionTime": "2019-05-10T16:57:01Z",
+      "disconnectTime": "2019-05-11T01:11:42Z",
+      "kWhDelivered": 5.957
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-10 17:07:25.233587",
+      "connectionTime": "2019-05-10T17:07:25Z",
+      "disconnectTime": "2019-05-11T02:15:19Z",
+      "kWhDelivered": 11.333
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-10 17:19:16.999117",
+      "connectionTime": "2019-05-10T17:19:17Z",
+      "disconnectTime": "2019-05-11T00:35:20Z",
+      "kWhDelivered": 11.45
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-10 17:39:08.528902",
+      "connectionTime": "2019-05-10T17:39:09Z",
+      "disconnectTime": "2019-05-11T00:26:52Z",
+      "kWhDelivered": 13.677
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-10 17:59:44.622904",
+      "connectionTime": "2019-05-10T17:59:45Z",
+      "disconnectTime": "2019-05-11T00:46:49Z",
+      "kWhDelivered": 13.147
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-10 18:02:02.360273",
+      "connectionTime": "2019-05-10T18:02:02Z",
+      "disconnectTime": "2019-05-11T01:33:09Z",
+      "kWhDelivered": 15.056
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-10 18:26:30.869663",
+      "connectionTime": "2019-05-10T18:26:31Z",
+      "disconnectTime": "2019-05-11T00:39:19Z",
+      "kWhDelivered": 7.309
+    },
+    {
+      "sessionID": "2_39_88_438_2019-05-10 18:54:54.298225",
+      "connectionTime": "2019-05-10T18:54:54Z",
+      "disconnectTime": "2019-05-11T10:39:18Z",
+      "kWhDelivered": 17.908
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-10 19:14:40.828080",
+      "connectionTime": "2019-05-10T19:14:41Z",
+      "disconnectTime": "2019-05-11T00:06:42Z",
+      "kWhDelivered": 13.087
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-10 19:38:41.729462",
+      "connectionTime": "2019-05-10T19:38:42Z",
+      "disconnectTime": "2019-05-11T05:24:01Z",
+      "kWhDelivered": 1.942
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-10 20:06:50.702615",
+      "connectionTime": "2019-05-10T20:06:51Z",
+      "disconnectTime": "2019-05-11T00:22:52Z",
+      "kWhDelivered": 6.37
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-10 20:09:09.962051",
+      "connectionTime": "2019-05-10T20:09:36Z",
+      "disconnectTime": "2019-05-10T21:16:59Z",
+      "kWhDelivered": 7.462
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-10 20:20:08.483145",
+      "connectionTime": "2019-05-10T20:20:08Z",
+      "disconnectTime": "2019-05-10T22:38:36Z",
+      "kWhDelivered": 0.883
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-10 20:54:48.501709",
+      "connectionTime": "2019-05-10T20:54:48Z",
+      "disconnectTime": "2019-05-11T01:26:35Z",
+      "kWhDelivered": 6.449
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-10 21:34:04.344187",
+      "connectionTime": "2019-05-10T21:34:04Z",
+      "disconnectTime": "2019-05-10T22:48:33Z",
+      "kWhDelivered": 4.06
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-10 22:27:06.195250",
+      "connectionTime": "2019-05-10T22:27:06Z",
+      "disconnectTime": "2019-05-11T00:09:58Z",
+      "kWhDelivered": 2.554
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-10 23:07:12.247776",
+      "connectionTime": "2019-05-10T23:07:12Z",
+      "disconnectTime": "2019-05-11T00:51:30Z",
+      "kWhDelivered": 7.868
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-10 23:55:33.765469",
+      "connectionTime": "2019-05-10T23:55:34Z",
+      "disconnectTime": "2019-05-11T01:04:28Z",
+      "kWhDelivered": 1.931
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-11 01:38:31.433319",
+      "connectionTime": "2019-05-11T01:38:31Z",
+      "disconnectTime": "2019-05-11T17:38:05Z",
+      "kWhDelivered": 49.127
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-11 14:37:37.885899",
+      "connectionTime": "2019-05-11T14:37:38Z",
+      "disconnectTime": "2019-05-11T15:24:12Z",
+      "kWhDelivered": 2.639
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-11 14:52:19.532341",
+      "connectionTime": "2019-05-11T14:52:20Z",
+      "disconnectTime": "2019-05-11T16:41:56Z",
+      "kWhDelivered": 7.755
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-11 15:02:18.802037",
+      "connectionTime": "2019-05-11T15:02:19Z",
+      "disconnectTime": "2019-05-11T19:05:07Z",
+      "kWhDelivered": 0.643
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-11 15:22:24.707051",
+      "connectionTime": "2019-05-11T15:22:25Z",
+      "disconnectTime": "2019-05-11T19:02:14Z",
+      "kWhDelivered": 0.888
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-11 15:35:50.538883",
+      "connectionTime": "2019-05-11T15:35:51Z",
+      "disconnectTime": "2019-05-11T18:46:38Z",
+      "kWhDelivered": 11.265
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-11 17:24:57.540567",
+      "connectionTime": "2019-05-11T17:24:58Z",
+      "disconnectTime": "2019-05-11T19:30:08Z",
+      "kWhDelivered": 7.893
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-11 17:58:19.123775",
+      "connectionTime": "2019-05-11T17:58:19Z",
+      "disconnectTime": "2019-05-12T00:09:40Z",
+      "kWhDelivered": 6.21
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-11 18:05:01.874795",
+      "connectionTime": "2019-05-11T18:05:02Z",
+      "disconnectTime": "2019-05-11T22:24:36Z",
+      "kWhDelivered": 4.655
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-11 18:43:31.655175",
+      "connectionTime": "2019-05-11T18:43:32Z",
+      "disconnectTime": "2019-05-11T20:30:51Z",
+      "kWhDelivered": 0.908
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-11 19:02:17.921385",
+      "connectionTime": "2019-05-11T19:02:18Z",
+      "disconnectTime": "2019-05-11T19:22:24Z",
+      "kWhDelivered": 0.578
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-11 19:10:17.584746",
+      "connectionTime": "2019-05-11T19:10:18Z",
+      "disconnectTime": "2019-05-11T21:02:28Z",
+      "kWhDelivered": 12.916
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-11 20:30:58.673491",
+      "connectionTime": "2019-05-11T20:30:59Z",
+      "disconnectTime": "2019-05-12T00:00:45Z",
+      "kWhDelivered": 0.922
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-11 22:02:56.433509",
+      "connectionTime": "2019-05-11T22:02:56Z",
+      "disconnectTime": "2019-05-12T00:06:37Z",
+      "kWhDelivered": 4.418
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-11 22:11:15.013600",
+      "connectionTime": "2019-05-11T22:11:15Z",
+      "disconnectTime": "2019-05-12T00:57:05Z",
+      "kWhDelivered": 17.517
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-11 22:22:33.919599",
+      "connectionTime": "2019-05-11T22:22:34Z",
+      "disconnectTime": "2019-05-12T00:12:30Z",
+      "kWhDelivered": 10.636
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-11 23:18:35.275226",
+      "connectionTime": "2019-05-11T23:18:35Z",
+      "disconnectTime": "2019-05-12T15:40:05Z",
+      "kWhDelivered": 35.492
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-11 23:50:27.281172",
+      "connectionTime": "2019-05-11T23:50:27Z",
+      "disconnectTime": "2019-05-12T00:09:38Z",
+      "kWhDelivered": 1.997
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-12 00:10:12.811943",
+      "connectionTime": "2019-05-12T00:10:13Z",
+      "disconnectTime": "2019-05-12T00:21:19Z",
+      "kWhDelivered": 0.597
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-12 02:41:54.466742",
+      "connectionTime": "2019-05-12T02:41:54Z",
+      "disconnectTime": "2019-05-12T03:12:47Z",
+      "kWhDelivered": 0.943
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-12 05:21:53.368755",
+      "connectionTime": "2019-05-12T05:21:53Z",
+      "disconnectTime": "2019-05-12T05:53:45Z",
+      "kWhDelivered": 0.845
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-12 08:49:18.935658",
+      "connectionTime": "2019-05-12T08:49:19Z",
+      "disconnectTime": "2019-05-12T22:13:09Z",
+      "kWhDelivered": 6.29
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-12 15:42:14.738732",
+      "connectionTime": "2019-05-12T15:42:15Z",
+      "disconnectTime": "2019-05-12T17:16:34Z",
+      "kWhDelivered": 5.4
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-12 17:36:03.258372",
+      "connectionTime": "2019-05-12T17:36:03Z",
+      "disconnectTime": "2019-05-12T20:17:53Z",
+      "kWhDelivered": 6.534
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-12 18:54:05.778193",
+      "connectionTime": "2019-05-12T18:54:06Z",
+      "disconnectTime": "2019-05-12T20:30:50Z",
+      "kWhDelivered": 1.912
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-12 19:36:37.953550",
+      "connectionTime": "2019-05-12T19:36:38Z",
+      "disconnectTime": "2019-05-13T00:19:34Z",
+      "kWhDelivered": 15.601
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-12 20:11:27.538675",
+      "connectionTime": "2019-05-12T20:11:28Z",
+      "disconnectTime": "2019-05-12T21:16:09Z",
+      "kWhDelivered": 0.931
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-12 22:11:18.721176",
+      "connectionTime": "2019-05-12T22:11:19Z",
+      "disconnectTime": "2019-05-13T00:35:21Z",
+      "kWhDelivered": 15.2
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-12 22:12:23.059253",
+      "connectionTime": "2019-05-12T22:12:30Z",
+      "disconnectTime": "2019-05-13T05:14:53Z",
+      "kWhDelivered": 2.721
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-13 00:18:36.067880",
+      "connectionTime": "2019-05-13T00:18:36Z",
+      "disconnectTime": "2019-05-13T03:15:36Z",
+      "kWhDelivered": 10.456
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-13 04:05:31.116710",
+      "connectionTime": "2019-05-13T04:05:31Z",
+      "disconnectTime": "2019-05-13T14:23:01Z",
+      "kWhDelivered": 18.249
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-13 13:17:09.348854",
+      "connectionTime": "2019-05-13T13:17:09Z",
+      "disconnectTime": "2019-05-13T14:30:27Z",
+      "kWhDelivered": 4.168
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-13 13:32:48.775268",
+      "connectionTime": "2019-05-13T13:32:49Z",
+      "disconnectTime": "2019-05-13T19:05:40Z",
+      "kWhDelivered": 18.791
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-13 13:48:57.552530",
+      "connectionTime": "2019-05-13T13:48:58Z",
+      "disconnectTime": "2019-05-13T22:55:40Z",
+      "kWhDelivered": 4.969
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-13 14:08:30.028023",
+      "connectionTime": "2019-05-13T14:08:30Z",
+      "disconnectTime": "2019-05-13T23:54:44Z",
+      "kWhDelivered": 26.424
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-13 14:14:49.084355",
+      "connectionTime": "2019-05-13T14:14:49Z",
+      "disconnectTime": "2019-05-14T00:25:53Z",
+      "kWhDelivered": 47.856
+    },
+    {
+      "sessionID": "2_39_123_557_2019-05-13 14:39:15.536849",
+      "connectionTime": "2019-05-13T14:39:16Z",
+      "disconnectTime": "2019-05-13T23:39:28Z",
+      "kWhDelivered": 8.817
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-13 15:11:39.232158",
+      "connectionTime": "2019-05-13T15:12:13Z",
+      "disconnectTime": "2019-05-13T22:06:55Z",
+      "kWhDelivered": 14.729
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-13 15:14:55.270291",
+      "connectionTime": "2019-05-13T15:14:55Z",
+      "disconnectTime": "2019-05-15T02:50:30Z",
+      "kWhDelivered": 13.498
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-13 15:20:51.594568",
+      "connectionTime": "2019-05-13T15:20:52Z",
+      "disconnectTime": "2019-05-14T03:37:19Z",
+      "kWhDelivered": 2.211
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-13 15:21:14.481161",
+      "connectionTime": "2019-05-13T15:21:14Z",
+      "disconnectTime": "2019-05-14T02:03:10Z",
+      "kWhDelivered": 14.207
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-13 15:21:17.725252",
+      "connectionTime": "2019-05-13T15:21:18Z",
+      "disconnectTime": "2019-05-13T23:39:28Z",
+      "kWhDelivered": 53.253
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-13 15:26:26.230961",
+      "connectionTime": "2019-05-13T15:26:26Z",
+      "disconnectTime": "2019-05-15T04:50:46Z",
+      "kWhDelivered": 13.604
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-13 15:35:40.961213",
+      "connectionTime": "2019-05-13T15:35:41Z",
+      "disconnectTime": "2019-05-13T22:11:07Z",
+      "kWhDelivered": 15.465
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-13 15:40:31.044649",
+      "connectionTime": "2019-05-13T15:40:31Z",
+      "disconnectTime": "2019-05-14T00:29:21Z",
+      "kWhDelivered": 13.869
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-13 15:48:24.453429",
+      "connectionTime": "2019-05-13T15:48:24Z",
+      "disconnectTime": "2019-05-13T21:41:45Z",
+      "kWhDelivered": 1.197
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-13 15:49:14.983270",
+      "connectionTime": "2019-05-13T15:49:15Z",
+      "disconnectTime": "2019-05-14T00:43:09Z",
+      "kWhDelivered": 18.499
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-13 15:56:39.814500",
+      "connectionTime": "2019-05-13T15:56:40Z",
+      "disconnectTime": "2019-05-14T00:43:28Z",
+      "kWhDelivered": 0.991
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-13 16:10:22.328837",
+      "connectionTime": "2019-05-13T16:10:22Z",
+      "disconnectTime": "2019-05-14T01:32:19Z",
+      "kWhDelivered": 3.634
+    },
+    {
+      "sessionID": "2_39_128_562_2019-05-13 16:13:11.916556",
+      "connectionTime": "2019-05-13T16:13:12Z",
+      "disconnectTime": "2019-05-14T02:06:44Z",
+      "kWhDelivered": 9.844
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-13 16:13:40.825660",
+      "connectionTime": "2019-05-13T16:13:41Z",
+      "disconnectTime": "2019-05-14T01:01:52Z",
+      "kWhDelivered": 13.584
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-13 16:16:14.039550",
+      "connectionTime": "2019-05-13T16:16:14Z",
+      "disconnectTime": "2019-05-13T23:23:31Z",
+      "kWhDelivered": 3.352
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-13 16:23:24.431980",
+      "connectionTime": "2019-05-13T16:23:24Z",
+      "disconnectTime": "2019-05-13T23:52:01Z",
+      "kWhDelivered": 1.021
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-13 16:25:18.892425",
+      "connectionTime": "2019-05-13T16:25:19Z",
+      "disconnectTime": "2019-05-13T23:19:29Z",
+      "kWhDelivered": 1.043
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-13 16:31:42.830709",
+      "connectionTime": "2019-05-13T16:31:43Z",
+      "disconnectTime": "2019-05-14T00:30:19Z",
+      "kWhDelivered": 4.212
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-13 17:02:29.766980",
+      "connectionTime": "2019-05-13T17:02:30Z",
+      "disconnectTime": "2019-05-14T00:21:21Z",
+      "kWhDelivered": 8.118
+    },
+    {
+      "sessionID": "2_39_88_438_2019-05-13 17:11:47.522601",
+      "connectionTime": "2019-05-13T17:11:48Z",
+      "disconnectTime": "2019-05-14T00:57:46Z",
+      "kWhDelivered": 3.453
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-13 17:12:33.837065",
+      "connectionTime": "2019-05-13T17:13:01Z",
+      "disconnectTime": "2019-05-14T01:08:49Z",
+      "kWhDelivered": 11.737
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-13 17:19:38.017982",
+      "connectionTime": "2019-05-13T17:19:38Z",
+      "disconnectTime": "2019-05-13T21:43:40Z",
+      "kWhDelivered": 28.529
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-13 17:37:25.092447",
+      "connectionTime": "2019-05-13T17:37:25Z",
+      "disconnectTime": "2019-05-13T19:51:20Z",
+      "kWhDelivered": 0.954
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-13 17:54:09.971273",
+      "connectionTime": "2019-05-13T17:54:10Z",
+      "disconnectTime": "2019-05-14T00:00:39Z",
+      "kWhDelivered": 38.881
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-13 19:09:31.592521",
+      "connectionTime": "2019-05-13T19:09:32Z",
+      "disconnectTime": "2019-05-13T21:22:08Z",
+      "kWhDelivered": 0.897
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-13 19:21:19.994972",
+      "connectionTime": "2019-05-13T19:21:20Z",
+      "disconnectTime": "2019-05-14T00:58:46Z",
+      "kWhDelivered": 14.583
+    },
+    {
+      "sessionID": "2_39_139_567_2019-05-13 19:43:11.531976",
+      "connectionTime": "2019-05-13T19:43:12Z",
+      "disconnectTime": "2019-05-13T21:54:33Z",
+      "kWhDelivered": 2.308
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-13 20:05:18.181265",
+      "connectionTime": "2019-05-13T20:05:18Z",
+      "disconnectTime": "2019-05-14T00:08:34Z",
+      "kWhDelivered": 12.227
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-13 20:08:26.690475",
+      "connectionTime": "2019-05-13T20:08:27Z",
+      "disconnectTime": "2019-05-13T21:11:13Z",
+      "kWhDelivered": 0.868
+    },
+    {
+      "sessionID": "2_39_83_386_2019-05-13 20:38:07.224077",
+      "connectionTime": "2019-05-13T20:38:07Z",
+      "disconnectTime": "2019-05-14T00:42:46Z",
+      "kWhDelivered": 5.826
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-13 21:13:46.219114",
+      "connectionTime": "2019-05-13T21:13:46Z",
+      "disconnectTime": "2019-05-14T02:43:06Z",
+      "kWhDelivered": 4.982
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-13 21:46:37.987216",
+      "connectionTime": "2019-05-13T21:46:38Z",
+      "disconnectTime": "2019-05-13T22:24:08Z",
+      "kWhDelivered": 0.91
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-13 23:43:47.596207",
+      "connectionTime": "2019-05-13T23:43:48Z",
+      "disconnectTime": "2019-05-14T00:58:16Z",
+      "kWhDelivered": 4.233
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-13 23:43:58.279211",
+      "connectionTime": "2019-05-13T23:44:36Z",
+      "disconnectTime": "2019-05-14T01:19:54Z",
+      "kWhDelivered": 7.879
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-13 23:52:37.755774",
+      "connectionTime": "2019-05-13T23:52:38Z",
+      "disconnectTime": "2019-05-14T03:16:26Z",
+      "kWhDelivered": 12.036
+    },
+    {
+      "sessionID": "2_39_88_438_2019-05-14 00:58:12.456635",
+      "connectionTime": "2019-05-14T00:58:49Z",
+      "disconnectTime": "2019-05-14T02:14:33Z",
+      "kWhDelivered": 8.779
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-14 01:07:27.102427",
+      "connectionTime": "2019-05-14T01:07:27Z",
+      "disconnectTime": "2019-05-14T02:44:03Z",
+      "kWhDelivered": 7.895
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-14 02:52:37.252941",
+      "connectionTime": "2019-05-14T02:52:37Z",
+      "disconnectTime": "2019-05-14T09:05:36Z",
+      "kWhDelivered": 6.455
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-14 04:00:42.385441",
+      "connectionTime": "2019-05-14T04:00:42Z",
+      "disconnectTime": "2019-05-14T19:19:36Z",
+      "kWhDelivered": 52.381
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-14 04:44:11.107978",
+      "connectionTime": "2019-05-14T04:44:11Z",
+      "disconnectTime": "2019-05-16T01:45:11Z",
+      "kWhDelivered": 11.833
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-14 13:35:22.494525",
+      "connectionTime": "2019-05-14T13:35:22Z",
+      "disconnectTime": "2019-05-14T18:34:40Z",
+      "kWhDelivered": 18.978
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-14 14:18:50.754236",
+      "connectionTime": "2019-05-14T14:18:51Z",
+      "disconnectTime": "2019-05-14T19:38:20Z",
+      "kWhDelivered": 5.895
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-14 15:00:46.074270",
+      "connectionTime": "2019-05-14T15:00:46Z",
+      "disconnectTime": "2019-05-14T22:57:12Z",
+      "kWhDelivered": 4.053
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-14 15:13:14.586362",
+      "connectionTime": "2019-05-14T15:13:30Z",
+      "disconnectTime": "2019-05-14T23:10:29Z",
+      "kWhDelivered": 5.415
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-14 15:29:10.471772",
+      "connectionTime": "2019-05-14T15:29:10Z",
+      "disconnectTime": "2019-05-15T00:39:34Z",
+      "kWhDelivered": 13.491
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-14 15:50:30.918103",
+      "connectionTime": "2019-05-14T15:50:31Z",
+      "disconnectTime": "2019-05-15T00:43:46Z",
+      "kWhDelivered": 8.817
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-14 15:54:01.805338",
+      "connectionTime": "2019-05-14T15:54:02Z",
+      "disconnectTime": "2019-05-15T00:33:52Z",
+      "kWhDelivered": 1.453
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-14 16:01:06.841989",
+      "connectionTime": "2019-05-14T16:01:07Z",
+      "disconnectTime": "2019-05-14T23:53:48Z",
+      "kWhDelivered": 1.731
+    },
+    {
+      "sessionID": "2_39_128_562_2019-05-14 16:05:58.813306",
+      "connectionTime": "2019-05-14T16:05:59Z",
+      "disconnectTime": "2019-05-14T21:58:05Z",
+      "kWhDelivered": 7.127
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-14 16:15:03.440217",
+      "connectionTime": "2019-05-14T16:15:12Z",
+      "disconnectTime": "2019-05-15T00:12:33Z",
+      "kWhDelivered": 4.875
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-14 16:16:13.425370",
+      "connectionTime": "2019-05-14T16:16:13Z",
+      "disconnectTime": "2019-05-15T02:38:20Z",
+      "kWhDelivered": 5.598
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-14 16:17:56.240835",
+      "connectionTime": "2019-05-14T16:17:56Z",
+      "disconnectTime": "2019-05-15T01:15:43Z",
+      "kWhDelivered": 11.064
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-14 16:19:20.276334",
+      "connectionTime": "2019-05-14T16:19:20Z",
+      "disconnectTime": "2019-05-15T00:29:34Z",
+      "kWhDelivered": 15.315
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-14 16:28:50.997586",
+      "connectionTime": "2019-05-14T16:28:51Z",
+      "disconnectTime": "2019-05-15T00:17:48Z",
+      "kWhDelivered": 3.641
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-14 16:32:42.030885",
+      "connectionTime": "2019-05-14T16:32:42Z",
+      "disconnectTime": "2019-05-15T00:30:19Z",
+      "kWhDelivered": 1.939
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-14 16:39:49.162002",
+      "connectionTime": "2019-05-14T16:39:49Z",
+      "disconnectTime": "2019-05-15T00:53:27Z",
+      "kWhDelivered": 11.945
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-14 16:40:55.455680",
+      "connectionTime": "2019-05-14T16:40:55Z",
+      "disconnectTime": "2019-05-14T23:36:22Z",
+      "kWhDelivered": 11.257
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-14 16:55:08.465841",
+      "connectionTime": "2019-05-14T16:55:08Z",
+      "disconnectTime": "2019-05-15T00:09:04Z",
+      "kWhDelivered": 8.348
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-14 16:56:26.896151",
+      "connectionTime": "2019-05-14T16:56:27Z",
+      "disconnectTime": "2019-05-14T18:35:35Z",
+      "kWhDelivered": 6.511
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-14 16:56:27.462809",
+      "connectionTime": "2019-05-14T16:56:27Z",
+      "disconnectTime": "2019-05-15T00:24:39Z",
+      "kWhDelivered": 6.108
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-14 17:01:25.285318",
+      "connectionTime": "2019-05-14T17:01:25Z",
+      "disconnectTime": "2019-05-15T00:53:31Z",
+      "kWhDelivered": 15.881
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-14 17:01:43.416279",
+      "connectionTime": "2019-05-14T17:01:43Z",
+      "disconnectTime": "2019-05-15T00:35:00Z",
+      "kWhDelivered": 2.445
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-14 17:12:11.790541",
+      "connectionTime": "2019-05-14T17:12:12Z",
+      "disconnectTime": "2019-05-15T02:08:04Z",
+      "kWhDelivered": 5.813
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-14 19:12:22.258754",
+      "connectionTime": "2019-05-14T19:12:22Z",
+      "disconnectTime": "2019-05-14T22:51:48Z",
+      "kWhDelivered": 1.778
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-14 19:18:39.591883",
+      "connectionTime": "2019-05-14T19:18:40Z",
+      "disconnectTime": "2019-05-15T00:39:54Z",
+      "kWhDelivered": 6.625
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-14 20:12:12.872813",
+      "connectionTime": "2019-05-14T20:12:13Z",
+      "disconnectTime": "2019-05-15T00:13:48Z",
+      "kWhDelivered": 9.917
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-14 20:48:40.177024",
+      "connectionTime": "2019-05-14T20:48:40Z",
+      "disconnectTime": "2019-05-15T00:09:46Z",
+      "kWhDelivered": 4.911
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-14 21:56:08.856526",
+      "connectionTime": "2019-05-14T21:56:09Z",
+      "disconnectTime": "2019-05-14T23:37:41Z",
+      "kWhDelivered": 11.486
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-14 22:35:51.959647",
+      "connectionTime": "2019-05-14T22:35:52Z",
+      "disconnectTime": "2019-05-14T23:12:03Z",
+      "kWhDelivered": 3.542
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-14 23:37:22.960447",
+      "connectionTime": "2019-05-14T23:37:23Z",
+      "disconnectTime": "2019-05-15T01:28:03Z",
+      "kWhDelivered": 5.129
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-15 03:20:46.888816",
+      "connectionTime": "2019-05-15T03:20:47Z",
+      "disconnectTime": "2019-05-15T09:59:15Z",
+      "kWhDelivered": 6.537
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-15 03:22:41.959517",
+      "connectionTime": "2019-05-15T03:22:42Z",
+      "disconnectTime": "2019-05-15T04:06:26Z",
+      "kWhDelivered": 0.584
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-15 03:26:26.318391",
+      "connectionTime": "2019-05-15T03:26:26Z",
+      "disconnectTime": "2019-05-15T04:42:06Z",
+      "kWhDelivered": 7.404
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-15 06:05:06.827135",
+      "connectionTime": "2019-05-15T06:05:07Z",
+      "disconnectTime": "2019-05-20T00:19:09Z",
+      "kWhDelivered": 9.831
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-15 13:35:34.159115",
+      "connectionTime": "2019-05-15T13:35:34Z",
+      "disconnectTime": "2019-05-15T18:19:23Z",
+      "kWhDelivered": 18.716
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-15 15:05:29.109773",
+      "connectionTime": "2019-05-15T15:05:29Z",
+      "disconnectTime": "2019-05-16T00:36:30Z",
+      "kWhDelivered": 0.856
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-15 15:20:11.681684",
+      "connectionTime": "2019-05-15T15:20:12Z",
+      "disconnectTime": "2019-05-15T23:31:56Z",
+      "kWhDelivered": 4.529
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-15 15:29:02.517461",
+      "connectionTime": "2019-05-15T15:29:03Z",
+      "disconnectTime": "2019-05-16T00:24:43Z",
+      "kWhDelivered": 13.427
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-15 15:30:38.035790",
+      "connectionTime": "2019-05-15T15:30:38Z",
+      "disconnectTime": "2019-05-16T01:26:44Z",
+      "kWhDelivered": 13.853
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-15 15:31:29.246516",
+      "connectionTime": "2019-05-15T15:31:29Z",
+      "disconnectTime": "2019-05-16T00:15:24Z",
+      "kWhDelivered": 18.876
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-15 15:31:59.841151",
+      "connectionTime": "2019-05-15T15:32:00Z",
+      "disconnectTime": "2019-05-15T17:05:55Z",
+      "kWhDelivered": 6.169
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-15 15:41:12.174223",
+      "connectionTime": "2019-05-15T15:41:12Z",
+      "disconnectTime": "2019-05-16T01:47:33Z",
+      "kWhDelivered": 5.056
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-15 15:49:12.005221",
+      "connectionTime": "2019-05-15T15:49:12Z",
+      "disconnectTime": "2019-05-16T00:35:49Z",
+      "kWhDelivered": 4.763
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-15 15:59:44.607209",
+      "connectionTime": "2019-05-15T15:59:45Z",
+      "disconnectTime": "2019-05-15T18:16:21Z",
+      "kWhDelivered": 5.868
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-15 16:00:04.946727",
+      "connectionTime": "2019-05-15T16:00:05Z",
+      "disconnectTime": "2019-05-16T01:10:38Z",
+      "kWhDelivered": 13.32
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-15 16:01:21.494884",
+      "connectionTime": "2019-05-15T16:01:21Z",
+      "disconnectTime": "2019-05-15T23:35:29Z",
+      "kWhDelivered": 6.943
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-15 16:04:32.939603",
+      "connectionTime": "2019-05-15T16:04:33Z",
+      "disconnectTime": "2019-05-15T23:20:59Z",
+      "kWhDelivered": 5.489
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-15 16:06:28.874158",
+      "connectionTime": "2019-05-15T16:06:29Z",
+      "disconnectTime": "2019-05-15T20:45:13Z",
+      "kWhDelivered": 5.414
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-15 16:10:04.336617",
+      "connectionTime": "2019-05-15T16:10:04Z",
+      "disconnectTime": "2019-05-15T23:28:29Z",
+      "kWhDelivered": 1.889
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-15 16:11:39.482967",
+      "connectionTime": "2019-05-15T16:11:39Z",
+      "disconnectTime": "2019-05-15T23:18:38Z",
+      "kWhDelivered": 4.683
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-15 16:12:03.648642",
+      "connectionTime": "2019-05-15T16:12:04Z",
+      "disconnectTime": "2019-05-15T17:12:45Z",
+      "kWhDelivered": 6.658
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-15 16:13:17.765617",
+      "connectionTime": "2019-05-15T16:13:18Z",
+      "disconnectTime": "2019-05-16T00:29:22Z",
+      "kWhDelivered": 3.916
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-15 16:21:45.127567",
+      "connectionTime": "2019-05-15T16:21:45Z",
+      "disconnectTime": "2019-05-16T02:53:11Z",
+      "kWhDelivered": 16.137
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-15 16:23:17.674944",
+      "connectionTime": "2019-05-15T16:23:27Z",
+      "disconnectTime": "2019-05-16T00:26:58Z",
+      "kWhDelivered": 8.249
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-15 16:23:52.713104",
+      "connectionTime": "2019-05-15T16:24:16Z",
+      "disconnectTime": "2019-05-16T00:07:18Z",
+      "kWhDelivered": 5.149
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-15 16:40:16.437096",
+      "connectionTime": "2019-05-15T16:40:16Z",
+      "disconnectTime": "2019-05-16T00:38:31Z",
+      "kWhDelivered": 17.27
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-15 16:50:58.219615",
+      "connectionTime": "2019-05-15T16:50:58Z",
+      "disconnectTime": "2019-05-16T00:55:29Z",
+      "kWhDelivered": 10.241
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-15 16:52:39.400554",
+      "connectionTime": "2019-05-15T16:52:57Z",
+      "disconnectTime": "2019-05-15T23:18:40Z",
+      "kWhDelivered": 8.227
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-15 17:10:39.016056",
+      "connectionTime": "2019-05-15T17:10:39Z",
+      "disconnectTime": "2019-05-16T02:08:21Z",
+      "kWhDelivered": 6.194
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-15 17:18:43.167080",
+      "connectionTime": "2019-05-15T17:18:43Z",
+      "disconnectTime": "2019-05-15T18:09:40Z",
+      "kWhDelivered": 4.524
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-15 17:23:30.859341",
+      "connectionTime": "2019-05-15T17:23:31Z",
+      "disconnectTime": "2019-05-16T00:39:45Z",
+      "kWhDelivered": 48.66778583333334
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-15 17:44:46.711944",
+      "connectionTime": "2019-05-15T17:44:47Z",
+      "disconnectTime": "2019-05-15T18:48:18Z",
+      "kWhDelivered": 1.1574413888888893
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-15 18:17:13.024207",
+      "connectionTime": "2019-05-15T18:17:13Z",
+      "disconnectTime": "2019-05-16T01:55:38Z",
+      "kWhDelivered": 0.924
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-15 18:48:19.973963",
+      "connectionTime": "2019-05-15T18:48:20Z",
+      "disconnectTime": "2019-05-15T22:54:06Z",
+      "kWhDelivered": 1.635
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-15 19:22:06.897704",
+      "connectionTime": "2019-05-15T19:22:07Z",
+      "disconnectTime": "2019-05-16T03:07:31Z",
+      "kWhDelivered": 8.494
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-15 19:23:13.568225",
+      "connectionTime": "2019-05-15T19:23:14Z",
+      "disconnectTime": "2019-05-16T00:19:11Z",
+      "kWhDelivered": 6.847
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-15 19:29:24.735775",
+      "connectionTime": "2019-05-15T19:29:25Z",
+      "disconnectTime": "2019-05-16T00:33:03Z",
+      "kWhDelivered": 6.43
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-15 19:37:24.052537",
+      "connectionTime": "2019-05-15T19:37:24Z",
+      "disconnectTime": "2019-05-16T04:32:53Z",
+      "kWhDelivered": 1.05
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-15 19:53:44.336084",
+      "connectionTime": "2019-05-15T19:53:44Z",
+      "disconnectTime": "2019-05-16T01:53:44Z",
+      "kWhDelivered": 6.462
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-15 20:19:30.142561",
+      "connectionTime": "2019-05-15T20:19:30Z",
+      "disconnectTime": "2019-05-16T06:21:23Z",
+      "kWhDelivered": 2.353
+    },
+    {
+      "sessionID": "2_39_88_438_2019-05-15 20:21:19.441316",
+      "connectionTime": "2019-05-15T20:21:19Z",
+      "disconnectTime": "2019-05-15T21:23:27Z",
+      "kWhDelivered": 0.903
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-15 23:11:37.199671",
+      "connectionTime": "2019-05-15T23:11:37Z",
+      "disconnectTime": "2019-05-16T02:31:49Z",
+      "kWhDelivered": 10.889
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-15 23:38:09.941850",
+      "connectionTime": "2019-05-15T23:38:10Z",
+      "disconnectTime": "2019-05-16T00:52:39Z",
+      "kWhDelivered": 4.159
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-16 01:23:53.683349",
+      "connectionTime": "2019-05-16T01:23:54Z",
+      "disconnectTime": "2019-05-16T02:39:57Z",
+      "kWhDelivered": 4.14
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-16 02:52:55.120297",
+      "connectionTime": "2019-05-16T02:52:55Z",
+      "disconnectTime": "2019-05-16T15:10:48Z",
+      "kWhDelivered": 6.648
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-16 06:54:32.086138",
+      "connectionTime": "2019-05-16T06:54:32Z",
+      "disconnectTime": "2019-05-16T22:52:15Z",
+      "kWhDelivered": 52.468
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-16 13:17:17.918794",
+      "connectionTime": "2019-05-16T13:17:18Z",
+      "disconnectTime": "2019-05-16T14:36:58Z",
+      "kWhDelivered": 4.306
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-16 13:36:05.783789",
+      "connectionTime": "2019-05-16T13:36:06Z",
+      "disconnectTime": "2019-05-16T18:53:16Z",
+      "kWhDelivered": 18.844
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-16 13:45:47.973583",
+      "connectionTime": "2019-05-16T13:45:48Z",
+      "disconnectTime": "2019-05-16T23:21:05Z",
+      "kWhDelivered": 0.905
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-16 14:09:35.278247",
+      "connectionTime": "2019-05-16T14:09:35Z",
+      "disconnectTime": "2019-05-16T23:49:07Z",
+      "kWhDelivered": 20.327
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-16 14:28:44.921175",
+      "connectionTime": "2019-05-16T14:28:45Z",
+      "disconnectTime": "2019-05-17T02:37:32Z",
+      "kWhDelivered": 3.861
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-16 15:07:55.722587",
+      "connectionTime": "2019-05-16T15:07:56Z",
+      "disconnectTime": "2019-05-16T22:21:32Z",
+      "kWhDelivered": 3.848
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-16 15:35:36.976513",
+      "connectionTime": "2019-05-16T15:35:37Z",
+      "disconnectTime": "2019-05-17T01:46:50Z",
+      "kWhDelivered": 9.898
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-16 15:45:36.499298",
+      "connectionTime": "2019-05-16T15:45:36Z",
+      "disconnectTime": "2019-05-16T22:24:52Z",
+      "kWhDelivered": 2.279
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-16 15:55:27.411308",
+      "connectionTime": "2019-05-16T15:55:27Z",
+      "disconnectTime": "2019-05-17T00:33:00Z",
+      "kWhDelivered": 4.857
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-16 16:04:06.757322",
+      "connectionTime": "2019-05-16T16:04:07Z",
+      "disconnectTime": "2019-05-16T22:14:28Z",
+      "kWhDelivered": 19.759
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-16 16:05:52.032632",
+      "connectionTime": "2019-05-16T16:05:52Z",
+      "disconnectTime": "2019-05-17T01:51:23Z",
+      "kWhDelivered": 10.197
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-16 16:27:34.327553",
+      "connectionTime": "2019-05-16T16:27:34Z",
+      "disconnectTime": "2019-05-17T04:03:06Z",
+      "kWhDelivered": 21.752
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-16 16:27:49.962650",
+      "connectionTime": "2019-05-16T16:27:50Z",
+      "disconnectTime": "2019-05-17T00:33:08Z",
+      "kWhDelivered": 4.538
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-16 16:44:08.640150",
+      "connectionTime": "2019-05-16T16:44:19Z",
+      "disconnectTime": "2019-05-16T23:43:39Z",
+      "kWhDelivered": 11.618
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-16 17:01:20.715858",
+      "connectionTime": "2019-05-16T17:01:21Z",
+      "disconnectTime": "2019-05-16T18:55:38Z",
+      "kWhDelivered": 4.768
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-16 17:08:31.423208",
+      "connectionTime": "2019-05-16T17:08:31Z",
+      "disconnectTime": "2019-05-17T01:10:40Z",
+      "kWhDelivered": 15.042
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-16 17:11:36.063370",
+      "connectionTime": "2019-05-16T17:11:36Z",
+      "disconnectTime": "2019-05-16T21:26:36Z",
+      "kWhDelivered": 10.672
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-16 18:02:56.107407",
+      "connectionTime": "2019-05-16T18:02:56Z",
+      "disconnectTime": "2019-05-17T02:05:04Z",
+      "kWhDelivered": 11.841
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-16 18:03:06.986702",
+      "connectionTime": "2019-05-16T18:03:07Z",
+      "disconnectTime": "2019-05-17T00:47:14Z",
+      "kWhDelivered": 1.996
+    },
+    {
+      "sessionID": "2_39_83_386_2019-05-16 18:19:40.147213",
+      "connectionTime": "2019-05-16T18:19:40Z",
+      "disconnectTime": "2019-05-17T00:50:39Z",
+      "kWhDelivered": 5.906
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-16 18:24:48.377292",
+      "connectionTime": "2019-05-16T18:24:48Z",
+      "disconnectTime": "2019-05-16T19:36:23Z",
+      "kWhDelivered": 5.82
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-16 18:29:15.339242",
+      "connectionTime": "2019-05-16T18:29:15Z",
+      "disconnectTime": "2019-05-17T03:03:44Z",
+      "kWhDelivered": 5.907
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-16 19:15:41.212648",
+      "connectionTime": "2019-05-16T19:15:41Z",
+      "disconnectTime": "2019-05-16T23:50:21Z",
+      "kWhDelivered": 26.733
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-16 19:15:47.227267",
+      "connectionTime": "2019-05-16T19:15:47Z",
+      "disconnectTime": "2019-05-16T22:47:01Z",
+      "kWhDelivered": 7.831
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-16 19:22:12.701074",
+      "connectionTime": "2019-05-16T19:22:13Z",
+      "disconnectTime": "2019-05-17T04:47:07Z",
+      "kWhDelivered": 2.103
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-16 19:24:11.615903",
+      "connectionTime": "2019-05-16T19:24:12Z",
+      "disconnectTime": "2019-05-16T22:52:23Z",
+      "kWhDelivered": 2.06
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-16 20:06:54.845956",
+      "connectionTime": "2019-05-16T20:06:55Z",
+      "disconnectTime": "2019-05-17T00:13:43Z",
+      "kWhDelivered": 6.417
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-16 20:23:08.936323",
+      "connectionTime": "2019-05-16T20:23:09Z",
+      "disconnectTime": "2019-05-16T21:03:40Z",
+      "kWhDelivered": 0.855
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-16 20:35:10.509422",
+      "connectionTime": "2019-05-16T20:35:10Z",
+      "disconnectTime": "2019-05-16T23:07:26Z",
+      "kWhDelivered": 0.883
+    },
+    {
+      "sessionID": "2_39_123_557_2019-05-16 21:11:16.998451",
+      "connectionTime": "2019-05-16T21:11:17Z",
+      "disconnectTime": "2019-05-17T01:12:04Z",
+      "kWhDelivered": 13.37
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-16 23:16:29.662820",
+      "connectionTime": "2019-05-16T23:16:30Z",
+      "disconnectTime": "2019-05-17T02:52:07Z",
+      "kWhDelivered": 4.323
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-17 00:43:52.724774",
+      "connectionTime": "2019-05-17T00:43:53Z",
+      "disconnectTime": "2019-05-17T02:32:07Z",
+      "kWhDelivered": 4.423
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-17 01:42:03.103207",
+      "connectionTime": "2019-05-17T01:42:03Z",
+      "disconnectTime": "2019-05-17T02:34:51Z",
+      "kWhDelivered": 6.03
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-17 01:44:48.504472",
+      "connectionTime": "2019-05-17T01:44:22Z",
+      "disconnectTime": "2019-05-17T05:22:13Z",
+      "kWhDelivered": 12.964
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-17 03:12:31.949505",
+      "connectionTime": "2019-05-17T03:12:32Z",
+      "disconnectTime": "2019-05-17T16:21:27Z",
+      "kWhDelivered": 3.493
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-17 03:24:25.412102",
+      "connectionTime": "2019-05-17T03:24:25Z",
+      "disconnectTime": "2019-05-17T04:46:00Z",
+      "kWhDelivered": 9.325
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-17 04:06:37.609447",
+      "connectionTime": "2019-05-17T04:06:38Z",
+      "disconnectTime": "2019-05-18T01:51:40Z",
+      "kWhDelivered": 8.961
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-17 13:31:10.087649",
+      "connectionTime": "2019-05-17T13:31:10Z",
+      "disconnectTime": "2019-05-17T19:00:13Z",
+      "kWhDelivered": 18.782
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-17 13:59:08.261560",
+      "connectionTime": "2019-05-17T13:59:08Z",
+      "disconnectTime": "2019-05-17T15:12:30Z",
+      "kWhDelivered": 3.946
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-17 14:06:38.639827",
+      "connectionTime": "2019-05-17T14:06:39Z",
+      "disconnectTime": "2019-05-17T17:25:56Z",
+      "kWhDelivered": 0.841
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-17 15:00:22.688625",
+      "connectionTime": "2019-05-17T15:00:23Z",
+      "disconnectTime": "2019-05-17T22:59:46Z",
+      "kWhDelivered": 5.013
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-17 15:13:29.641508",
+      "connectionTime": "2019-05-17T15:13:30Z",
+      "disconnectTime": "2019-05-17T18:24:09Z",
+      "kWhDelivered": 13.553
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-17 15:14:11.226523",
+      "connectionTime": "2019-05-17T15:14:11Z",
+      "disconnectTime": "2019-05-18T00:28:54Z",
+      "kWhDelivered": 23.176
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-17 15:14:44.784903",
+      "connectionTime": "2019-05-17T15:14:45Z",
+      "disconnectTime": "2019-05-17T20:59:53Z",
+      "kWhDelivered": 5.256
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-17 15:18:16.728800",
+      "connectionTime": "2019-05-17T15:18:17Z",
+      "disconnectTime": "2019-05-18T00:25:46Z",
+      "kWhDelivered": 12.399
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-17 15:28:04.899532",
+      "connectionTime": "2019-05-17T15:28:05Z",
+      "disconnectTime": "2019-05-18T01:17:23Z",
+      "kWhDelivered": 9.342
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-17 15:34:44.470158",
+      "connectionTime": "2019-05-17T15:34:44Z",
+      "disconnectTime": "2019-05-18T03:45:56Z",
+      "kWhDelivered": 15.744
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-17 15:43:23.089190",
+      "connectionTime": "2019-05-17T15:43:23Z",
+      "disconnectTime": "2019-05-17T22:09:47Z",
+      "kWhDelivered": 5.788
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-17 15:48:41.219605",
+      "connectionTime": "2019-05-17T15:48:41Z",
+      "disconnectTime": "2019-05-17T23:19:07Z",
+      "kWhDelivered": 35.947
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-17 15:51:23.031877",
+      "connectionTime": "2019-05-17T15:51:23Z",
+      "disconnectTime": "2019-05-18T00:32:56Z",
+      "kWhDelivered": 9.829
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-17 15:58:48.398110",
+      "connectionTime": "2019-05-17T15:58:48Z",
+      "disconnectTime": "2019-05-18T02:00:38Z",
+      "kWhDelivered": 6.804
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-17 16:01:09.854223",
+      "connectionTime": "2019-05-17T16:01:10Z",
+      "disconnectTime": "2019-05-18T00:58:57Z",
+      "kWhDelivered": 4.325
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-17 16:29:12.965020",
+      "connectionTime": "2019-05-17T16:29:13Z",
+      "disconnectTime": "2019-05-18T02:46:12Z",
+      "kWhDelivered": 17.89
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-17 16:42:45.392857",
+      "connectionTime": "2019-05-17T16:42:45Z",
+      "disconnectTime": "2019-05-18T00:28:57Z",
+      "kWhDelivered": 3.543
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-17 16:49:20.151615",
+      "connectionTime": "2019-05-17T16:49:33Z",
+      "disconnectTime": "2019-05-18T00:59:38Z",
+      "kWhDelivered": 2.852
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-17 16:51:30.206114",
+      "connectionTime": "2019-05-17T16:51:30Z",
+      "disconnectTime": "2019-05-17T20:35:36Z",
+      "kWhDelivered": 5.446
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-17 16:52:23.125982",
+      "connectionTime": "2019-05-17T16:52:23Z",
+      "disconnectTime": "2019-05-17T22:59:24Z",
+      "kWhDelivered": 1.071
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-17 16:56:17.527212",
+      "connectionTime": "2019-05-17T16:56:18Z",
+      "disconnectTime": "2019-05-18T01:02:03Z",
+      "kWhDelivered": 2.144
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-17 17:02:16.076666",
+      "connectionTime": "2019-05-17T17:02:16Z",
+      "disconnectTime": "2019-05-18T00:12:59Z",
+      "kWhDelivered": 26.832
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-17 17:03:56.275620",
+      "connectionTime": "2019-05-17T17:03:56Z",
+      "disconnectTime": "2019-05-18T02:51:10Z",
+      "kWhDelivered": 6.005
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-17 17:11:23.813271",
+      "connectionTime": "2019-05-17T17:11:24Z",
+      "disconnectTime": "2019-05-18T02:01:55Z",
+      "kWhDelivered": 10.571
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-17 17:13:04.587367",
+      "connectionTime": "2019-05-17T17:13:05Z",
+      "disconnectTime": "2019-05-17T22:11:00Z",
+      "kWhDelivered": 2.141
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-17 18:17:21.897678",
+      "connectionTime": "2019-05-17T18:17:22Z",
+      "disconnectTime": "2019-05-18T04:48:44Z",
+      "kWhDelivered": 2.229
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-17 18:40:25.418529",
+      "connectionTime": "2019-05-17T18:40:25Z",
+      "disconnectTime": "2019-05-18T01:02:40Z",
+      "kWhDelivered": 6.546
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-17 19:09:34.424708",
+      "connectionTime": "2019-05-17T19:09:34Z",
+      "disconnectTime": "2019-05-18T00:37:50Z",
+      "kWhDelivered": 14.24
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-17 19:19:55.069195",
+      "connectionTime": "2019-05-17T19:19:55Z",
+      "disconnectTime": "2019-05-18T01:55:30Z",
+      "kWhDelivered": 0.886
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-17 19:33:40.703611",
+      "connectionTime": "2019-05-17T19:33:11Z",
+      "disconnectTime": "2019-05-17T22:53:34Z",
+      "kWhDelivered": 2.084
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-17 20:34:11.822206",
+      "connectionTime": "2019-05-17T20:34:12Z",
+      "disconnectTime": "2019-05-17T22:02:05Z",
+      "kWhDelivered": 9.356
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-17 22:23:29.132166",
+      "connectionTime": "2019-05-17T22:23:29Z",
+      "disconnectTime": "2019-05-18T01:45:35Z",
+      "kWhDelivered": 5.937
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-17 23:16:51.536057",
+      "connectionTime": "2019-05-17T23:16:54Z",
+      "disconnectTime": "2019-05-18T00:52:56Z",
+      "kWhDelivered": 5.242
+    },
+    {
+      "sessionID": "2_39_82_384_2019-05-18 00:19:17.052324",
+      "connectionTime": "2019-05-18T00:19:17Z",
+      "disconnectTime": "2019-05-18T05:13:51Z",
+      "kWhDelivered": 0.888
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-18 00:29:38.615494",
+      "connectionTime": "2019-05-18T00:29:39Z",
+      "disconnectTime": "2019-05-18T05:21:23Z",
+      "kWhDelivered": 7.331
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-18 00:39:43.462251",
+      "connectionTime": "2019-05-18T00:39:43Z",
+      "disconnectTime": "2019-05-18T05:27:24Z",
+      "kWhDelivered": 2.094
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-18 02:14:01.327135",
+      "connectionTime": "2019-05-18T02:14:01Z",
+      "disconnectTime": "2019-05-18T05:34:24Z",
+      "kWhDelivered": 11.913
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-18 14:51:36.958860",
+      "connectionTime": "2019-05-18T14:51:37Z",
+      "disconnectTime": "2019-05-18T16:38:21Z",
+      "kWhDelivered": 11.887
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-18 15:10:35.112528",
+      "connectionTime": "2019-05-18T15:10:35Z",
+      "disconnectTime": "2019-05-18T20:20:35Z",
+      "kWhDelivered": 12.228
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-18 15:33:36.706895",
+      "connectionTime": "2019-05-18T15:33:37Z",
+      "disconnectTime": "2019-05-19T00:09:23Z",
+      "kWhDelivered": 7.671
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-18 18:05:34.160863",
+      "connectionTime": "2019-05-18T18:05:34Z",
+      "disconnectTime": "2019-05-18T20:56:12Z",
+      "kWhDelivered": 13.437
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-18 18:10:50.165310",
+      "connectionTime": "2019-05-18T18:10:50Z",
+      "disconnectTime": "2019-05-18T19:48:02Z",
+      "kWhDelivered": 1.983
+    },
+    {
+      "sessionID": "2_39_82_384_2019-05-18 19:45:58.976512",
+      "connectionTime": "2019-05-18T19:45:59Z",
+      "disconnectTime": "2019-05-18T20:18:33Z",
+      "kWhDelivered": 0.9
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-18 20:16:33.285587",
+      "connectionTime": "2019-05-18T20:16:35Z",
+      "disconnectTime": "2019-05-18T21:36:51Z",
+      "kWhDelivered": 4.38
+    },
+    {
+      "sessionID": "2_39_82_385_2019-05-18 20:18:51.039060",
+      "connectionTime": "2019-05-18T20:18:51Z",
+      "disconnectTime": "2019-05-18T20:50:38Z",
+      "kWhDelivered": 0.898
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-18 20:49:18.298168",
+      "connectionTime": "2019-05-18T20:49:18Z",
+      "disconnectTime": "2019-05-18T23:31:44Z",
+      "kWhDelivered": 0.864
+    },
+    {
+      "sessionID": "2_39_82_385_2019-05-18 20:50:50.127280",
+      "connectionTime": "2019-05-18T20:50:50Z",
+      "disconnectTime": "2019-05-19T00:41:46Z",
+      "kWhDelivered": 0.907
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-18 22:30:07.436402",
+      "connectionTime": "2019-05-18T22:30:07Z",
+      "disconnectTime": "2019-05-19T00:39:51Z",
+      "kWhDelivered": 2.128
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-19 00:25:03.619071",
+      "connectionTime": "2019-05-19T00:25:04Z",
+      "disconnectTime": "2019-05-19T01:27:12Z",
+      "kWhDelivered": 3.285
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-19 02:07:38.483253",
+      "connectionTime": "2019-05-19T02:07:48Z",
+      "disconnectTime": "2019-05-19T03:07:18Z",
+      "kWhDelivered": 6.792
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-19 02:53:37.631484",
+      "connectionTime": "2019-05-19T02:53:38Z",
+      "disconnectTime": "2019-05-19T04:26:04Z",
+      "kWhDelivered": 10.474
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-19 04:49:03.086270",
+      "connectionTime": "2019-05-19T04:49:03Z",
+      "disconnectTime": "2019-05-19T11:05:39Z",
+      "kWhDelivered": 21.388
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-19 05:46:43.740614",
+      "connectionTime": "2019-05-19T05:46:44Z",
+      "disconnectTime": "2019-05-19T16:15:40Z",
+      "kWhDelivered": 35.894
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-19 15:26:29.873564",
+      "connectionTime": "2019-05-19T15:26:30Z",
+      "disconnectTime": "2019-05-19T17:20:55Z",
+      "kWhDelivered": 4.132
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-19 16:50:39.972117",
+      "connectionTime": "2019-05-19T16:50:40Z",
+      "disconnectTime": "2019-05-19T21:53:11Z",
+      "kWhDelivered": 14.278
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-19 17:00:20.643607",
+      "connectionTime": "2019-05-19T17:00:21Z",
+      "disconnectTime": "2019-05-19T18:58:18Z",
+      "kWhDelivered": 13.306
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-19 18:51:24.952692",
+      "connectionTime": "2019-05-19T18:51:25Z",
+      "disconnectTime": "2019-05-19T20:29:21Z",
+      "kWhDelivered": 0.9
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-19 18:56:20.392577",
+      "connectionTime": "2019-05-19T18:56:20Z",
+      "disconnectTime": "2019-05-20T02:37:05Z",
+      "kWhDelivered": 36.398
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-19 19:00:07.449455",
+      "connectionTime": "2019-05-19T19:00:07Z",
+      "disconnectTime": "2019-05-20T01:06:44Z",
+      "kWhDelivered": 9.163
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-19 19:32:55.613207",
+      "connectionTime": "2019-05-19T19:32:56Z",
+      "disconnectTime": "2019-05-20T00:32:13Z",
+      "kWhDelivered": 1.911
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-19 20:05:14.335840",
+      "connectionTime": "2019-05-19T20:05:14Z",
+      "disconnectTime": "2019-05-19T20:55:09Z",
+      "kWhDelivered": 2.834
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-19 22:49:22.957783",
+      "connectionTime": "2019-05-19T22:49:23Z",
+      "disconnectTime": "2019-05-20T04:01:14Z",
+      "kWhDelivered": 14.336
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-19 22:58:00.204485",
+      "connectionTime": "2019-05-19T22:58:00Z",
+      "disconnectTime": "2019-05-20T00:54:04Z",
+      "kWhDelivered": 12.675
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-19 22:58:33.758368",
+      "connectionTime": "2019-05-19T22:58:34Z",
+      "disconnectTime": "2019-05-20T00:19:37Z",
+      "kWhDelivered": 0.785
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-20 00:16:47.302720",
+      "connectionTime": "2019-05-20T00:16:47Z",
+      "disconnectTime": "2019-05-20T00:55:52Z",
+      "kWhDelivered": 0.957
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-20 02:22:56.016206",
+      "connectionTime": "2019-05-20T02:22:56Z",
+      "disconnectTime": "2019-05-20T04:20:26Z",
+      "kWhDelivered": 8.176
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-20 04:22:02.916967",
+      "connectionTime": "2019-05-20T04:22:03Z",
+      "disconnectTime": "2019-05-20T05:12:37Z",
+      "kWhDelivered": 4.791
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-20 13:31:33.862922",
+      "connectionTime": "2019-05-20T13:31:34Z",
+      "disconnectTime": "2019-05-20T18:35:23Z",
+      "kWhDelivered": 18.984
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-20 14:28:31.912396",
+      "connectionTime": "2019-05-20T14:28:32Z",
+      "disconnectTime": "2019-05-20T19:31:11Z",
+      "kWhDelivered": 16.37
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-20 14:43:51.760838",
+      "connectionTime": "2019-05-20T14:43:52Z",
+      "disconnectTime": "2019-05-21T03:40:03Z",
+      "kWhDelivered": 3.93
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-20 14:44:36.032110",
+      "connectionTime": "2019-05-20T14:44:36Z",
+      "disconnectTime": "2019-05-20T23:35:18Z",
+      "kWhDelivered": 3.511
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-20 15:00:27.039601",
+      "connectionTime": "2019-05-20T15:00:27Z",
+      "disconnectTime": "2019-05-20T23:41:09Z",
+      "kWhDelivered": 3.423
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-20 15:01:53.824885",
+      "connectionTime": "2019-05-20T15:01:54Z",
+      "disconnectTime": "2019-05-20T19:59:14Z",
+      "kWhDelivered": 1.577
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-20 15:12:01.894093",
+      "connectionTime": "2019-05-20T15:12:15Z",
+      "disconnectTime": "2019-05-20T22:12:00Z",
+      "kWhDelivered": 14.405
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-20 15:12:26.638140",
+      "connectionTime": "2019-05-20T15:12:27Z",
+      "disconnectTime": "2019-05-21T00:31:03Z",
+      "kWhDelivered": 10.255
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-20 15:25:16.513412",
+      "connectionTime": "2019-05-20T15:25:17Z",
+      "disconnectTime": "2019-05-21T00:32:58Z",
+      "kWhDelivered": 5.145
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-20 15:28:33.948259",
+      "connectionTime": "2019-05-20T15:28:34Z",
+      "disconnectTime": "2019-05-20T17:33:06Z",
+      "kWhDelivered": 7.885
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-20 15:28:46.786425",
+      "connectionTime": "2019-05-20T15:28:47Z",
+      "disconnectTime": "2019-05-21T00:31:01Z",
+      "kWhDelivered": 6.038
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-20 15:28:56.254528",
+      "connectionTime": "2019-05-20T15:28:56Z",
+      "disconnectTime": "2019-05-21T02:57:38Z",
+      "kWhDelivered": 9.382
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-20 15:32:41.075334",
+      "connectionTime": "2019-05-20T15:32:41Z",
+      "disconnectTime": "2019-05-21T00:54:58Z",
+      "kWhDelivered": 15.729
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-20 15:38:14.433423",
+      "connectionTime": "2019-05-20T15:38:14Z",
+      "disconnectTime": "2019-05-20T20:23:25Z",
+      "kWhDelivered": 19.465
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-20 15:53:37.494575",
+      "connectionTime": "2019-05-20T15:53:37Z",
+      "disconnectTime": "2019-05-20T19:28:00Z",
+      "kWhDelivered": 1.819
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-20 15:59:51.604026",
+      "connectionTime": "2019-05-20T15:59:52Z",
+      "disconnectTime": "2019-05-21T00:19:33Z",
+      "kWhDelivered": 6.154
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-20 16:01:55.044520",
+      "connectionTime": "2019-05-20T16:01:55Z",
+      "disconnectTime": "2019-05-20T23:11:24Z",
+      "kWhDelivered": 4.743
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-20 16:04:47.436558",
+      "connectionTime": "2019-05-20T16:04:47Z",
+      "disconnectTime": "2019-05-21T02:40:57Z",
+      "kWhDelivered": 3.889
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-20 16:06:40.362413",
+      "connectionTime": "2019-05-20T16:06:40Z",
+      "disconnectTime": "2019-05-20T17:24:03Z",
+      "kWhDelivered": 4.519
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-20 16:10:57.484665",
+      "connectionTime": "2019-05-20T16:10:57Z",
+      "disconnectTime": "2019-05-21T00:48:27Z",
+      "kWhDelivered": 4.391
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-20 16:13:18.126217",
+      "connectionTime": "2019-05-20T16:13:18Z",
+      "disconnectTime": "2019-05-20T19:46:30Z",
+      "kWhDelivered": 0.824
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-20 16:16:24.006563",
+      "connectionTime": "2019-05-20T16:16:24Z",
+      "disconnectTime": "2019-05-21T01:05:54Z",
+      "kWhDelivered": 12.131
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-20 16:41:12.491343",
+      "connectionTime": "2019-05-20T16:41:12Z",
+      "disconnectTime": "2019-05-21T05:05:17Z",
+      "kWhDelivered": 14.499
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-20 16:54:32.445723",
+      "connectionTime": "2019-05-20T16:54:32Z",
+      "disconnectTime": "2019-05-21T03:03:43Z",
+      "kWhDelivered": 21.19
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-20 16:54:51.140596",
+      "connectionTime": "2019-05-20T16:54:51Z",
+      "disconnectTime": "2019-05-20T18:23:55Z",
+      "kWhDelivered": 5.014
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-20 17:06:45.222635",
+      "connectionTime": "2019-05-20T17:06:45Z",
+      "disconnectTime": "2019-05-21T01:04:27Z",
+      "kWhDelivered": 8.052
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-20 17:08:07.345405",
+      "connectionTime": "2019-05-20T17:08:07Z",
+      "disconnectTime": "2019-05-20T23:56:42Z",
+      "kWhDelivered": 3.497
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-20 17:22:11.657751",
+      "connectionTime": "2019-05-20T17:22:12Z",
+      "disconnectTime": "2019-05-21T01:26:00Z",
+      "kWhDelivered": 3.364
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-20 17:48:12.692554",
+      "connectionTime": "2019-05-20T17:48:13Z",
+      "disconnectTime": "2019-05-21T00:25:14Z",
+      "kWhDelivered": 9.091
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-20 18:01:48.098396",
+      "connectionTime": "2019-05-20T18:01:48Z",
+      "disconnectTime": "2019-05-21T02:14:51Z",
+      "kWhDelivered": 18.595
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-20 18:06:22.573433",
+      "connectionTime": "2019-05-20T18:06:23Z",
+      "disconnectTime": "2019-05-21T00:56:44Z",
+      "kWhDelivered": 6.455
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-20 19:13:49.734464",
+      "connectionTime": "2019-05-20T19:13:50Z",
+      "disconnectTime": "2019-05-21T05:04:21Z",
+      "kWhDelivered": 2.068
+    },
+    {
+      "sessionID": "2_39_127_561_2019-05-20 19:22:01.580156",
+      "connectionTime": "2019-05-20T19:22:02Z",
+      "disconnectTime": "2019-05-20T23:58:09Z",
+      "kWhDelivered": 9.394
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-20 19:30:17.450106",
+      "connectionTime": "2019-05-20T19:30:17Z",
+      "disconnectTime": "2019-05-20T22:53:34Z",
+      "kWhDelivered": 3.625
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-20 19:59:16.123149",
+      "connectionTime": "2019-05-20T19:59:16Z",
+      "disconnectTime": "2019-05-21T03:45:55Z",
+      "kWhDelivered": 0.824
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-20 23:40:17.567084",
+      "connectionTime": "2019-05-20T23:40:18Z",
+      "disconnectTime": "2019-05-21T00:54:15Z",
+      "kWhDelivered": 4.233
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-21 01:10:04.466161",
+      "connectionTime": "2019-05-21T01:10:04Z",
+      "disconnectTime": "2019-05-21T02:55:34Z",
+      "kWhDelivered": 7.886
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-21 04:36:26.058298",
+      "connectionTime": "2019-05-21T04:36:26Z",
+      "disconnectTime": "2019-05-22T05:30:57Z",
+      "kWhDelivered": 11.847
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-21 05:25:22.628517",
+      "connectionTime": "2019-05-21T05:25:23Z",
+      "disconnectTime": "2019-05-21T14:01:09Z",
+      "kWhDelivered": 13.544
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-21 13:04:09.432614",
+      "connectionTime": "2019-05-21T13:04:09Z",
+      "disconnectTime": "2019-05-21T14:19:42Z",
+      "kWhDelivered": 3.994
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-21 13:31:33.495853",
+      "connectionTime": "2019-05-21T13:31:33Z",
+      "disconnectTime": "2019-05-21T18:44:54Z",
+      "kWhDelivered": 17.475
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-21 14:20:40.350824",
+      "connectionTime": "2019-05-21T14:20:40Z",
+      "disconnectTime": "2019-05-22T00:21:40Z",
+      "kWhDelivered": 46.144
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-21 14:26:55.958399",
+      "connectionTime": "2019-05-21T14:26:56Z",
+      "disconnectTime": "2019-05-22T00:52:19Z",
+      "kWhDelivered": 13.851
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-21 14:39:35.972553",
+      "connectionTime": "2019-05-21T14:39:36Z",
+      "disconnectTime": "2019-05-21T21:49:44Z",
+      "kWhDelivered": 8.527
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-21 15:05:11.192556",
+      "connectionTime": "2019-05-21T15:05:11Z",
+      "disconnectTime": "2019-05-21T23:33:24Z",
+      "kWhDelivered": 2.588
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-21 15:17:13.654997",
+      "connectionTime": "2019-05-21T15:17:30Z",
+      "disconnectTime": "2019-05-22T00:07:28Z",
+      "kWhDelivered": 8.156
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-21 15:23:07.527793",
+      "connectionTime": "2019-05-21T15:23:08Z",
+      "disconnectTime": "2019-05-22T01:54:22Z",
+      "kWhDelivered": 1.774
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-21 15:30:08.296784",
+      "connectionTime": "2019-05-21T15:30:08Z",
+      "disconnectTime": "2019-05-22T01:11:00Z",
+      "kWhDelivered": 4.653
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-21 15:33:18.053266",
+      "connectionTime": "2019-05-21T15:33:18Z",
+      "disconnectTime": "2019-05-22T00:27:12Z",
+      "kWhDelivered": 6.583
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-21 15:43:12.127465",
+      "connectionTime": "2019-05-21T15:43:12Z",
+      "disconnectTime": "2019-05-21T17:11:28Z",
+      "kWhDelivered": 7.87
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-21 15:45:34.214323",
+      "connectionTime": "2019-05-21T15:45:34Z",
+      "disconnectTime": "2019-05-22T00:04:51Z",
+      "kWhDelivered": 11.257
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-21 15:59:43.252194",
+      "connectionTime": "2019-05-21T15:59:43Z",
+      "disconnectTime": "2019-05-22T00:56:34Z",
+      "kWhDelivered": 1.926
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-21 16:01:59.007777",
+      "connectionTime": "2019-05-21T16:01:59Z",
+      "disconnectTime": "2019-05-22T01:48:52Z",
+      "kWhDelivered": 4.492
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-21 16:03:50.109267",
+      "connectionTime": "2019-05-21T16:03:50Z",
+      "disconnectTime": "2019-05-22T01:46:24Z",
+      "kWhDelivered": 5.718
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-21 16:12:05.751033",
+      "connectionTime": "2019-05-21T16:12:06Z",
+      "disconnectTime": "2019-05-21T23:09:09Z",
+      "kWhDelivered": 4.28
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-21 16:13:09.249380",
+      "connectionTime": "2019-05-21T16:13:09Z",
+      "disconnectTime": "2019-05-21T23:31:18Z",
+      "kWhDelivered": 27.78
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-21 16:24:18.801510",
+      "connectionTime": "2019-05-21T16:24:19Z",
+      "disconnectTime": "2019-05-21T23:28:13Z",
+      "kWhDelivered": 7.688
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-21 16:25:12.458912",
+      "connectionTime": "2019-05-21T16:25:12Z",
+      "disconnectTime": "2019-05-21T22:00:43Z",
+      "kWhDelivered": 0.929
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-21 16:28:51.423430",
+      "connectionTime": "2019-05-21T16:28:51Z",
+      "disconnectTime": "2019-05-21T22:35:16Z",
+      "kWhDelivered": 1.762
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-21 16:30:30.102627",
+      "connectionTime": "2019-05-21T16:30:30Z",
+      "disconnectTime": "2019-05-22T02:34:31Z",
+      "kWhDelivered": 10.664
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-21 16:33:39.919218",
+      "connectionTime": "2019-05-21T16:33:40Z",
+      "disconnectTime": "2019-05-22T00:25:58Z",
+      "kWhDelivered": 6.433
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-21 16:41:38.871241",
+      "connectionTime": "2019-05-21T16:41:39Z",
+      "disconnectTime": "2019-05-22T04:26:47Z",
+      "kWhDelivered": 1.944
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-21 16:52:08.440633",
+      "connectionTime": "2019-05-21T16:52:08Z",
+      "disconnectTime": "2019-05-22T00:05:29Z",
+      "kWhDelivered": 24.713
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-21 17:01:16.832451",
+      "connectionTime": "2019-05-21T17:01:17Z",
+      "disconnectTime": "2019-05-21T18:22:16Z",
+      "kWhDelivered": 5.263
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-21 17:16:42.010759",
+      "connectionTime": "2019-05-21T17:16:42Z",
+      "disconnectTime": "2019-05-22T02:06:31Z",
+      "kWhDelivered": 11.61
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-21 17:23:01.436300",
+      "connectionTime": "2019-05-21T17:23:01Z",
+      "disconnectTime": "2019-05-21T19:35:16Z",
+      "kWhDelivered": 6.583
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-21 17:32:26.660212",
+      "connectionTime": "2019-05-21T17:32:27Z",
+      "disconnectTime": "2019-05-22T01:10:02Z",
+      "kWhDelivered": 0.97
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-21 17:38:13.762927",
+      "connectionTime": "2019-05-21T17:38:14Z",
+      "disconnectTime": "2019-05-21T23:29:32Z",
+      "kWhDelivered": 8.745
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-21 17:49:35.524609",
+      "connectionTime": "2019-05-21T17:49:36Z",
+      "disconnectTime": "2019-05-22T05:03:31Z",
+      "kWhDelivered": 20.227
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-21 18:54:43.228647",
+      "connectionTime": "2019-05-21T18:54:43Z",
+      "disconnectTime": "2019-05-22T02:23:54Z",
+      "kWhDelivered": 13.091
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-21 18:56:41.024171",
+      "connectionTime": "2019-05-21T18:56:41Z",
+      "disconnectTime": "2019-05-22T05:25:25Z",
+      "kWhDelivered": 56.403
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-21 19:08:56.573137",
+      "connectionTime": "2019-05-21T19:08:57Z",
+      "disconnectTime": "2019-05-21T22:49:06Z",
+      "kWhDelivered": 1.691
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-21 19:22:10.496443",
+      "connectionTime": "2019-05-21T19:22:10Z",
+      "disconnectTime": "2019-05-22T04:48:32Z",
+      "kWhDelivered": 2.107
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-21 20:17:17.884873",
+      "connectionTime": "2019-05-21T20:17:18Z",
+      "disconnectTime": "2019-05-22T02:04:38Z",
+      "kWhDelivered": 6.824
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-21 21:36:10.980237",
+      "connectionTime": "2019-05-21T21:36:11Z",
+      "disconnectTime": "2019-05-21T23:06:08Z",
+      "kWhDelivered": 3.978
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-21 23:18:35.435187",
+      "connectionTime": "2019-05-21T23:18:35Z",
+      "disconnectTime": "2019-05-22T01:20:33Z",
+      "kWhDelivered": 4.746
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-22 00:44:05.181009",
+      "connectionTime": "2019-05-22T00:44:05Z",
+      "disconnectTime": "2019-05-22T01:32:41Z",
+      "kWhDelivered": 0.859
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-22 03:31:17.764985",
+      "connectionTime": "2019-05-22T03:31:18Z",
+      "disconnectTime": "2019-05-22T04:43:05Z",
+      "kWhDelivered": 8.193
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-22 04:01:40.167831",
+      "connectionTime": "2019-05-22T04:01:40Z",
+      "disconnectTime": "2019-05-22T05:18:15Z",
+      "kWhDelivered": 4.161
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-22 13:33:07.682861",
+      "connectionTime": "2019-05-22T13:33:08Z",
+      "disconnectTime": "2019-05-22T18:48:43Z",
+      "kWhDelivered": 19.197
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-22 14:13:08.780244",
+      "connectionTime": "2019-05-22T14:13:09Z",
+      "disconnectTime": "2019-05-22T23:57:10Z",
+      "kWhDelivered": 13.655
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-22 14:50:10.049252",
+      "connectionTime": "2019-05-22T14:50:10Z",
+      "disconnectTime": "2019-05-23T00:46:04Z",
+      "kWhDelivered": 3.781
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-22 14:55:18.163137",
+      "connectionTime": "2019-05-22T14:55:30Z",
+      "disconnectTime": "2019-05-22T22:23:50Z",
+      "kWhDelivered": 4.401
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-22 14:56:10.945237",
+      "connectionTime": "2019-05-22T14:56:11Z",
+      "disconnectTime": "2019-05-23T03:40:52Z",
+      "kWhDelivered": 15.878
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-22 14:56:30.533990",
+      "connectionTime": "2019-05-22T14:56:31Z",
+      "disconnectTime": "2019-05-23T00:38:01Z",
+      "kWhDelivered": 4.767
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-22 14:58:27.914718",
+      "connectionTime": "2019-05-22T14:58:28Z",
+      "disconnectTime": "2019-05-23T02:15:21Z",
+      "kWhDelivered": 6.645
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-22 15:05:32.941027",
+      "connectionTime": "2019-05-22T15:05:33Z",
+      "disconnectTime": "2019-05-23T00:51:20Z",
+      "kWhDelivered": 1.608
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-22 15:07:13.450522",
+      "connectionTime": "2019-05-22T15:07:13Z",
+      "disconnectTime": "2019-05-22T23:19:45Z",
+      "kWhDelivered": 5.543
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-22 15:24:31.502430",
+      "connectionTime": "2019-05-22T15:24:31Z",
+      "disconnectTime": "2019-05-22T19:35:17Z",
+      "kWhDelivered": 4.558
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-22 15:28:16.947366",
+      "connectionTime": "2019-05-22T15:28:17Z",
+      "disconnectTime": "2019-05-23T01:00:01Z",
+      "kWhDelivered": 0.655
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-22 15:37:20.099998",
+      "connectionTime": "2019-05-22T15:37:20Z",
+      "disconnectTime": "2019-05-22T22:50:48Z",
+      "kWhDelivered": 8.862
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-22 15:40:00.585449",
+      "connectionTime": "2019-05-22T15:40:01Z",
+      "disconnectTime": "2019-05-22T17:30:21Z",
+      "kWhDelivered": 4.565
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-22 15:41:43.680741",
+      "connectionTime": "2019-05-22T15:41:44Z",
+      "disconnectTime": "2019-05-22T21:31:04Z",
+      "kWhDelivered": 0.967
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-22 15:45:26.018298",
+      "connectionTime": "2019-05-22T15:45:26Z",
+      "disconnectTime": "2019-05-22T22:21:09Z",
+      "kWhDelivered": 8.291
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-22 15:46:07.765295",
+      "connectionTime": "2019-05-22T15:46:08Z",
+      "disconnectTime": "2019-05-23T00:49:49Z",
+      "kWhDelivered": 22.345
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-22 15:57:55.570274",
+      "connectionTime": "2019-05-22T15:57:56Z",
+      "disconnectTime": "2019-05-23T00:16:02Z",
+      "kWhDelivered": 13.112
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-22 16:01:48.641638",
+      "connectionTime": "2019-05-22T16:01:49Z",
+      "disconnectTime": "2019-05-23T01:09:50Z",
+      "kWhDelivered": 27.837
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-22 16:04:33.738250",
+      "connectionTime": "2019-05-22T16:04:34Z",
+      "disconnectTime": "2019-05-22T23:38:20Z",
+      "kWhDelivered": 5.35
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-22 16:08:30.816366",
+      "connectionTime": "2019-05-22T16:08:31Z",
+      "disconnectTime": "2019-05-22T23:31:11Z",
+      "kWhDelivered": 8.001
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-22 16:10:16.208850",
+      "connectionTime": "2019-05-22T16:10:16Z",
+      "disconnectTime": "2019-05-22T23:22:15Z",
+      "kWhDelivered": 3.774
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-22 16:12:43.794673",
+      "connectionTime": "2019-05-22T16:12:44Z",
+      "disconnectTime": "2019-05-23T00:58:32Z",
+      "kWhDelivered": 13.254
+    },
+    {
+      "sessionID": "2_39_138_566_2019-05-22 16:15:17.229400",
+      "connectionTime": "2019-05-22T16:15:17Z",
+      "disconnectTime": "2019-05-22T16:58:30Z",
+      "kWhDelivered": 0.75
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-22 16:28:26.307975",
+      "connectionTime": "2019-05-22T16:28:26Z",
+      "disconnectTime": "2019-05-23T01:30:13Z",
+      "kWhDelivered": 1.734
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-22 16:47:37.242042",
+      "connectionTime": "2019-05-22T16:47:37Z",
+      "disconnectTime": "2019-05-23T01:13:17Z",
+      "kWhDelivered": 6.445
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-22 16:50:07.841107",
+      "connectionTime": "2019-05-22T16:50:08Z",
+      "disconnectTime": "2019-05-23T01:15:20Z",
+      "kWhDelivered": 3.424
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-22 17:05:39.100918",
+      "connectionTime": "2019-05-22T17:05:39Z",
+      "disconnectTime": "2019-05-23T02:27:48Z",
+      "kWhDelivered": 5.697
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-22 17:09:23.641591",
+      "connectionTime": "2019-05-22T17:09:24Z",
+      "disconnectTime": "2019-05-23T00:05:48Z",
+      "kWhDelivered": 7.251
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-22 17:09:38.563719",
+      "connectionTime": "2019-05-22T17:09:39Z",
+      "disconnectTime": "2019-05-22T23:24:31Z",
+      "kWhDelivered": 8.421
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-22 17:15:08.498014",
+      "connectionTime": "2019-05-22T17:15:08Z",
+      "disconnectTime": "2019-05-23T02:15:09Z",
+      "kWhDelivered": 11.235
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-22 17:56:37.415678",
+      "connectionTime": "2019-05-22T17:56:37Z",
+      "disconnectTime": "2019-05-22T18:25:12Z",
+      "kWhDelivered": 0.779
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-22 17:59:56.182677",
+      "connectionTime": "2019-05-22T17:59:56Z",
+      "disconnectTime": "2019-05-22T18:20:38Z",
+      "kWhDelivered": 0.573
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-22 18:08:43.784084",
+      "connectionTime": "2019-05-22T18:08:44Z",
+      "disconnectTime": "2019-05-23T00:09:39Z",
+      "kWhDelivered": 35.885
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-22 18:27:07.661175",
+      "connectionTime": "2019-05-22T18:27:08Z",
+      "disconnectTime": "2019-05-22T21:38:03Z",
+      "kWhDelivered": 0.972
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-22 19:20:18.083496",
+      "connectionTime": "2019-05-22T19:20:18Z",
+      "disconnectTime": "2019-05-22T20:39:27Z",
+      "kWhDelivered": 4.066
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-22 19:36:36.021327",
+      "connectionTime": "2019-05-22T19:36:36Z",
+      "disconnectTime": "2019-05-22T22:50:09Z",
+      "kWhDelivered": 2.255
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-22 19:46:26.469865",
+      "connectionTime": "2019-05-22T19:46:26Z",
+      "disconnectTime": "2019-05-23T02:54:04Z",
+      "kWhDelivered": 11.39
+    },
+    {
+      "sessionID": "2_39_125_559_2019-05-22 20:12:03.899712",
+      "connectionTime": "2019-05-22T20:12:04Z",
+      "disconnectTime": "2019-05-22T21:55:58Z",
+      "kWhDelivered": 0.893
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-22 20:44:22.407170",
+      "connectionTime": "2019-05-22T20:44:22Z",
+      "disconnectTime": "2019-05-23T04:41:04Z",
+      "kWhDelivered": 1.466
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-22 23:18:47.007587",
+      "connectionTime": "2019-05-22T23:18:47Z",
+      "disconnectTime": "2019-05-23T00:58:17Z",
+      "kWhDelivered": 9.826
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-23 00:58:25.099254",
+      "connectionTime": "2019-05-23T00:58:25Z",
+      "disconnectTime": "2019-05-23T01:27:07Z",
+      "kWhDelivered": 0.777
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-23 01:35:36.407581",
+      "connectionTime": "2019-05-23T01:35:36Z",
+      "disconnectTime": "2019-05-23T04:02:00Z",
+      "kWhDelivered": 5.472
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-23 03:04:33.892425",
+      "connectionTime": "2019-05-23T03:04:34Z",
+      "disconnectTime": "2019-05-23T04:32:39Z",
+      "kWhDelivered": 0.887
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-23 04:15:43.425460",
+      "connectionTime": "2019-05-23T04:15:43Z",
+      "disconnectTime": "2019-05-23T05:32:54Z",
+      "kWhDelivered": 4.17
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-23 06:29:36.035060",
+      "connectionTime": "2019-05-23T06:29:36Z",
+      "disconnectTime": "2019-05-23T06:57:19Z",
+      "kWhDelivered": 0.807
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-23 14:24:19.406776",
+      "connectionTime": "2019-05-23T14:24:19Z",
+      "disconnectTime": "2019-05-23T14:31:02Z",
+      "kWhDelivered": 0.699
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-23 14:48:29.902133",
+      "connectionTime": "2019-05-23T14:48:30Z",
+      "disconnectTime": "2019-05-23T23:47:19Z",
+      "kWhDelivered": 0.859
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-23 15:02:36.659581",
+      "connectionTime": "2019-05-23T15:02:37Z",
+      "disconnectTime": "2019-05-24T01:54:05Z",
+      "kWhDelivered": 1.015
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-23 15:04:54.263543",
+      "connectionTime": "2019-05-23T15:04:54Z",
+      "disconnectTime": "2019-05-23T23:52:30Z",
+      "kWhDelivered": 1.104
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-23 15:11:29.192804",
+      "connectionTime": "2019-05-23T15:11:49Z",
+      "disconnectTime": "2019-05-24T00:23:30Z",
+      "kWhDelivered": 4.747
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-23 15:18:52.656229",
+      "connectionTime": "2019-05-23T15:18:53Z",
+      "disconnectTime": "2019-05-23T19:05:52Z",
+      "kWhDelivered": 0.892
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-23 15:20:29.489892",
+      "connectionTime": "2019-05-23T15:20:29Z",
+      "disconnectTime": "2019-05-24T01:43:27Z",
+      "kWhDelivered": 5.275
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-23 15:30:03.989162",
+      "connectionTime": "2019-05-23T15:30:04Z",
+      "disconnectTime": "2019-05-23T17:53:17Z",
+      "kWhDelivered": 8.28
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-23 15:36:15.498781",
+      "connectionTime": "2019-05-23T15:36:15Z",
+      "disconnectTime": "2019-05-23T22:32:16Z",
+      "kWhDelivered": 10.299
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-23 15:46:00.336294",
+      "connectionTime": "2019-05-23T15:46:00Z",
+      "disconnectTime": "2019-05-24T02:28:13Z",
+      "kWhDelivered": 4.583
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-23 15:52:17.511259",
+      "connectionTime": "2019-05-23T15:52:18Z",
+      "disconnectTime": "2019-05-23T21:34:00Z",
+      "kWhDelivered": 0.717
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-23 15:56:03.604498",
+      "connectionTime": "2019-05-23T15:56:04Z",
+      "disconnectTime": "2019-05-24T00:26:39Z",
+      "kWhDelivered": 15.715
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-23 16:13:09.550787",
+      "connectionTime": "2019-05-23T16:13:10Z",
+      "disconnectTime": "2019-05-24T02:09:22Z",
+      "kWhDelivered": 11.757
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-23 16:13:19.314484",
+      "connectionTime": "2019-05-23T16:13:19Z",
+      "disconnectTime": "2019-05-24T00:50:01Z",
+      "kWhDelivered": 19.963
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-23 16:16:58.316615",
+      "connectionTime": "2019-05-23T16:16:58Z",
+      "disconnectTime": "2019-05-24T01:34:47Z",
+      "kWhDelivered": 7.986
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-23 16:18:45.048941",
+      "connectionTime": "2019-05-23T16:18:45Z",
+      "disconnectTime": "2019-05-28T15:13:05Z",
+      "kWhDelivered": 1.084
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-23 16:28:38.027363",
+      "connectionTime": "2019-05-23T16:28:38Z",
+      "disconnectTime": "2019-05-24T01:04:44Z",
+      "kWhDelivered": 21.608
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-23 16:34:27.798269",
+      "connectionTime": "2019-05-23T16:34:28Z",
+      "disconnectTime": "2019-05-23T23:04:29Z",
+      "kWhDelivered": 13.898
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-23 17:09:08.001476",
+      "connectionTime": "2019-05-23T17:09:08Z",
+      "disconnectTime": "2019-05-24T00:42:07Z",
+      "kWhDelivered": 12.219
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-23 17:33:25.610476",
+      "connectionTime": "2019-05-23T17:33:26Z",
+      "disconnectTime": "2019-05-24T00:01:24Z",
+      "kWhDelivered": 10.024
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-23 17:34:30.645103",
+      "connectionTime": "2019-05-23T17:34:31Z",
+      "disconnectTime": "2019-05-24T08:35:02Z",
+      "kWhDelivered": 0.762
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-23 17:36:10.196176",
+      "connectionTime": "2019-05-23T17:36:10Z",
+      "disconnectTime": "2019-05-24T00:30:00Z",
+      "kWhDelivered": 4.137
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-23 17:41:39.792886",
+      "connectionTime": "2019-05-23T17:41:40Z",
+      "disconnectTime": "2019-05-24T02:11:48Z",
+      "kWhDelivered": 3.918
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-23 17:42:00.511775",
+      "connectionTime": "2019-05-23T17:42:01Z",
+      "disconnectTime": "2019-05-24T03:02:23Z",
+      "kWhDelivered": 1.636
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-23 18:20:11.964485",
+      "connectionTime": "2019-05-23T18:20:12Z",
+      "disconnectTime": "2019-05-23T23:38:32Z",
+      "kWhDelivered": 11.484
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-23 18:55:04.212310",
+      "connectionTime": "2019-05-23T18:55:04Z",
+      "disconnectTime": "2019-05-24T07:03:47Z",
+      "kWhDelivered": 1.861
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-23 19:06:03.431899",
+      "connectionTime": "2019-05-23T19:06:03Z",
+      "disconnectTime": "2019-05-23T20:20:09Z",
+      "kWhDelivered": 0.901
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-23 19:12:48.812664",
+      "connectionTime": "2019-05-23T19:12:49Z",
+      "disconnectTime": "2019-05-24T08:14:07Z",
+      "kWhDelivered": 16.222
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-23 19:14:31.638715",
+      "connectionTime": "2019-05-23T19:14:32Z",
+      "disconnectTime": "2019-05-24T00:13:45Z",
+      "kWhDelivered": 13.842
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-23 19:32:29.474376",
+      "connectionTime": "2019-05-23T19:32:29Z",
+      "disconnectTime": "2019-05-24T01:50:47Z",
+      "kWhDelivered": 6.574
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-23 19:44:52.390374",
+      "connectionTime": "2019-05-23T19:44:52Z",
+      "disconnectTime": "2019-05-23T23:55:15Z",
+      "kWhDelivered": 17.746
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-23 19:56:29.914102",
+      "connectionTime": "2019-05-23T19:56:30Z",
+      "disconnectTime": "2019-05-24T01:26:20Z",
+      "kWhDelivered": 6.07
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-23 20:20:32.192160",
+      "connectionTime": "2019-05-23T20:20:32Z",
+      "disconnectTime": "2019-05-23T20:58:42Z",
+      "kWhDelivered": 0.8686272222222221
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-23 20:32:37.741418",
+      "connectionTime": "2019-05-23T20:32:38Z",
+      "disconnectTime": "2019-05-24T00:06:27Z",
+      "kWhDelivered": 0.878
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-23 20:32:49.087344",
+      "connectionTime": "2019-05-23T20:32:49Z",
+      "disconnectTime": "2019-05-23T22:52:19Z",
+      "kWhDelivered": 0.916
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-23 20:52:28.806392",
+      "connectionTime": "2019-05-23T20:52:29Z",
+      "disconnectTime": "2019-05-23T23:09:27Z",
+      "kWhDelivered": 14.533
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-23 21:51:26.906182",
+      "connectionTime": "2019-05-23T21:51:27Z",
+      "disconnectTime": "2019-05-24T02:02:47Z",
+      "kWhDelivered": 0.734
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-23 22:45:36.757414",
+      "connectionTime": "2019-05-23T22:45:38Z",
+      "disconnectTime": "2019-05-23T23:49:55Z",
+      "kWhDelivered": 3.418
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-23 23:35:48.122959",
+      "connectionTime": "2019-05-23T23:35:48Z",
+      "disconnectTime": "2019-05-24T01:38:57Z",
+      "kWhDelivered": 6.188
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-24 00:28:01.028040",
+      "connectionTime": "2019-05-24T00:28:01Z",
+      "disconnectTime": "2019-05-24T02:41:33Z",
+      "kWhDelivered": 7.884
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-24 00:51:38.507040",
+      "connectionTime": "2019-05-24T00:51:38Z",
+      "disconnectTime": "2019-05-24T04:43:06Z",
+      "kWhDelivered": 5.679
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-24 01:02:16.328999",
+      "connectionTime": "2019-05-24T01:02:16Z",
+      "disconnectTime": "2019-05-24T05:13:53Z",
+      "kWhDelivered": 3.231
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-24 01:12:59.981601",
+      "connectionTime": "2019-05-24T01:13:00Z",
+      "disconnectTime": "2019-05-24T04:08:30Z",
+      "kWhDelivered": 4.892
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-24 01:40:04.615587",
+      "connectionTime": "2019-05-24T01:40:05Z",
+      "disconnectTime": "2019-05-24T02:03:55Z",
+      "kWhDelivered": 0.686
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-24 01:51:29.723054",
+      "connectionTime": "2019-05-24T01:51:30Z",
+      "disconnectTime": "2019-05-24T03:39:09Z",
+      "kWhDelivered": 7.651
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-24 13:23:46.216987",
+      "connectionTime": "2019-05-24T13:23:46Z",
+      "disconnectTime": "2019-05-24T14:25:54Z",
+      "kWhDelivered": 3.403
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-24 13:31:28.010296",
+      "connectionTime": "2019-05-24T13:31:28Z",
+      "disconnectTime": "2019-05-24T19:32:22Z",
+      "kWhDelivered": 18.982
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-24 14:43:29.444159",
+      "connectionTime": "2019-05-24T14:43:29Z",
+      "disconnectTime": "2019-05-25T00:03:25Z",
+      "kWhDelivered": 20.895
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-24 15:09:37.525706",
+      "connectionTime": "2019-05-24T15:09:38Z",
+      "disconnectTime": "2019-05-24T17:24:59Z",
+      "kWhDelivered": 5.661
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-24 15:10:59.486688",
+      "connectionTime": "2019-05-24T15:11:15Z",
+      "disconnectTime": "2019-05-24T23:07:36Z",
+      "kWhDelivered": 5.426
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-24 15:23:51.831816",
+      "connectionTime": "2019-05-24T15:23:52Z",
+      "disconnectTime": "2019-05-25T00:17:10Z",
+      "kWhDelivered": 25.814
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-24 15:28:03.555070",
+      "connectionTime": "2019-05-24T15:28:04Z",
+      "disconnectTime": "2019-05-25T01:41:30Z",
+      "kWhDelivered": 4.86
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-24 15:31:23.684115",
+      "connectionTime": "2019-05-24T15:31:24Z",
+      "disconnectTime": "2019-05-25T02:25:10Z",
+      "kWhDelivered": 13.485
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-24 15:35:18.969655",
+      "connectionTime": "2019-05-24T15:35:19Z",
+      "disconnectTime": "2019-05-24T23:48:33Z",
+      "kWhDelivered": 12.465
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-24 15:51:16.145378",
+      "connectionTime": "2019-05-24T15:51:16Z",
+      "disconnectTime": "2019-05-25T00:13:19Z",
+      "kWhDelivered": 5.964
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-24 15:53:39.123597",
+      "connectionTime": "2019-05-24T15:53:39Z",
+      "disconnectTime": "2019-05-25T02:16:13Z",
+      "kWhDelivered": 5.272
+    },
+    {
+      "sessionID": "2_39_88_438_2019-05-24 16:12:06.414103",
+      "connectionTime": "2019-05-24T16:12:06Z",
+      "disconnectTime": "2019-05-24T23:02:44Z",
+      "kWhDelivered": 0.783
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-24 16:20:02.103741",
+      "connectionTime": "2019-05-24T16:20:02Z",
+      "disconnectTime": "2019-05-24T23:20:18Z",
+      "kWhDelivered": 4.241
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-24 16:25:34.930928",
+      "connectionTime": "2019-05-24T16:25:35Z",
+      "disconnectTime": "2019-05-25T00:51:41Z",
+      "kWhDelivered": 0.938
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-24 16:29:25.871680",
+      "connectionTime": "2019-05-24T16:29:26Z",
+      "disconnectTime": "2019-05-24T20:33:25Z",
+      "kWhDelivered": 6.328
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-24 16:46:54.559329",
+      "connectionTime": "2019-05-24T16:46:55Z",
+      "disconnectTime": "2019-05-24T22:58:19Z",
+      "kWhDelivered": 29.728
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-24 16:49:45.125888",
+      "connectionTime": "2019-05-24T16:49:45Z",
+      "disconnectTime": "2019-05-25T02:41:59Z",
+      "kWhDelivered": 5.727
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-24 16:51:28.814761",
+      "connectionTime": "2019-05-24T16:51:29Z",
+      "disconnectTime": "2019-05-25T01:22:43Z",
+      "kWhDelivered": 15.595
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-24 16:59:22.025629",
+      "connectionTime": "2019-05-24T16:59:22Z",
+      "disconnectTime": "2019-05-25T01:03:33Z",
+      "kWhDelivered": 11.259
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-24 17:05:01.440180",
+      "connectionTime": "2019-05-24T17:05:01Z",
+      "disconnectTime": "2019-05-24T23:13:45Z",
+      "kWhDelivered": 14.042
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-24 18:42:03.983361",
+      "connectionTime": "2019-05-24T18:42:04Z",
+      "disconnectTime": "2019-05-24T22:38:19Z",
+      "kWhDelivered": 2.197
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-24 19:15:12.396217",
+      "connectionTime": "2019-05-24T19:15:12Z",
+      "disconnectTime": "2019-05-25T00:17:59Z",
+      "kWhDelivered": 6.467
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-24 19:15:38.405896",
+      "connectionTime": "2019-05-24T19:15:38Z",
+      "disconnectTime": "2019-05-24T23:26:00Z",
+      "kWhDelivered": 0.893
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-24 19:38:36.344516",
+      "connectionTime": "2019-05-24T19:38:36Z",
+      "disconnectTime": "2019-05-24T22:29:21Z",
+      "kWhDelivered": 5.795
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-24 19:51:23.690199",
+      "connectionTime": "2019-05-24T19:51:24Z",
+      "disconnectTime": "2019-05-25T09:05:11Z",
+      "kWhDelivered": 0.916
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-24 19:56:42.968188",
+      "connectionTime": "2019-05-24T19:56:43Z",
+      "disconnectTime": "2019-05-25T01:02:03Z",
+      "kWhDelivered": 5.689
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-24 20:03:06.677096",
+      "connectionTime": "2019-05-24T20:03:07Z",
+      "disconnectTime": "2019-05-24T22:58:13Z",
+      "kWhDelivered": 2.004
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-24 20:55:11.394554",
+      "connectionTime": "2019-05-24T20:55:11Z",
+      "disconnectTime": "2019-05-25T05:04:02Z",
+      "kWhDelivered": 4.698
+    },
+    {
+      "sessionID": "2_39_83_386_2019-05-25 03:20:40.071826",
+      "connectionTime": "2019-05-25T03:20:40Z",
+      "disconnectTime": "2019-05-25T05:30:03Z",
+      "kWhDelivered": 5.694
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-25 06:07:31.077102",
+      "connectionTime": "2019-05-25T06:07:31Z",
+      "disconnectTime": "2019-05-25T19:08:28Z",
+      "kWhDelivered": 11.504
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-25 16:34:19.551439",
+      "connectionTime": "2019-05-25T16:34:20Z",
+      "disconnectTime": "2019-05-25T17:56:14Z",
+      "kWhDelivered": 4.56
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-25 17:22:57.599111",
+      "connectionTime": "2019-05-25T17:22:58Z",
+      "disconnectTime": "2019-05-25T19:13:22Z",
+      "kWhDelivered": 2.011
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-25 18:04:47.110961",
+      "connectionTime": "2019-05-25T18:04:47Z",
+      "disconnectTime": "2019-05-25T20:08:55Z",
+      "kWhDelivered": 14.194
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-25 19:41:14.806046",
+      "connectionTime": "2019-05-25T19:41:15Z",
+      "disconnectTime": "2019-05-25T22:07:35Z",
+      "kWhDelivered": 8.138
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-25 19:44:55.020712",
+      "connectionTime": "2019-05-25T19:44:55Z",
+      "disconnectTime": "2019-05-26T07:36:32Z",
+      "kWhDelivered": 2.242
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-25 22:24:07.725014",
+      "connectionTime": "2019-05-25T22:24:08Z",
+      "disconnectTime": "2019-05-25T23:37:22Z",
+      "kWhDelivered": 3.065
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-25 23:50:42.993780",
+      "connectionTime": "2019-05-25T23:50:43Z",
+      "disconnectTime": "2019-05-27T18:11:02Z",
+      "kWhDelivered": 50.229
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-26 00:38:24.422338",
+      "connectionTime": "2019-05-26T00:38:32Z",
+      "disconnectTime": "2019-05-26T00:44:07Z",
+      "kWhDelivered": 0.624
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-26 05:27:47.511232",
+      "connectionTime": "2019-05-26T05:27:48Z",
+      "disconnectTime": "2019-05-26T14:37:51Z",
+      "kWhDelivered": 15.368
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-26 11:33:54.353520",
+      "connectionTime": "2019-05-26T11:33:54Z",
+      "disconnectTime": "2019-05-26T15:46:34Z",
+      "kWhDelivered": 26.0
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-26 14:50:50.510951",
+      "connectionTime": "2019-05-26T14:50:51Z",
+      "disconnectTime": "2019-05-26T17:06:16Z",
+      "kWhDelivered": 4.244
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-26 16:51:07.045703",
+      "connectionTime": "2019-05-26T16:51:07Z",
+      "disconnectTime": "2019-05-26T18:27:12Z",
+      "kWhDelivered": 10.667
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-26 21:08:30.823023",
+      "connectionTime": "2019-05-26T21:08:31Z",
+      "disconnectTime": "2019-05-26T22:04:24Z",
+      "kWhDelivered": 3.049
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-26 21:55:18.916869",
+      "connectionTime": "2019-05-26T21:55:19Z",
+      "disconnectTime": "2019-05-27T06:19:04Z",
+      "kWhDelivered": 43.836
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-26 22:33:48.951010",
+      "connectionTime": "2019-05-26T22:33:49Z",
+      "disconnectTime": "2019-05-26T23:34:26Z",
+      "kWhDelivered": 3.242
+    },
+    {
+      "sessionID": "2_39_83_386_2019-05-26 23:42:54.104986",
+      "connectionTime": "2019-05-26T23:43:08Z",
+      "disconnectTime": "2019-05-27T01:41:29Z",
+      "kWhDelivered": 4.403
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-27 00:14:54.477838",
+      "connectionTime": "2019-05-27T00:14:54Z",
+      "disconnectTime": "2019-05-27T02:53:08Z",
+      "kWhDelivered": 0.911
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-27 04:53:23.266881",
+      "connectionTime": "2019-05-27T04:53:23Z",
+      "disconnectTime": "2019-05-27T20:45:27Z",
+      "kWhDelivered": 52.366
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-27 06:12:55.092767",
+      "connectionTime": "2019-05-27T06:12:55Z",
+      "disconnectTime": "2019-05-27T06:46:25Z",
+      "kWhDelivered": 0.863
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-27 14:59:06.605356",
+      "connectionTime": "2019-05-27T14:59:07Z",
+      "disconnectTime": "2019-05-27T16:24:13Z",
+      "kWhDelivered": 4.552
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-27 15:55:24.883032",
+      "connectionTime": "2019-05-27T15:55:25Z",
+      "disconnectTime": "2019-05-27T19:44:42Z",
+      "kWhDelivered": 6.602
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-27 16:34:36.401212",
+      "connectionTime": "2019-05-27T16:34:36Z",
+      "disconnectTime": "2019-05-28T01:01:42Z",
+      "kWhDelivered": 15.517
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-27 16:43:13.582607",
+      "connectionTime": "2019-05-27T16:43:14Z",
+      "disconnectTime": "2019-05-27T20:05:43Z",
+      "kWhDelivered": 6.499
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-27 17:51:44.532836",
+      "connectionTime": "2019-05-27T17:51:45Z",
+      "disconnectTime": "2019-05-28T01:33:40Z",
+      "kWhDelivered": 25.899
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-27 18:19:30.662603",
+      "connectionTime": "2019-05-27T18:19:31Z",
+      "disconnectTime": "2019-05-27T19:47:35Z",
+      "kWhDelivered": 9.674
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-27 19:55:12.276202",
+      "connectionTime": "2019-05-27T19:55:12Z",
+      "disconnectTime": "2019-05-27T20:44:12Z",
+      "kWhDelivered": 2.651
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-27 22:58:41.295898",
+      "connectionTime": "2019-05-27T22:58:41Z",
+      "disconnectTime": "2019-05-28T00:45:29Z",
+      "kWhDelivered": 4.858
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-27 23:38:15.964803",
+      "connectionTime": "2019-05-27T23:38:16Z",
+      "disconnectTime": "2019-05-28T01:31:02Z",
+      "kWhDelivered": 5.878
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-28 01:12:35.737167",
+      "connectionTime": "2019-05-28T01:12:36Z",
+      "disconnectTime": "2019-05-28T01:53:31Z",
+      "kWhDelivered": 2.3
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-28 01:22:40.607361",
+      "connectionTime": "2019-05-28T01:22:41Z",
+      "disconnectTime": "2019-05-29T01:00:00Z",
+      "kWhDelivered": 11.689
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-28 13:39:29.391422",
+      "connectionTime": "2019-05-28T13:39:29Z",
+      "disconnectTime": "2019-05-28T19:38:21Z",
+      "kWhDelivered": 18.373
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-28 13:49:07.498167",
+      "connectionTime": "2019-05-28T13:49:22Z",
+      "disconnectTime": "2019-05-29T01:51:29Z",
+      "kWhDelivered": 3.887
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-28 14:24:40.939818",
+      "connectionTime": "2019-05-28T14:24:41Z",
+      "disconnectTime": "2019-05-28T15:19:55Z",
+      "kWhDelivered": 0.863
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-28 15:07:24.230536",
+      "connectionTime": "2019-05-28T15:07:36Z",
+      "disconnectTime": "2019-05-29T00:10:11Z",
+      "kWhDelivered": 7.507
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-28 15:13:40.132407",
+      "connectionTime": "2019-05-28T15:13:40Z",
+      "disconnectTime": "2019-05-29T02:59:10Z",
+      "kWhDelivered": 12.694
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-28 15:14:43.486918",
+      "connectionTime": "2019-05-28T15:14:43Z",
+      "disconnectTime": "2019-05-28T23:35:55Z",
+      "kWhDelivered": 4.681
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-28 15:26:10.682504",
+      "connectionTime": "2019-05-28T15:26:11Z",
+      "disconnectTime": "2019-05-28T19:46:39Z",
+      "kWhDelivered": 14.235
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-28 15:52:54.767409",
+      "connectionTime": "2019-05-28T15:52:55Z",
+      "disconnectTime": "2019-05-29T00:16:30Z",
+      "kWhDelivered": 18.029
+    },
+    {
+      "sessionID": "2_39_127_19_2019-05-28 15:55:11.337275",
+      "connectionTime": "2019-05-28T15:55:11Z",
+      "disconnectTime": "2019-05-29T00:54:40Z",
+      "kWhDelivered": 8.198
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-28 15:56:03.105593",
+      "connectionTime": "2019-05-28T15:56:03Z",
+      "disconnectTime": "2019-05-28T18:17:20Z",
+      "kWhDelivered": 2.093
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-28 16:04:50.616898",
+      "connectionTime": "2019-05-28T16:04:51Z",
+      "disconnectTime": "2019-05-29T00:09:05Z",
+      "kWhDelivered": 3.992
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-28 16:05:28.522192",
+      "connectionTime": "2019-05-28T16:05:29Z",
+      "disconnectTime": "2019-05-29T01:01:25Z",
+      "kWhDelivered": 18.482
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-28 16:05:42.681910",
+      "connectionTime": "2019-05-28T16:05:43Z",
+      "disconnectTime": "2019-05-29T04:01:44Z",
+      "kWhDelivered": 13.59
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-28 16:14:51.424235",
+      "connectionTime": "2019-05-28T16:14:51Z",
+      "disconnectTime": "2019-05-28T23:52:38Z",
+      "kWhDelivered": 7.613
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-28 16:20:27.416927",
+      "connectionTime": "2019-05-28T16:20:27Z",
+      "disconnectTime": "2019-05-28T17:10:43Z",
+      "kWhDelivered": 0.922
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-28 16:20:41.228372",
+      "connectionTime": "2019-05-28T16:20:41Z",
+      "disconnectTime": "2019-05-28T18:32:50Z",
+      "kWhDelivered": 1.033
+    },
+    {
+      "sessionID": "2_39_126_560_2019-05-28 16:30:00.092143",
+      "connectionTime": "2019-05-28T16:30:00Z",
+      "disconnectTime": "2019-05-29T03:00:58Z",
+      "kWhDelivered": 6.244
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-28 16:47:58.422522",
+      "connectionTime": "2019-05-28T16:47:58Z",
+      "disconnectTime": "2019-05-29T02:26:57Z",
+      "kWhDelivered": 0.964
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-28 16:55:37.026014",
+      "connectionTime": "2019-05-28T16:55:37Z",
+      "disconnectTime": "2019-05-28T23:37:22Z",
+      "kWhDelivered": 5.408
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-28 16:55:58.745410",
+      "connectionTime": "2019-05-28T16:55:59Z",
+      "disconnectTime": "2019-05-29T03:42:39Z",
+      "kWhDelivered": 0.868
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-28 16:56:18.791002",
+      "connectionTime": "2019-05-28T16:56:19Z",
+      "disconnectTime": "2019-05-28T19:32:42Z",
+      "kWhDelivered": 7.401
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-28 16:57:45.738179",
+      "connectionTime": "2019-05-28T16:57:46Z",
+      "disconnectTime": "2019-05-28T18:26:02Z",
+      "kWhDelivered": 0.947
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-28 17:00:52.299503",
+      "connectionTime": "2019-05-28T17:00:52Z",
+      "disconnectTime": "2019-05-29T01:54:07Z",
+      "kWhDelivered": 5.889
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-28 17:09:46.683352",
+      "connectionTime": "2019-05-28T17:09:47Z",
+      "disconnectTime": "2019-05-29T00:14:22Z",
+      "kWhDelivered": 43.937
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-28 17:14:37.670097",
+      "connectionTime": "2019-05-28T17:14:38Z",
+      "disconnectTime": "2019-05-29T02:15:57Z",
+      "kWhDelivered": 11.292
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-28 17:28:06.852484",
+      "connectionTime": "2019-05-28T17:28:07Z",
+      "disconnectTime": "2019-05-28T21:59:48Z",
+      "kWhDelivered": 0.958
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-28 17:44:21.539236",
+      "connectionTime": "2019-05-28T17:44:22Z",
+      "disconnectTime": "2019-05-29T00:57:47Z",
+      "kWhDelivered": 13.193
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-28 17:44:29.110820",
+      "connectionTime": "2019-05-28T17:44:29Z",
+      "disconnectTime": "2019-05-29T00:20:00Z",
+      "kWhDelivered": 13.23
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-28 17:46:22.339483",
+      "connectionTime": "2019-05-28T17:46:22Z",
+      "disconnectTime": "2019-05-29T03:39:51Z",
+      "kWhDelivered": 2.034
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-28 18:32:22.290086",
+      "connectionTime": "2019-05-28T18:32:22Z",
+      "disconnectTime": "2019-05-28T23:31:28Z",
+      "kWhDelivered": 17.757
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-28 20:07:54.729768",
+      "connectionTime": "2019-05-28T20:07:55Z",
+      "disconnectTime": "2019-05-28T22:55:20Z",
+      "kWhDelivered": 2.16
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-28 20:17:35.132805",
+      "connectionTime": "2019-05-28T20:17:35Z",
+      "disconnectTime": "2019-05-29T02:05:29Z",
+      "kWhDelivered": 0.864
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-28 20:28:58.880094",
+      "connectionTime": "2019-05-28T20:28:59Z",
+      "disconnectTime": "2019-05-29T01:38:20Z",
+      "kWhDelivered": 3.671
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-28 20:42:09.074371",
+      "connectionTime": "2019-05-28T20:42:09Z",
+      "disconnectTime": "2019-05-29T00:19:21Z",
+      "kWhDelivered": 0.923
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-29 00:37:35.949290",
+      "connectionTime": "2019-05-29T00:37:36Z",
+      "disconnectTime": "2019-05-29T01:58:43Z",
+      "kWhDelivered": 8.767
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-29 00:45:14.519887",
+      "connectionTime": "2019-05-29T00:45:15Z",
+      "disconnectTime": "2019-05-29T02:22:43Z",
+      "kWhDelivered": 7.871
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-29 02:16:08.150619",
+      "connectionTime": "2019-05-29T02:16:08Z",
+      "disconnectTime": "2019-05-29T04:26:58Z",
+      "kWhDelivered": 10.891
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-29 03:20:49.218304",
+      "connectionTime": "2019-05-29T03:20:49Z",
+      "disconnectTime": "2019-05-29T04:38:27Z",
+      "kWhDelivered": 7.428
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-29 13:28:15.888282",
+      "connectionTime": "2019-05-29T13:28:16Z",
+      "disconnectTime": "2019-05-29T18:53:03Z",
+      "kWhDelivered": 18.117
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-29 13:46:29.577510",
+      "connectionTime": "2019-05-29T13:46:30Z",
+      "disconnectTime": "2019-05-30T00:42:21Z",
+      "kWhDelivered": 4.55
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-29 14:08:08.460453",
+      "connectionTime": "2019-05-29T14:08:08Z",
+      "disconnectTime": "2019-05-29T21:20:34Z",
+      "kWhDelivered": 11.223
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-29 14:21:46.408099",
+      "connectionTime": "2019-05-29T14:21:46Z",
+      "disconnectTime": "2019-05-29T18:00:55Z",
+      "kWhDelivered": 5.063
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-29 15:06:59.639331",
+      "connectionTime": "2019-05-29T15:07:00Z",
+      "disconnectTime": "2019-05-29T15:20:59Z",
+      "kWhDelivered": 1.418
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-29 15:09:56.193465",
+      "connectionTime": "2019-05-29T15:09:56Z",
+      "disconnectTime": "2019-05-29T23:24:37Z",
+      "kWhDelivered": 10.931
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-29 15:14:16.950119",
+      "connectionTime": "2019-05-29T15:14:28Z",
+      "disconnectTime": "2019-05-29T23:49:26Z",
+      "kWhDelivered": 4.555
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-29 15:20:10.176565",
+      "connectionTime": "2019-05-29T15:20:10Z",
+      "disconnectTime": "2019-05-29T23:58:22Z",
+      "kWhDelivered": 11.928
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-29 15:21:43.314768",
+      "connectionTime": "2019-05-29T15:21:43Z",
+      "disconnectTime": "2019-05-30T05:57:59Z",
+      "kWhDelivered": 12.888
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-29 15:22:41.849691",
+      "connectionTime": "2019-05-29T15:22:42Z",
+      "disconnectTime": "2019-05-30T00:58:02Z",
+      "kWhDelivered": 1.051
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-29 15:28:00.669575",
+      "connectionTime": "2019-05-29T15:28:01Z",
+      "disconnectTime": "2019-05-30T03:02:14Z",
+      "kWhDelivered": 1.953
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-29 15:35:52.825021",
+      "connectionTime": "2019-05-29T15:35:53Z",
+      "disconnectTime": "2019-05-30T00:09:16Z",
+      "kWhDelivered": 7.403
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-29 15:36:56.225582",
+      "connectionTime": "2019-05-29T15:36:56Z",
+      "disconnectTime": "2019-05-29T21:21:37Z",
+      "kWhDelivered": 10.144
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-29 15:38:42.446331",
+      "connectionTime": "2019-05-29T15:38:42Z",
+      "disconnectTime": "2019-05-30T01:31:59Z",
+      "kWhDelivered": 12.142
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-29 15:42:39.686999",
+      "connectionTime": "2019-05-29T15:42:40Z",
+      "disconnectTime": "2019-05-29T19:45:13Z",
+      "kWhDelivered": 4.783
+    },
+    {
+      "sessionID": "2_39_128_18_2019-05-29 15:51:14.946113",
+      "connectionTime": "2019-05-29T15:51:15Z",
+      "disconnectTime": "2019-05-30T00:06:12Z",
+      "kWhDelivered": 5.713
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-29 15:56:22.262236",
+      "connectionTime": "2019-05-29T15:56:22Z",
+      "disconnectTime": "2019-05-29T23:17:16Z",
+      "kWhDelivered": 4.924
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-29 15:57:00.110717",
+      "connectionTime": "2019-05-29T15:57:00Z",
+      "disconnectTime": "2019-05-30T00:31:08Z",
+      "kWhDelivered": 18.481
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-29 16:09:40.080556",
+      "connectionTime": "2019-05-29T16:09:40Z",
+      "disconnectTime": "2019-05-29T23:25:47Z",
+      "kWhDelivered": 3.765
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-29 16:31:36.443316",
+      "connectionTime": "2019-05-29T16:31:36Z",
+      "disconnectTime": "2019-05-29T23:32:21Z",
+      "kWhDelivered": 20.828
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-29 16:38:55.325873",
+      "connectionTime": "2019-05-29T16:39:15Z",
+      "disconnectTime": "2019-05-30T01:07:52Z",
+      "kWhDelivered": 2.134
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-29 16:46:12.871094",
+      "connectionTime": "2019-05-29T16:46:13Z",
+      "disconnectTime": "2019-05-29T22:29:01Z",
+      "kWhDelivered": 0.964
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-29 16:51:58.255132",
+      "connectionTime": "2019-05-29T16:51:58Z",
+      "disconnectTime": "2019-05-30T00:09:39Z",
+      "kWhDelivered": 3.183
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-29 16:56:01.131138",
+      "connectionTime": "2019-05-29T16:56:01Z",
+      "disconnectTime": "2019-05-30T00:10:41Z",
+      "kWhDelivered": 11.041
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-29 17:17:55.928282",
+      "connectionTime": "2019-05-29T17:17:56Z",
+      "disconnectTime": "2019-05-30T02:13:03Z",
+      "kWhDelivered": 11.431
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-29 17:31:34.922437",
+      "connectionTime": "2019-05-29T17:31:35Z",
+      "disconnectTime": "2019-05-30T00:19:19Z",
+      "kWhDelivered": 5.863
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-29 17:36:34.469608",
+      "connectionTime": "2019-05-29T17:36:34Z",
+      "disconnectTime": "2019-05-30T01:24:28Z",
+      "kWhDelivered": 12.274
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-29 18:07:17.258351",
+      "connectionTime": "2019-05-29T18:07:17Z",
+      "disconnectTime": "2019-05-30T08:48:34Z",
+      "kWhDelivered": 2.077
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-29 19:36:15.524193",
+      "connectionTime": "2019-05-29T19:36:16Z",
+      "disconnectTime": "2019-05-29T23:19:22Z",
+      "kWhDelivered": 1.64
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-29 20:34:34.012162",
+      "connectionTime": "2019-05-29T20:34:34Z",
+      "disconnectTime": "2019-05-30T02:34:01Z",
+      "kWhDelivered": 1.036
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-29 22:19:14.408103",
+      "connectionTime": "2019-05-29T22:19:14Z",
+      "disconnectTime": "2019-05-29T23:44:08Z",
+      "kWhDelivered": 4.204
+    },
+    {
+      "sessionID": "2_39_126_20_2019-05-29 23:28:21.167806",
+      "connectionTime": "2019-05-29T23:28:21Z",
+      "disconnectTime": "2019-05-30T00:55:54Z",
+      "kWhDelivered": 5.019
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-29 23:52:44.180645",
+      "connectionTime": "2019-05-29T23:52:44Z",
+      "disconnectTime": "2019-05-30T01:04:43Z",
+      "kWhDelivered": 0.955
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-30 01:24:46.684799",
+      "connectionTime": "2019-05-30T01:24:57Z",
+      "disconnectTime": "2019-05-30T02:46:39Z",
+      "kWhDelivered": 4.807
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-30 01:31:48.006325",
+      "connectionTime": "2019-05-30T01:31:48Z",
+      "disconnectTime": "2019-05-30T03:37:58Z",
+      "kWhDelivered": 5.868
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-30 01:52:41.875590",
+      "connectionTime": "2019-05-30T01:52:42Z",
+      "disconnectTime": "2019-05-30T03:44:13Z",
+      "kWhDelivered": 4.547
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-30 04:12:37.823952",
+      "connectionTime": "2019-05-30T04:12:38Z",
+      "disconnectTime": "2019-05-30T15:16:03Z",
+      "kWhDelivered": 11.865
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-30 04:41:36.491061",
+      "connectionTime": "2019-05-30T04:41:36Z",
+      "disconnectTime": "2019-05-31T05:35:08Z",
+      "kWhDelivered": 5.62
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-30 13:19:38.761739",
+      "connectionTime": "2019-05-30T13:19:39Z",
+      "disconnectTime": "2019-05-30T14:46:36Z",
+      "kWhDelivered": 3.862
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-30 13:30:37.941718",
+      "connectionTime": "2019-05-30T13:30:38Z",
+      "disconnectTime": "2019-05-30T19:23:43Z",
+      "kWhDelivered": 18.594
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-30 14:20:07.507580",
+      "connectionTime": "2019-05-30T14:20:07Z",
+      "disconnectTime": "2019-05-31T00:16:45Z",
+      "kWhDelivered": 17.883
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-30 15:04:12.892610",
+      "connectionTime": "2019-05-30T15:04:13Z",
+      "disconnectTime": "2019-05-31T01:49:07Z",
+      "kWhDelivered": 7.916
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-30 15:07:18.632138",
+      "connectionTime": "2019-05-30T15:07:19Z",
+      "disconnectTime": "2019-05-30T23:06:38Z",
+      "kWhDelivered": 5.213
+    },
+    {
+      "sessionID": "2_39_79_383_2019-05-30 15:26:15.467938",
+      "connectionTime": "2019-05-30T15:26:15Z",
+      "disconnectTime": "2019-05-31T00:34:09Z",
+      "kWhDelivered": 9.406
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-30 15:26:46.799700",
+      "connectionTime": "2019-05-30T15:27:02Z",
+      "disconnectTime": "2019-05-30T23:09:24Z",
+      "kWhDelivered": 4.622
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-30 15:31:04.100970",
+      "connectionTime": "2019-05-30T15:31:04Z",
+      "disconnectTime": "2019-05-31T04:20:13Z",
+      "kWhDelivered": 13.697
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-30 15:43:49.564635",
+      "connectionTime": "2019-05-30T15:43:50Z",
+      "disconnectTime": "2019-05-30T18:46:05Z",
+      "kWhDelivered": 4.719
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-30 15:58:30.126870",
+      "connectionTime": "2019-05-30T15:58:30Z",
+      "disconnectTime": "2019-05-31T00:09:30Z",
+      "kWhDelivered": 9.864
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-30 16:09:29.202899",
+      "connectionTime": "2019-05-30T16:09:29Z",
+      "disconnectTime": "2019-05-31T00:11:50Z",
+      "kWhDelivered": 10.925
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-30 16:10:22.128992",
+      "connectionTime": "2019-05-30T16:10:22Z",
+      "disconnectTime": "2019-05-30T18:26:39Z",
+      "kWhDelivered": 12.592
+    },
+    {
+      "sessionID": "2_39_89_439_2019-05-30 16:19:48.206355",
+      "connectionTime": "2019-05-30T16:19:48Z",
+      "disconnectTime": "2019-05-31T00:47:26Z",
+      "kWhDelivered": 4.146
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-30 16:26:30.923068",
+      "connectionTime": "2019-05-30T16:26:31Z",
+      "disconnectTime": "2019-05-30T23:30:16Z",
+      "kWhDelivered": 6.758
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-30 16:32:14.769048",
+      "connectionTime": "2019-05-30T16:32:15Z",
+      "disconnectTime": "2019-05-31T00:19:57Z",
+      "kWhDelivered": 22.209
+    },
+    {
+      "sessionID": "2_39_91_441_2019-05-30 16:46:51.758963",
+      "connectionTime": "2019-05-30T16:46:52Z",
+      "disconnectTime": "2019-05-31T10:21:04Z",
+      "kWhDelivered": 17.948
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-30 16:48:39.120919",
+      "connectionTime": "2019-05-30T16:48:39Z",
+      "disconnectTime": "2019-05-31T00:53:58Z",
+      "kWhDelivered": 10.155
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-30 16:49:19.547743",
+      "connectionTime": "2019-05-30T16:49:20Z",
+      "disconnectTime": "2019-05-30T20:27:50Z",
+      "kWhDelivered": 13.933
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-30 16:55:23.355530",
+      "connectionTime": "2019-05-30T16:55:23Z",
+      "disconnectTime": "2019-05-31T00:30:01Z",
+      "kWhDelivered": 1.922
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-30 17:06:52.938574",
+      "connectionTime": "2019-05-30T17:06:53Z",
+      "disconnectTime": "2019-05-31T02:58:15Z",
+      "kWhDelivered": 9.489
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-30 17:08:51.654089",
+      "connectionTime": "2019-05-30T17:08:52Z",
+      "disconnectTime": "2019-05-31T01:03:35Z",
+      "kWhDelivered": 36.03
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-30 17:14:01.747072",
+      "connectionTime": "2019-05-30T17:14:02Z",
+      "disconnectTime": "2019-05-31T01:54:00Z",
+      "kWhDelivered": 11.258
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-30 17:16:42.580885",
+      "connectionTime": "2019-05-30T17:16:43Z",
+      "disconnectTime": "2019-05-31T01:14:00Z",
+      "kWhDelivered": 11.368
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-30 17:54:24.041844",
+      "connectionTime": "2019-05-30T17:54:24Z",
+      "disconnectTime": "2019-05-31T00:21:02Z",
+      "kWhDelivered": 10.905
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-30 19:58:46.961324",
+      "connectionTime": "2019-05-30T19:58:47Z",
+      "disconnectTime": "2019-05-31T01:57:39Z",
+      "kWhDelivered": 6.581
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-30 20:06:51.563394",
+      "connectionTime": "2019-05-30T20:06:52Z",
+      "disconnectTime": "2019-05-31T01:56:48Z",
+      "kWhDelivered": 1.404
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-30 20:12:32.512325",
+      "connectionTime": "2019-05-30T20:12:33Z",
+      "disconnectTime": "2019-05-30T23:35:06Z",
+      "kWhDelivered": 16.422
+    },
+    {
+      "sessionID": "2_39_79_378_2019-05-30 20:12:58.151899",
+      "connectionTime": "2019-05-30T20:12:58Z",
+      "disconnectTime": "2019-05-30T23:08:00Z",
+      "kWhDelivered": 1.237
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-30 20:14:51.865981",
+      "connectionTime": "2019-05-30T20:14:52Z",
+      "disconnectTime": "2019-05-30T23:50:26Z",
+      "kWhDelivered": 10.876
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-30 22:59:43.843070",
+      "connectionTime": "2019-05-30T22:59:44Z",
+      "disconnectTime": "2019-05-30T23:30:32Z",
+      "kWhDelivered": 0.842
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-31 00:34:16.029713",
+      "connectionTime": "2019-05-31T00:34:16Z",
+      "disconnectTime": "2019-05-31T01:07:10Z",
+      "kWhDelivered": 1.372
+    },
+    {
+      "sessionID": "2_39_78_362_2019-05-31 00:59:49.232421",
+      "connectionTime": "2019-05-31T00:59:49Z",
+      "disconnectTime": "2019-05-31T03:16:02Z",
+      "kWhDelivered": 3.753
+    },
+    {
+      "sessionID": "2_39_125_21_2019-05-31 13:29:07.286110",
+      "connectionTime": "2019-05-31T13:29:07Z",
+      "disconnectTime": "2019-05-31T19:21:06Z",
+      "kWhDelivered": 18.984
+    },
+    {
+      "sessionID": "2_39_78_364_2019-05-31 14:39:39.550877",
+      "connectionTime": "2019-05-31T14:39:40Z",
+      "disconnectTime": "2019-06-01T00:18:14Z",
+      "kWhDelivered": 4.085
+    },
+    {
+      "sessionID": "2_39_78_366_2019-05-31 14:43:55.808295",
+      "connectionTime": "2019-05-31T14:43:56Z",
+      "disconnectTime": "2019-06-01T00:21:20Z",
+      "kWhDelivered": 13.765
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-31 14:50:52.987379",
+      "connectionTime": "2019-05-31T14:50:53Z",
+      "disconnectTime": "2019-05-31T22:00:52Z",
+      "kWhDelivered": 8.329
+    },
+    {
+      "sessionID": "2_39_123_23_2019-05-31 15:02:11.447760",
+      "connectionTime": "2019-05-31T15:02:11Z",
+      "disconnectTime": "2019-05-31T23:44:04Z",
+      "kWhDelivered": 4.077
+    },
+    {
+      "sessionID": "2_39_92_442_2019-05-31 15:15:12.881459",
+      "connectionTime": "2019-05-31T15:15:13Z",
+      "disconnectTime": "2019-06-01T03:29:46Z",
+      "kWhDelivered": 37.383
+    },
+    {
+      "sessionID": "2_39_124_558_2019-05-31 15:16:42.605483",
+      "connectionTime": "2019-05-31T15:16:50Z",
+      "disconnectTime": "2019-05-31T22:59:46Z",
+      "kWhDelivered": 5.334
+    },
+    {
+      "sessionID": "2_39_131_30_2019-05-31 15:22:22.275196",
+      "connectionTime": "2019-05-31T15:22:22Z",
+      "disconnectTime": "2019-05-31T19:04:02Z",
+      "kWhDelivered": 4.395
+    },
+    {
+      "sessionID": "2_39_138_29_2019-05-31 15:27:37.231926",
+      "connectionTime": "2019-05-31T15:27:37Z",
+      "disconnectTime": "2019-06-01T00:36:54Z",
+      "kWhDelivered": 15.937
+    },
+    {
+      "sessionID": "2_39_89_25_2019-05-31 15:46:41.421428",
+      "connectionTime": "2019-05-31T15:46:41Z",
+      "disconnectTime": "2019-05-31T23:26:42Z",
+      "kWhDelivered": 3.659
+    },
+    {
+      "sessionID": "2_39_95_27_2019-05-31 15:51:17.398152",
+      "connectionTime": "2019-05-31T15:51:17Z",
+      "disconnectTime": "2019-06-01T00:00:20Z",
+      "kWhDelivered": 9.059
+    },
+    {
+      "sessionID": "2_39_130_31_2019-05-31 16:15:02.421753",
+      "connectionTime": "2019-05-31T16:15:02Z",
+      "disconnectTime": "2019-06-01T00:08:51Z",
+      "kWhDelivered": 7.129
+    },
+    {
+      "sessionID": "2_39_129_17_2019-05-31 16:18:24.467004",
+      "connectionTime": "2019-05-31T16:18:24Z",
+      "disconnectTime": "2019-06-01T00:31:12Z",
+      "kWhDelivered": 12.342
+    },
+    {
+      "sessionID": "2_39_91_437_2019-05-31 16:33:37.472216",
+      "connectionTime": "2019-05-31T16:33:37Z",
+      "disconnectTime": "2019-06-01T01:46:03Z",
+      "kWhDelivered": 10.89
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-31 16:42:59.905350",
+      "connectionTime": "2019-05-31T16:43:00Z",
+      "disconnectTime": "2019-05-31T19:24:50Z",
+      "kWhDelivered": 2.072
+    },
+    {
+      "sessionID": "2_39_79_377_2019-05-31 17:05:10.566405",
+      "connectionTime": "2019-05-31T17:05:11Z",
+      "disconnectTime": "2019-06-01T01:02:07Z",
+      "kWhDelivered": 1.158
+    },
+    {
+      "sessionID": "2_39_79_380_2019-05-31 17:06:58.226649",
+      "connectionTime": "2019-05-31T17:06:58Z",
+      "disconnectTime": "2019-06-01T00:07:42Z",
+      "kWhDelivered": 11.345
+    },
+    {
+      "sessionID": "2_39_78_363_2019-05-31 17:08:57.218129",
+      "connectionTime": "2019-05-31T17:08:57Z",
+      "disconnectTime": "2019-05-31T22:19:43Z",
+      "kWhDelivered": 20.887
+    },
+    {
+      "sessionID": "2_39_90_26_2019-05-31 17:10:12.816876",
+      "connectionTime": "2019-05-31T17:10:13Z",
+      "disconnectTime": "2019-06-01T02:16:24Z",
+      "kWhDelivered": 11.749
+    },
+    {
+      "sessionID": "2_39_88_24_2019-05-31 17:19:13.624612",
+      "connectionTime": "2019-05-31T17:19:14Z",
+      "disconnectTime": "2019-06-01T00:59:18Z",
+      "kWhDelivered": 2.036
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-31 17:39:15.993878",
+      "connectionTime": "2019-05-31T17:39:16Z",
+      "disconnectTime": "2019-05-31T20:56:03Z",
+      "kWhDelivered": 0.925
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-31 17:59:09.451509",
+      "connectionTime": "2019-05-31T17:59:09Z",
+      "disconnectTime": "2019-05-31T20:58:35Z",
+      "kWhDelivered": 6.092
+    },
+    {
+      "sessionID": "2_39_124_22_2019-05-31 18:01:13.015421",
+      "connectionTime": "2019-05-31T18:01:13Z",
+      "disconnectTime": "2019-06-01T09:59:24Z",
+      "kWhDelivered": 2.167
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-31 18:13:21.455008",
+      "connectionTime": "2019-05-31T18:13:21Z",
+      "disconnectTime": "2019-05-31T20:35:02Z",
+      "kWhDelivered": 5.829
+    },
+    {
+      "sessionID": "2_39_78_365_2019-05-31 18:24:40.762331",
+      "connectionTime": "2019-05-31T18:24:41Z",
+      "disconnectTime": "2019-06-01T01:08:36Z",
+      "kWhDelivered": 3.412
+    },
+    {
+      "sessionID": "2_39_79_381_2019-05-31 18:56:00.522524",
+      "connectionTime": "2019-05-31T18:56:01Z",
+      "disconnectTime": "2019-06-01T01:01:06Z",
+      "kWhDelivered": 3.239
+    },
+    {
+      "sessionID": "2_39_90_440_2019-05-31 19:03:42.445922",
+      "connectionTime": "2019-05-31T19:03:42Z",
+      "disconnectTime": "2019-06-01T07:44:59Z",
+      "kWhDelivered": 19.881
+    },
+    {
+      "sessionID": "2_39_78_367_2019-05-31 19:06:11.791688",
+      "connectionTime": "2019-05-31T19:06:12Z",
+      "disconnectTime": "2019-05-31T23:51:38Z",
+      "kWhDelivered": 23.451
+    },
+    {
+      "sessionID": "2_39_78_361_2019-05-31 19:23:02.802940",
+      "connectionTime": "2019-05-31T19:23:03Z",
+      "disconnectTime": "2019-06-01T00:16:43Z",
+      "kWhDelivered": 12.629
+    },
+    {
+      "sessionID": "2_39_92_436_2019-05-31 19:43:01.396683",
+      "connectionTime": "2019-05-31T19:43:01Z",
+      "disconnectTime": "2019-06-01T01:29:13Z",
+      "kWhDelivered": 0.824
+    },
+    {
+      "sessionID": "2_39_95_444_2019-05-31 19:49:20.745389",
+      "connectionTime": "2019-05-31T19:49:21Z",
+      "disconnectTime": "2019-06-01T00:30:03Z",
+      "kWhDelivered": 1.157
+    },
+    {
+      "sessionID": "2_39_79_382_2019-05-31 20:22:07.081114",
+      "connectionTime": "2019-05-31T20:22:07Z",
+      "disconnectTime": "2019-05-31T22:56:20Z",
+      "kWhDelivered": 1.863
+    },
+    {
+      "sessionID": "2_39_79_379_2019-05-31 21:35:02.327084",
+      "connectionTime": "2019-05-31T21:35:02Z",
+      "disconnectTime": "2019-05-31T22:16:01Z",
+      "kWhDelivered": 0.9096419444444445
+    },
+    {
+      "sessionID": "2_39_79_376_2019-05-31 22:12:41.349691",
+      "connectionTime": "2019-05-31T22:12:41Z",
+      "disconnectTime": "2019-05-31T22:47:02Z",
+      "kWhDelivered": 1.061
+    },
+    {
+      "sessionID": "2_39_78_360_2019-05-31 22:26:38.722885",
+      "connectionTime": "2019-05-31T22:26:39Z",
+      "disconnectTime": "2019-06-01T00:24:47Z",
+      "kWhDelivered": 5.933
+    },
+    {
+      "sessionID": "2_39_139_28_2019-05-31 22:41:51.375865",
+      "connectionTime": "2019-05-31T22:41:51Z",
+      "disconnectTime": "2019-05-31T23:54:06Z",
+      "kWhDelivered": 7.884
+    },
+    {
+      "sessionID": "2_39_131_30_2019-06-01 01:09:08.646704",
+      "connectionTime": "2019-06-01T01:09:09Z",
+      "disconnectTime": "2019-06-01T07:40:04Z",
+      "kWhDelivered": 10.541
+    },
+    {
+      "sessionID": "2_39_139_28_2019-06-01 04:32:22.861721",
+      "connectionTime": "2019-06-01T04:32:23Z",
+      "disconnectTime": "2019-06-01T16:27:29Z",
+      "kWhDelivered": 11.865
+    }
+  ]
+}

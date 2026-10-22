@@ -1,0 +1,37 @@
+KIỂM TRA MÃ IP_EP — BẢN EP-2026-10-22-v1.1.1
+
+KẾT LUẬN
+Công thức cập nhật chính trong gói gốc nhìn chung đúng. Những vấn đề cần sửa tập trung ở sự không khớp với giao thức trong bản thảo mới, dữ liệu đầu vào, thống kê và việc lưu/xuất kết quả. Bản sửa giữ cấu trúc MATLAB mô-đun, lưu từng lượt chạy và tiếp tục từ checkpoint.
+
+ĐÃ SỬA
+1. Gói cũ có 5 phương pháp và 5 cấu hình xác định. Bản mới có 9 phương pháp và 7 cấu hình: bổ sung EG, ba cấu hình IS và bài toán phi tuyến với kappa=100. Mỗi cấu hình xác định dùng 30 điểm đầu, tổng cộng 1.890 lượt.
+2. EG giải hai bài toán con. Tâm của bài toán con thứ hai là điểm x_k ban đầu, trong khi đối số thứ nhất là điểm trung gian w_k. Hai vị trí này đã được tách rõ trong hàm map.
+3. Bổ sung dữ liệu sạc quan sát thực đã xác định nguồn: 964 bản ghi đầu vào, còn 870 phiên trên 31 ngày sau lọc. Chạy đầy đủ có thêm 279 lượt EV, tổng 2.169 lượt. Không cần tài khoản hay tải dữ liệu khi chạy cấu hình mặc định.
+4. Không còn bỏ qua âm thầm thí nghiệm EV khi thiếu hoặc rỗng dữ liệu thật. Dữ liệu giả chỉ dùng kiểm tra phần mềm.
+5. Bảng thống kê dữ liệu sử dụng thông tin nguồn và số đếm đã lưu cùng lần chạy. Thay đổi tệp dữ liệu sau đó không làm thay đổi nguồn mô tả của kết quả cũ.
+6. Không loại âm thầm NaN/Inf khỏi thống kê. Số lượt thất bại và các thống kê không xác định được thể hiện rõ. Điều kiện tính tỷ số số vòng lặp và tỷ số thời gian được kiểm tra riêng.
+7. Kiểm tra rõ bước dương, quán tính không âm, điều kiện tham số của định lý và bước dùng tính residual. Sửa trường hợp bản ghi trùng đầu tiên bị lỗi làm mất bản ghi hợp lệ phía sau; kiểm tra đầy đủ phân trang và số lượng khi tải API.
+8. Cập nhật các bảng, hình và bộ đếm theo bản thảo mới. Sau K bước, phương pháp một bài toán con dùng tổng 2K+1 lần giải nếu tính cả residual; EG dùng 3K+1. Bảng báo median [IQR], với IQR=Q3-Q1.
+9. Thêm dấu nhận diện từ toàn bộ mã MATLAB vào checkpoint để mã thay đổi không vô tình dùng lại kết quả cũ.
+
+ĐÃ KIỂM TRA ĐẾN ĐÂU?
+- MISS_HIT đã phân tích cả 44 tệp MATLAB, không báo lỗi.
+- Đối chiếu độc lập bằng Python: 615 nghiệm bài toán phi tuyến gốc; 518 nghiệm phi tuyến có trọng số và tâm khác đối số thứ nhất; 400 hàng chiếu capped-simplex; 100 QP nhỏ; 25 QP của bifunction toàn phương với tâm riêng.
+- Sai số chuẩn hóa nghiệm phi tuyến lớn nhất dưới 1e-12; sai lệch tọa độ phép chiếu dưới 2.4e-13. QP đối chiếu có sai lệch tương đối hàm mục tiêu tối đa 2.6e-11. Chi tiết trong VALIDATION.md.
+- Kiểm tra độc lập quy trình lọc dữ liệu cho đúng 870 phiên/31 ngày.
+- Môi trường kiểm tra không có MATLAB/Octave. Chưa chạy EP_RUN_CHECKS hoặc toàn bộ thí nghiệm bằng MATLAB, chưa xác nhận thời gian thực thi hoặc mức cải thiện tốc độ trên máy của tác giả. Các kiểm tra Python xác nhận công thức số, không thay thế lần chạy MATLAB.
+
+CÁCH CHẠY
+Giải nén vào thư mục mới. Đặt Current Folder của MATLAB là thư mục IP_EP, rồi chạy:
+
+RUN_ALL
+
+RUN_ALL tự chạy thiết lập, EP_RUN_CHECKS và EP_RUN_PUBLICATION theo thứ tự. Nếu bộ kiểm tra hoàn tất, chương trình in các dòng PASS rồi bắt đầu tạo kết quả thật trên máy. Gói dùng MATLAB cơ bản với JVM tiêu chuẩn; không cần Optimization Toolbox, CVX hoặc MOSEK. Parallel Computing Toolbox chỉ cần khi chủ động bật chạy song song.
+
+EP_STATUS xem tiến độ. Chạy lại EP_RUN_PUBLICATION với cùng cấu hình để tiếp tục những lượt còn thiếu. Kết quả được lưu trong results_publication. Không ghép các checkpoint của gói cũ vào bản mới. Mã nguồn hoặc giao thức thay đổi sẽ khiến checkpoint không tương thích phải tính lại.
+
+EP_RUN_SMOKE là kiểm tra ngắn, giới hạn 200 bước và có EV giả, lưu riêng results_smoke. Trường hợp chạm giới hạn trong smoke không phải kết quả thí nghiệm chính.
+
+EP_EXPORT dựng lại bảng/hình từ checkpoint. Chạy EP_COPY_TO_MANUSCRIPT nếu bản thảo nằm trong thư mục manuscript cạnh IP_EP; nếu ở nơi khác, truyền hai đường dẫn thật vào EP_COPY_TO_MANUSCRIPT(results_dir, manuscript_dir). Lệnh sao chép kiểm tra tất cả lượt đã hoàn tất và không có lỗi bộ giải/chứng chỉ; các trường hợp chạm giới hạn vẫn được báo đúng trạng thái.
+
+Chỉ dùng số liệu và thời gian do lần chạy MATLAB thực sự tạo ra để điền vào bài. Tính đúng của công thức và số vòng lặp giảm ở một cấu hình không tự động chứng minh phương pháp luôn nhanh hơn NM-fast hay EG.

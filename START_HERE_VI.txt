@@ -1,0 +1,71 @@
+GÓI MATLAB ĐẦY ĐỦ — IP_EP
+Phiên bản EP-2026-10-22-v1.1.1
+
+CHẠY TỪ ĐẦU
+1. Giải nén toàn bộ IP_EP_MATLAB_FULL.zip.
+2. Mở MATLAB. Đặt Current Folder là thư mục IP_EP vừa giải nén,
+   nơi có RUN_ALL.m, EP_CONFIG.m, thư mục +ep và thư mục data.
+3. Trong Command Window, gõ:
+
+   RUN_ALL
+
+Cũng có thể mở RUN_ALL.m trong MATLAB Editor rồi bấm Run.
+Giữ nguyên thư mục +ep, kể cả dấu + ở đầu tên. Không cần tải hoặc
+ghép thêm tệp từ các gói cũ. Các đường dẫn được lấy theo vị trí gói.
+
+RUN_ALL TỰ THỰC HIỆN
+- Thiết lập đường dẫn của gói MATLAB.
+- Chạy EP_RUN_CHECKS; nếu một kiểm tra thất bại, MATLAB dừng tại lỗi đó.
+- Tự nhập tệp dữ liệu sạc đã kèm theo khi chưa có dữ liệu MAT đã xử lý.
+- Chạy đủ 9 phương pháp trên 7 cấu hình xác định với 30 điểm đầu mỗi
+  cấu hình: 1.890 lượt chạy.
+- Chạy 9 phương pháp trên 31 ngày sạc: 279 lượt chạy.
+- Lưu checkpoint sau từng lượt chạy.
+- Tổng hợp CSV, bảng LaTeX và hình PNG/PDF.
+- In thống kê hoàn tất, hội tụ, chạm giới hạn và lỗi nếu có.
+
+KẾT QUẢ NẰM Ở ĐÂU?
+Trong thư mục IP_EP/results_publication, được tạo tự động:
+- all_runs.csv: kết quả từng lượt chạy.
+- summary.csv: kết quả tổng hợp.
+- tables/: bảng và các đoạn LaTeX để chèn vào bản thảo.
+- figures/: các hình PNG và PDF.
+- checkpoints/: dữ liệu lưu để tiếp tục những lượt còn thiếu.
+
+Gói tải về chưa có kết quả thực nghiệm. Thư mục kết quả xuất hiện
+sau khi chương trình chạy. Thời gian thực thi được đo trên máy chạy.
+
+NẾU BỊ GIÁN ĐOẠN
+Giữ nguyên thư mục results_publication và chạy lại:
+
+   RUN_ALL
+
+Chương trình kiểm tra lại rồi dùng các checkpoint tương thích để tiếp tục.
+Muốn tiếp tục trực tiếp sau khi đã chạy kiểm tra thành công, có thể dùng:
+
+   EP_RUN_PUBLICATION
+
+Để xem tiến độ đã lưu, dùng EP_STATUS khi Command Window nhận lệnh.
+Để dựng lại bảng và hình sau khi có kết quả, dùng EP_EXPORT.
+
+THỬ NGẮN, NẾU CẦN
+Lệnh EP_RUN_SMOKE chạy cấu hình kiểm tra ngắn với giới hạn 200 bước
+và một mô hình sạc giả dành riêng cho kiểm tra phần mềm. Kết quả nằm
+ở results_smoke; các lượt chạm giới hạn trong cấu hình ngắn có thể xảy ra.
+Để tạo số liệu cho bài báo, dùng RUN_ALL theo hướng dẫn ở trên.
+
+YÊU CẦU
+- MATLAB, cấu hình mục tiêu R2026a, với JVM tiêu chuẩn được bật.
+- Không cần Optimization Toolbox, CVX hoặc MOSEK.
+- Mặc định chạy tuần tự, không cần Parallel Computing Toolbox.
+- Dữ liệu sạc đã được đóng gói, không cần tài khoản, API token hoặc tải mạng.
+
+KIỂM TRA VÀ HƯỚNG DẪN CHI TIẾT
+README.md: giao thức, phương pháp, residual, thời gian và các tệp kết quả.
+VALIDATION.md: phạm vi kiểm tra mã và đối chiếu công thức bằng Python.
+AUDIT_REPORT_VI.txt: lỗi đã sửa và giải thích bằng tiếng Việt.
+data/README.md: nguồn dữ liệu, phiên bản lưu trữ, checksum và quy tắc lọc.
+
+Mã đã được phân tích tĩnh và các công thức số đã được đối chiếu độc lập.
+MATLAB chưa được thực thi trong môi trường chuẩn bị gói; RUN_ALL sẽ chạy
+bộ kiểm tra trên máy của người dùng trước khi bắt đầu thí nghiệm đầy đủ.
