@@ -1,0 +1,2 @@
+raw_sessions,distinct_session_ids,duplicates,invalid_records,outside_month,different_local_day,valid_same_day,empty_window,energy_infeasible,retained_sessions,retained_days
+964,964,0,0,0,51,913,10,33,870,31

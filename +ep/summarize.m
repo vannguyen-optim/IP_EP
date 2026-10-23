@@ -41,7 +41,11 @@ for p=1:numel(model_ids)
             'update_subproblems_median',med(t.update_subproblems),...
             'diagnostic_subproblems_median',med(t.diagnostic_subproblems),...
             'kkt_max',maximum(t.max_subproblem_kkt));
-        rows(end+1)=row; %#ok<AGROW>
+        if isempty(rows)
+            rows=row;
+        else
+            rows(end+1)=row; %#ok<AGROW>
+        end
     end
 end
 if isempty(rows), summary=table(); else, summary=struct2table(rows); end

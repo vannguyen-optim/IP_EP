@@ -2,6 +2,10 @@ function [runs,records,manifest] = load_results(results_dir)
 %LOAD_RESULTS Read only checkpoints compatible with the saved manifest.
 m=load(fullfile(results_dir,'manifest.mat'),'manifest'); manifest=m.manifest;
 records={}; rows=struct([]);
+counter_names={'update_subproblems','diagnostic_subproblems',...
+    'update_projections','diagnostic_projections',...
+    'update_operator_evaluations','diagnostic_operator_evaluations',...
+    'update_inner_work','diagnostic_inner_work'};
 for k=1:numel(manifest.expected_keys)
     path=fullfile(results_dir,'checkpoints',[manifest.expected_keys{k},'.mat']);
     if ~isfile(path), continue; end
@@ -27,15 +31,23 @@ for k=1:numel(manifest.expected_keys)
         'update_operator_evaluations',NaN,'diagnostic_operator_evaluations',NaN,...
         'update_inner_work',NaN,'diagnostic_inner_work',NaN,'N',NaN);
     if isfield(r,'counts')
-        names=fieldnames(r.counts);
-        for j=1:numel(names), row.(names{j})=r.counts.(names{j}); end
+        % Keep the table schema fixed; all original counters remain in records.
+        for j=1:numel(counter_names)
+            name=counter_names{j};
+            if isfield(r.counts,name), row.(name)=r.counts.(name); end
+        end
     end
     if ~isnan(row.objective)
         row.relative_gap=row.gap_upper_bound/max(1,row.objective);
     end
     row.total_subproblems=row.update_subproblems+row.diagnostic_subproblems;
     if isfield(meta,'N'), row.N=meta.N; end
-    rows(end+1)=row; records{end+1}=s; %#ok<AGROW>
+    if isempty(rows)
+        rows=row;
+    else
+        rows(end+1)=row; %#ok<AGROW>
+    end
+    records{end+1}=s; %#ok<AGROW>
 end
 if isempty(rows), runs=table(); else, runs=struct2table(rows); end
 end

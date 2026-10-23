@@ -253,6 +253,34 @@ ep.export_tables(fixture_summary,table(),fixture_records,fixture_manifest,fullfi
 selection=fileread(fullfile(export_root,'tables','ev_data_summary.tex'));
 assert(contains(selection,'Retained sessions & 870') && ~contains(selection,'Retained sessions & 999'));
 names{end+1}='Export uses frozen selection counts rather than a changed live data file';
+% Mixed checkpoint schemas must load in either order without adding columns.
+schema_root=fullfile(tmp,'result_schema_regression');
+schema_manifest=fixture_manifest;
+schema_manifest.expected_keys={'ev_fixture_r001_nm','ev_fixture_r002_nm','ev_fixture_r003_nm'};
+schema_manifest.expected_signatures=repmat({'schema_current'},1,3);
+schema_results={ev_result_fixture,ev_result_fixture,...
+    struct('status','solver_error','message','SOFTWARE_TEST_ONLY')};
+schema_results{2}.counts=struct('update_subproblems',7,'extra_counter',123);
+for j=1:3
+    schema_meta=meta; schema_meta.trial=j;
+    ep.atomic_save(fullfile(schema_root,'checkpoints',[schema_manifest.expected_keys{j} '.mat']),...
+        struct('signature','schema_current','meta',schema_meta,'result',schema_results{j}));
+end
+ep.atomic_save(fullfile(schema_root,'manifest.mat'),struct('manifest',schema_manifest));
+[mixed_runs,mixed_records]=ep.load_results(schema_root);
+assert(height(mixed_runs)==3 && numel(mixed_records)==3);
+assert(isequal(mixed_runs.Properties.VariableNames,fixture_runs.Properties.VariableNames));
+assert(mixed_runs.update_subproblems(1)==ev_result_fixture.counts.update_subproblems);
+assert(mixed_runs.update_subproblems(2)==7 && isnan(mixed_runs.diagnostic_subproblems(2)));
+assert(mixed_records{2}.result.counts.extra_counter==123);
+assert(mixed_runs.status(3)=="solver_error" && isnan(mixed_runs.iterations(3)) &&...
+    isnan(mixed_runs.update_subproblems(3)) && isnan(mixed_runs.total_subproblems(3)));
+schema_manifest.expected_keys=schema_manifest.expected_keys(3:-1:1);
+schema_manifest.expected_signatures=schema_manifest.expected_signatures(3:-1:1);
+ep.atomic_save(fullfile(schema_root,'manifest.mat'),struct('manifest',schema_manifest));
+reordered_runs=ep.load_results(schema_root);
+assert(isequaln(reordered_runs,mixed_runs(3:-1:1,:)));
+names{end+1}='Result loading handles partial counters and failures in either order';
 % A successful pair with zero elapsed-time denominator is eligible for I only.
 paired=fixture_runs([1,1],:);
 paired.status(:)="converged";
@@ -263,6 +291,20 @@ pair_manifest=fixture_manifest; pair_manifest.methods=methods;
 assert(height(pair_summary)==1 && pair_summary.n_positive_iteration_pairs==1 &&...
     pair_summary.n_positive_time_pairs==0 && isnan(pair_summary.time_ratio_median));
 names{end+1}='Iteration and time ratios have separate positive-denominator counts';
+% More than one eligible method exercises every subsequent struct append.
+paired_many=paired([1,2,2],:);
+paired_many.method_key(3)="i020"; paired_many.method_name(3)="I-0.20";
+paired_many.alpha(3)=.2; paired_many.iterations(3)=4; paired_many.time_seconds(3)=.5;
+pair_manifest.expected_keys={'ev_fixture_r001_nm','ev_fixture_r001_i010','ev_fixture_r001_i020'};
+many_summary=ep.summarize(paired_many,pair_manifest);
+assert(height(many_summary)==3 && all(many_summary.n_recorded==1) &&...
+    all(many_summary.n_expected==1) && all(many_summary.n_success==1));
+[many_details,many_pairs]=ep.paired_speedups(paired_many,pair_manifest);
+i020=many_pairs(many_pairs.method_key=="i020",:);
+assert(height(many_details)==2 && height(many_pairs)==2 && height(i020)==1);
+assert(i020.iteration_ratio_median==2.5 && i020.time_ratio_median==2 &&...
+    i020.n_positive_iteration_pairs==1 && i020.n_positive_time_pairs==1);
+names{end+1}='Summary and paired comparisons retain multiple method rows';
 failed=fixture_runs([1,1],:); failed.status=["converged";"solver_error"];
 failed.iterations(2)=NaN; failed.time_seconds(2)=NaN; failed.residual(2)=Inf;
 failure_manifest=fixture_manifest;
